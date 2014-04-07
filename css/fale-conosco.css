@@ -65,6 +65,10 @@
 	margin-bottom: 10px;
 }
 
+.formBlocoTextarea {
+	position: relative;
+}
+
 #formContato .relative {
 	float: left;
 	width: 49.4%;
@@ -90,7 +94,8 @@
 	left: 22px;
 }
 
-#formContato .input {
+#formContato .input,
+#formContato .textarea {
 	background: none;
 	border: 2px solid #e3e3e3;
 	height: 48px;
@@ -104,6 +109,15 @@
 	-webkit-appearance:none;
 	-moz-appearance:none;
 	appearance:none;
+}
+
+#formContato .textarea {
+	height: 145px;
+	padding-top: 11px
+}
+
+#formContato textarea {
+	resize: none;
 }
 
 #formContato .formBlocoBt {

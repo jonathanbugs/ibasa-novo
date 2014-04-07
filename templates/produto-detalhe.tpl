@@ -119,7 +119,25 @@
 					<div class="informacoesBloco">
 						<span class="informacoesTitulo informacoesTituloDuvidas">Dúvidas Frequentes</span>
 						<div class="formDuvida">
+							<form action="javascript:;" name="formDuvida" id="formDuvida">
+								<p>Envie sua pergunta e receba a resposta.</p>
+								
+								<div class="formBloco clearfix">
+									<div class="relative">
+										<label class="label" for="email">Insira seu e-mail</label>
+										<input class="input" type="text" id="email" name="email">
+									</div>
+								</div>
 							
+								<div class="formBloco formBlocoTextarea">
+									<label class="label" for="duvida">Qual sua dúvida?</label>
+									<textarea class="textarea" name="duvida" id="duvida"></textarea>
+								</div>
+
+								<div class="formBloco formBlocoBt clearfix">
+									<button class="btForm geralTransition" type="submit">Enviar Dúvida</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>

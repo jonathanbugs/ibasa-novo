@@ -1,6 +1,54 @@
 $(document).ready(function(){
 	init();
+	validaForm();
 });
+
+
+
+/* =========
+   VALIDACAO DO FORMULARIO DUVIDAS
+   ========= */
+function validaForm(){
+	$('#formDuvida').validate({
+		ignore: "",
+		errorLabelContainer: "#errorContainer", 
+		errorElement: "div",
+		rules: {
+			email:  { required: true, email: true },
+			duvida: { required: true },
+		},
+
+		messages: {
+			email: "",
+			duvida: ""
+		},
+
+		submitHandler:function() {
+			//enviaDuvida();
+			
+			// $('#contatoResposta #sucessoContato').fadeTo(1000, 1);
+			// setTimeout(function() {
+			// 	$('#contatoResposta #sucessoContato').fadeTo(500, 0);
+			// }, 4000);
+		},
+
+		errorContainer: $('#contatoResposta #erroContato')
+	});
+}
+
+function enviaDuvida(){
+	var email   = $("#email").val();
+	var duvida  = $("#duvida").val();
+
+	$.post("./ajax/_post.duvida.php", {
+		'email'  : email,
+		'duvida' : duvida
+	},
+	function(data){
+		$("#email").val('').prev().show();
+		$("#duvida").val('').prev().show();
+	}, "html");
+}
 
 
 $(window).on('resize', function(){

@@ -1,4 +1,30 @@
-<!-- HEADER SESSAO TITULO -->
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-07 12:11:52
+         compiled from "templates/fale-conosco.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:12385335575342c0386f6935-26760604%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '81d2ea940585d8e9b74eca1418c4ab58d11ac960' => 
+    array (
+      0 => 'templates/fale-conosco.tpl',
+      1 => 1396883417,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '12385335575342c0386f6935-26760604',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'contato' => 0,
+    'endereco' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_5342c03872d8a7_04405451',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5342c03872d8a7_04405451')) {function content_5342c03872d8a7_04405451($_smarty_tpl) {?><!-- HEADER SESSAO TITULO -->
 <header id="sessaoTitulo">
 	<span class="bg bg1"></span>
 	<span class="bg bg2"></span>
@@ -28,7 +54,8 @@
 						<li class="contatosLi contatosLiFone">
 							<div class="table">
 								<div class="tableCell">
-									<span class="fone">{$contato.FoneSac}</span>
+									<span class="fone"><?php echo $_smarty_tpl->tpl_vars['contato']->value['FoneSac'];?>
+</span>
 									<p class="horarios">
 										<span>De segunda à sexta-feira</span>
 										<span>Das 8h30min às 12h - 13h30min às 18h</span>
@@ -95,14 +122,23 @@
 
 				<div id="endereco">
 					<span class="titulo">Laboratório IBASA Ltda.</span>
-					<span class="endereco">{$endereco.Rua}, {$endereco.Numero} - CEP {$endereco.CEP}</span>
-					<span class="endereco">{$endereco.Cidade}, {$endereco.Estado} - {$endereco.Pais}</span>
+					<span class="endereco"><?php echo $_smarty_tpl->tpl_vars['endereco']->value['Rua'];?>
+, <?php echo $_smarty_tpl->tpl_vars['endereco']->value['Numero'];?>
+ - CEP <?php echo $_smarty_tpl->tpl_vars['endereco']->value['CEP'];?>
+</span>
+					<span class="endereco"><?php echo $_smarty_tpl->tpl_vars['endereco']->value['Cidade'];?>
+, <?php echo $_smarty_tpl->tpl_vars['endereco']->value['Estado'];?>
+ - <?php echo $_smarty_tpl->tpl_vars['endereco']->value['Pais'];?>
+</span>
 					<a class="btMapa geralTransition" href="javascript:;" data-rel="blank">Ver no google maps</a>
 					
 					<div class="fone">
-						<a href="tel:{$contato.Link}">
+						<a href="tel:<?php echo $_smarty_tpl->tpl_vars['contato']->value['Link'];?>
+">
 							<span class="icone icon_phone"></span>
-							<span><span>{$contato.DDD}</span> {$contato.Fone}</span>
+							<span><span><?php echo $_smarty_tpl->tpl_vars['contato']->value['DDD'];?>
+</span> <?php echo $_smarty_tpl->tpl_vars['contato']->value['Fone'];?>
+</span>
 						</a>
 					</div>
 				</div>
@@ -110,3 +146,4 @@
 		</div>
 	</div>
 </section>
+<?php }} ?>
