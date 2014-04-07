@@ -1,0 +1,242 @@
+#tipoUl {
+	margin-top: 40px;
+	font-size: 0;
+	line-height: 0;
+}
+
+#tipoUl .tipoLi {
+	display: inline-block;
+}
+
+#tipoUl .tipoLi:first-child {
+	margin-right: 20px;
+}
+
+#tipoUl .tipoLink,
+#tipoUl .tipoLink:before {
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+#tipoUl .tipoLink {
+	border: 1px solid #6b6b6b;
+	color: #FFF;
+	display: block;
+	font-size: 12px;
+	line-height: 1em;
+	padding: 19px 100px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+#tipoUl .tipoLink:hover:before, {
+	border: 1px solid #FFF;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+#tipoUl .tipoLink:hover,
+#tipoUl .tipoLinkAtivo {
+	border-color: #FFF;
+}
+
+#blocoMapa {
+	display: block;
+	margin-bottom: 120px;
+}
+
+#blocoLista {
+	width: 45%;
+	float: left;
+}
+
+#conteudoLista {
+	padding: 40px 60px 0;
+}
+
+#mapa {
+	width: 55%;
+	height: 385px;
+	background: #F4F4F4;
+	float: right;
+}
+
+
+/* ============
+   SELECT
+   ============ */
+#filtrosUl {
+	display: block;
+	text-align: left;
+}
+
+.filtrosLi {
+	position: relative;
+	height: 60px;
+	float: left;
+}
+
+.filtrosLiEstado {
+	width: 25%;
+}
+
+.filtrosLiCidade {
+	float: right;
+	width: 74%;
+}
+
+.btSelect {
+	color: #727272;
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.listaSelectUl {
+	top: 50px;
+}
+
+
+/* ============
+   LISTA DE LOJAS E REPRESENTANTES
+   ============ */
+.lista .titulo {
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding: 5px 0 8px 0;
+}
+
+#listaUl {
+	height: 261px;
+	overflow: hidden;
+	text-align: left;
+	display: block;
+}
+
+.listaLi {
+	display: block;
+	margin-right: 10px;
+	border-top: 1px solid #e3e3e3;
+}
+
+.listaLink {
+	color: #77787b;
+	display: block;
+	font-family: 'OpenSans', sans-serif;	
+	font-size: 12px;
+	padding: 12px 55px 12px 25px;
+	position: relative;
+}
+
+.listaLink:hover,
+.listaLinkAtivo {
+	background: #cd1c38;
+	color: #FFF;
+}
+
+.listaLink span {
+	display: block;
+	padding-top: 3px;
+}
+
+.listaLink .listaTitulo {
+	padding-top: 0;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.listaLink .icone {
+	background: #717171;
+	color: #FFF;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: -10px;
+	text-align: center;
+	padding-top: 0;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.listaLink:hover .icone,
+.listaLinkAtivo .icone {
+	background: #FFF;
+	color: #cd1c38;
+}
+
+
+@media only screen and (max-width: 1125px) {
+	.filtrosLiEstado {
+		width: 30%;
+	}
+
+	.filtrosLiCidade {
+		float: right;
+		width: 69%;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	#conteudoLista {
+		padding: 40px 30px 0 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#tipoUl {		
+		padding-bottom: 50px;
+	}
+
+	#tipoUl .tipoLi {
+		display: block;
+	}
+
+	#tipoUl .tipoLi:first-child {
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	#tipoUl .tipoLink {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#blocoLista,
+	#mapa {
+		float: none;
+		width: 100%;
+	}
+
+	#conteudoLista {
+		padding: 0;
+		padding-top: 40px;
+		margin-bottom: 50px;
+	}
+
+	.filtrosLiEstado {
+		width: 35%;
+	}
+
+	.filtrosLiCidade {
+		float: right;
+		width: 64%;
+	}
+}	
+
+
+

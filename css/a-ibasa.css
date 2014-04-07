@@ -1,0 +1,619 @@
+
+#blocoTitulo .tituloSessao {
+	padding-left: 0;
+	margin-left: -80px;
+}
+
+
+.blocoTituloIbasa .titulo {
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 60px;
+	text-transform: uppercase;
+	margin-left: -230px;
+}
+
+.blocoTituloIbasa .subTitulo {
+	font-family: 'savignyregular_cond_italic', sans-serif;
+	color: #717171;
+	display: block;
+	margin: -10px 0 0 110px;
+}
+
+#timeline {
+	max-width: 520px;
+	margin: 85px auto 0;
+	position: relative;
+}
+
+#tempoUl {
+	background: url('../img/backgrounds/bg_linha.png') top left repeat-y;
+	height: 100%;
+	padding: 20px 0 130px;
+}
+
+.tempoLi {
+	color: #717171;
+	display: block;
+	padding-left: 30px;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.tempoLi1990 {
+	margin-top: -45px;
+}
+
+.seta {
+	background-image: url('../img/icons/seta_timeline.png');
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 18px;
+	left: -9px;
+}
+
+.setaLast {
+	background-position: 0 -20px;
+	top: auto;
+	bottom: -20px;
+}
+
+.blocoAno {
+	text-align: left;
+	float: left;
+	max-width: 245px;
+
+}
+
+.tempoAno {
+	display: block;
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 50px;
+	line-height: 1em;
+	letter-spacing: -0.05em;
+}
+
+.tempoDescricao {
+	line-height: 20px;
+	font-size: 13px;
+}
+
+.blocoImagem {
+	float: right;
+	max-width: 198px;
+	background: yellow;
+}
+
+.blocoImagem img {
+	display: block;
+	width: 100%;
+}
+
+.tempoLi1990 .blocoImagem {
+	margin: 55px 25px 0 0;
+	max-width: 119px;
+}
+
+.tempoLi1997 .blocoImagem {
+	max-width: 127px;
+}
+
+.tempoLi2006 .blocoImagem {
+	max-width: 89px;
+}
+
+.tempoLi2009 .blocoImagem {
+	max-width: 103px;
+}
+
+.tempoLi1990 .blocoAno {
+	max-width: 310px;
+}
+
+.tempoLi1997 .blocoImagem,
+.tempoLi2006 .blocoImagem,
+.tempoLi2009 .blocoImagem {
+	margin-top: 10px;
+}
+
+.tempoLi1997 .blocoImagem {
+	margin-right: 20px;
+}
+
+.tempoLi2006 .blocoImagem {
+	margin-right: 40px;
+}
+
+.tempoLi2009 .blocoImagem {
+	margin-right: 45px;
+	margin-top: 15px;
+}
+
+
+.conteudoIbasa,
+.conteudoIbasaTexto {
+	margin: 0 auto;
+	position: relative;
+	max-width: 934px;
+}
+
+.conteudoIbasa {
+	padding: 0 25px;
+}
+
+.conteudoIbasaTexto {
+	max-width: 884px;
+}
+
+#anoAtual {
+	background: #d71925;
+	padding: 165px 0 300px;
+	margin-top: -85px;
+}
+
+.blocoIbasa {
+	color: #FFF;
+	max-width: 876px;
+	position: relative;
+	padding: 55px 0 0 330px;
+	text-align: left;
+	margin-bottom: 110px;
+}
+
+.boxTxtAno {
+	position: absolute;
+	top: -50px;
+	left: 0;
+}
+
+.boxTxtAno .txtAno {
+	line-height: 1em;
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 260px;
+	letter-spacing: -0.1em;
+}
+
+.txtMomento span {
+	display: block;
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 78px;
+	line-height: 1em;
+	text-transform: uppercase;
+	letter-spacing: -0.05em;
+}
+
+.txtMomento .txtMomento2,
+.txtAnoAtual {
+	font-family: 'savignyregular_cond', sans-serif;
+}
+
+.txtAnoAtual {
+	font-size: 22px;
+	line-height: 26px;
+	max-width: 440px;
+	margin-top: 25px;
+}
+
+.blocoIbasaMenor {
+	display: block;
+	max-width: 560px;
+	margin: 0 0 95px 97px;
+}
+
+.blocoIbasaMenorBeleza {
+	max-width: 680px;
+	margin-bottom: 0;
+	margin-top: 130px;
+}
+
+.blocoIbasaImagem,
+.blocoIbasaTexto {
+	width: 235px;
+	float: left;
+}
+
+.blocoIbasaMenorBeleza .blocoIbasaTexto {
+	width: 290px;
+}	
+
+.blocoIbasaTexto {
+	width: 195px;
+	padding-right: 40px;
+	text-align: right;
+}
+
+.blocoIbasaTexto span {
+	color: #FFF;
+	display: block;
+	font-family: 'savignyregular_cond_italic', sans-serif;
+	font-size: 55px;
+	line-height: 0.9em;
+	letter-spacing: -0.05em;
+}
+
+.blocoIbasaDescricao {
+	color: #FFF;
+	float: right;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: left;
+	width: 325px;
+}
+
+.blocoIbasaMenorBeleza .blocoIbasaDescricao {
+	width: 340px;
+	padding-top: 18px;
+}
+
+
+
+/* ============
+   LINHAS DE PRODUTOS
+   ============ */
+#linhas {
+	background: #1d1d1d;
+	padding-bottom: 135px;
+	height: 330px;
+}
+
+#linhas .conteudoIbasa {
+	position: relative;
+}
+
+#imagemProdutos {
+	max-width: 760px;
+	margin: 0 auto 65px;
+}
+
+#imagemProdutos img {
+	display: block;
+	width: 100%;
+	position: relative;
+	top: -220px;
+}
+
+#linhasProdutosUl {
+	font-size: 0;
+	margin-top: -220px;
+}
+
+.linhasProdutosLi {
+	display: inline-block;
+}
+
+.linhasProdutosLiCentro {
+	margin: 0 20px;
+}
+
+.linhasProdutosLink {
+	border: 2px solid #717171;
+	color: #717171;
+	display: block;
+	font-size: 12px;
+	letter-spacing: -0.05em;
+	padding: 23px 0;
+	width: 273px;
+	text-transform: uppercase;
+}
+
+.linhasProdutosLink:hover {
+	background: #d71925;
+	border-color: #d71925;
+	color: #FFF;
+}
+
+
+
+
+
+
+
+
+/* ============
+   VIDEO COMERCIAL
+   ============ */
+#boxVideo {
+	width: 100%;
+	position: relative;
+}
+
+#boxVideo #sombra {
+	width: 100%;
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+}
+
+#boxVideo #sombra img {
+	width: 100%;
+	display: block;
+}
+
+.blocoVideo {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.blocoVideo .videoDestaque,
+.blocoVideo .boxVideoDestaque,
+.blocoVideo .imagem {
+	border: none;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.blocoVideo .play {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.iconePlay {
+	background: url('../img/icons/play.png') no-repeat;
+	width: 191px;
+	height: 191px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -95px 0 0 -95px;
+}
+
+.blocoVideo .play:hover .iconePlay {
+	background-position: 0 -191px;
+}
+
+.blocoVideo .showVideo,
+.blocoVideo .moreVideos {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+
+.blocoVideo .showVideo {
+	z-index: 2
+}
+
+.blocoVideo .moreVideos {
+	background: #FFF;
+	z-index: 1;
+}
+
+
+.blocoVideo .moreVideos .boxVideoMenor {
+	width: 372px;
+	height: 328px;
+	position: relative;
+	float: left;
+	margin-top: 100px;
+}
+
+.blocoVideo .moreVideos .boxVideoMargem {
+	margin-right: 40px;
+	margin-left: 75px;
+}
+
+.blocoVideo .moreVideos .maskVideoMenor {
+	width: 372px;
+	height: 209px;
+	position: absolute;
+	top: 70px;
+	left: 0;
+}
+
+.blocoVideo .moreVideos .maskVideoMenor1 {
+	background-position: 0 -516px;
+}
+
+.playMenor .tituloVideo {
+	margin: 0 auto;
+	max-width: 230px;
+	font-family: 'savignyregular_cond', sans-serif, tahoma;
+	color: #e10614;
+	font-size: 30px;
+	line-height: 1em;
+	display: block;
+}
+
+.blocoVideo .moreVideos .boxVideoMenor .playMenor {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#boxVideo1 {
+	display: none;
+}
+
+#btCampanha {
+	border: 2px solid #FFF;
+	color: #FFF;
+	display: inline-block;
+	margin-top: 90px;
+	padding: 23px 40px;
+	text-transform: uppercase;
+}
+
+
+#btCampanha:hover {
+	background: #FFF;
+	color: #d71925;
+}
+
+@media only screen and (max-width: 990px) {
+	.txtMomento span {
+		font-size: 54px;
+	}
+
+	.blocoIbasaMenorBeleza {
+		margin-left: 0;
+	}
+
+	.txtAnoAtual {
+		font-size: 19px;
+		line-height: 24px;
+	}
+
+	.linhasProdutosLiCentro {
+		margin: 0 10px;
+	}
+
+	.linhasProdutosLink {
+		width: 225px;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.blocoAno,
+	.blocoImagem {
+		float: none;
+		width: 100%;
+	}
+
+	.tempoLi1997 .blocoImagem, 
+	.tempoLi2006 .blocoImagem, 
+	.tempoLi2009 .blocoImagem {
+		margin: 0;
+	}
+
+	.tempoLi .blocoImagem {
+		margin-top: 30px;
+	}
+
+	
+	.blocoIbasaMenor {
+		display: block;
+		margin: 0 auto 95px;
+	}
+
+	.blocoIbasaMenorBeleza {
+		margin-top: 95px;
+	}
+
+	.blocoIbasaImagem,
+	.blocoIbasaDescricao,
+	.blocoIbasaTexto {
+		float: none;
+		width: 100%;
+		padding: 0;
+		max-width: 280px;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.blocoIbasaTexto {
+		padding-bottom: 20px;
+	}
+
+	.iconePlay {
+		background: url('../img/icons/play_menor.png') no-repeat;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -50px 0 0 -50px;
+	}
+
+	.blocoVideo .play:hover .iconePlay {
+		background-position: 0 -100px;
+	}
+
+
+	#imagemProdutos img {
+		top: -200px;
+	}
+
+	#linhasProdutosUl {
+		margin-top: -200px;
+	}
+
+	.linhasProdutosLi {
+		display: block;
+	}
+
+	.linhasProdutosLiCentro {
+		margin: 20px 0;
+	}
+
+	.linhasProdutosLink {
+		width: 100%;
+		display: block;
+	}
+}
+
+
+@media only screen and (max-width: 585px) {
+	#blocoTitulo .tituloSessao {
+		font-size: 30px;
+		margin-left: -5px;
+	}
+
+	.blocoTituloIbasa .titulo {
+		font-size: 50px;
+	}
+
+	.blocoTituloIbasa .titulo,
+	.blocoTituloIbasa .subTitulo {
+		margin: 0;
+	}
+
+	.blocoTituloIbasa .titulo {
+		margin-left: -120px;
+	}
+
+
+	.blocoIbasa {
+		padding: 0 0 0 0;
+		max-width: 280px;
+		margin: -45px auto 95px;
+	}
+
+	.boxTxtAno {
+		position: relative;
+		top: 0;
+	}
+
+	.boxTxtAno .txtAno {
+		font-size: 200px;
+	}
+
+	#anoAtual {
+		padding-bottom: 95px;
+	}
+
+
+	#imagemProdutos img {
+		top: -90px;
+	}
+
+	#linhasProdutosUl {
+		margin-top: -90px;
+	}
+}
+
+
+/* ============
+   RETINA
+   ============ */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.seta {
+		background-image: url('../img/icons/seta_timeline_2x.png');
+		background-size: 20px 40px;
+	}
+}

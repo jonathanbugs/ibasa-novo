@@ -1,0 +1,440 @@
+/* ============
+   BANNER
+   ============ */
+#sessaoBannerLanding {
+	background: #cd1c38;
+	position: relative;
+	margin-top: 33px;
+}
+
+#sessaoBannerLanding .bg {
+	background: #FFF;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 12%;
+}
+
+#sessaoBannerLanding .bg2 {
+	background: #cd1c38;
+	top: 12%;
+	height: 76%;
+}
+
+#sessaoBannerLanding .bg3 {
+	bottom: 0;
+}
+
+.bannerLanding {
+	position: relative;
+}
+
+.bannerLanding img {
+	display: block;
+	width: 100%;
+}
+
+.blocoInteresse {
+	background: #464646;
+	padding: 50px 80px;
+}
+
+.conteudoInteresse {
+	text-align: left;
+	display: block;
+}
+
+.conteudoInteresseTexto {
+	max-width: 355px;
+	float: left;
+}
+
+.conteudoInteresseTexto .titulo {
+	color: #FFF;
+	display: block;
+	font-size: 20px;
+	line-height: 1em;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.conteudoInteresseTexto .descricao {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+
+
+/* ============
+   FORMULARIO DE INTERESSE
+   ============ */
+.conteudoInteresseFormulario {
+	width: 630px;
+	float: right;
+}
+
+.formLeft {
+	width: 250px;
+	float: left;
+}
+
+.formRight {
+	width: 370px;
+	float: right;
+	position: relative;
+}
+
+#formInteresse .relative {
+	width: 100%;
+	height: 38px;
+	position: relative;
+	margin-bottom: 4px;
+}
+
+#formInteresse .relativeTexarea {
+	height: auto;
+}
+
+#formInteresse  .relativeLast {
+	margin-bottom: 0;
+}
+
+#formInteresse .label,
+#formInteresse .input,
+#formInteresse .textarea {
+	color: #727272;
+	font-family: 'OpenSans', sans-serif;
+	font-size: 12px;
+}
+
+#formInteresse .label {
+	position: absolute;
+	top: 14px;
+	left: 18px;
+}
+
+
+#formInteresse .textarea,
+#formInteresse .input {
+	background: none;
+	border: 1px solid #585858;
+	height: 38px;
+	outline: none;
+	margin: 0;
+	width: 100%;
+	padding: 0 17px;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+
+#formInteresse .textarea {
+	height: 80px;
+	padding: 9px 17px;
+}
+
+#formInteresse textarea {
+	resize: none;
+}
+
+#formInteresse .btForm {
+	border: 2px solid #727272;
+	height: 38px;
+	font-size: 14px;
+	color: #727272;
+	display: block;
+	text-transform: uppercase;
+	width: 100%;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#formInteresse .btForm:hover {
+	background: #727272;
+	color: #FFF;
+}
+
+#formInteresse .input.error,
+#formInteresse .textarea.error {
+	border-color: #ff0000;	
+}
+
+#formInteresse .errorBox {
+	display: none;
+	color: #ff0000;
+	border: none;
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	margin-top: 5px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -40px;
+}
+
+#formInteresse label.error {
+	display:none !important;
+}
+
+
+.conteudoLanding {
+	display: block;
+	margin: 0 75px;
+	padding-top: 85px;
+}
+
+.conteudoLandingLeft,
+.conteudoLandingRight {
+	width: 50%;
+	float: left;
+	max-width: 470px;
+	text-align: left;
+}
+
+.conteudoLandingRight {
+	float: right;
+	padding-top: 40px;
+}
+
+.conteudoLandingBts {
+	width: 100%;
+}
+
+.conteudoLandingLeft .blocoImagem {
+	max-width: 450px;
+}
+
+.conteudoLandingRight .blocoImagem {
+	max-width: 268px;
+	float: left;
+}
+
+.conteudoLandingLeft .blocoImagem img,
+.conteudoLandingRight .blocoImagem img {
+	width: 100%;
+	display: block;
+}
+
+.conteudoLandingDescricao {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.conteudoLandingLeft .conteudoLandingDescricao {
+	padding-right: 40px;
+}
+
+.conteudoLandingRight .conteudoLandingDescricao {
+	max-width: 195px;
+	float: right;
+}
+
+.conteudoLandingBts {
+	padding: 115px 0;
+}
+
+.imagemBts {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.imagemBts img {
+	display: block;
+	width: 100%;
+}
+
+.landingBtsUl {
+	font-size: 0;
+	margin-top: 50px;
+}
+
+.landingBtsLi {
+	display: inline-block;
+}
+
+.landingBtsLi:first-child {
+	margin-right: 40px;
+}
+
+.landingBtsLink {
+	border: 2px solid #727272;
+	color: #727272;
+	display: block;
+	font-size: 12px;
+	padding: 33px 0;
+	text-transform: uppercase;
+	width: 556px;
+}
+
+.landingBtsLink:hover {
+	background: #727272;
+	color: #FFF;
+}
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1279px) {
+	.conteudoInteresseTexto {
+		max-width: 300px;
+	}
+
+	.conteudoInteresseTexto .titulo {
+		font-size: 18px;
+	}
+
+	.conteudoInteresseTexto .descricao {
+		font-size: 12px;
+	}
+
+	.conteudoInteresseFormulario {
+		max-width: 470px;
+	}
+
+	.formLeft {
+		width: 200px;
+	}
+
+	.formRight {
+		width: 260px;
+	}
+
+	.conteudoLandingLeft {
+		width: 40%;
+	}
+
+	.conteudoLandingRight .blocoImagem {
+		max-width: 215px;
+	}
+
+	.conteudoLandingRight .conteudoLandingDescricao {
+		max-width: 180px;
+	}
+
+	.landingBtsLi:first-child {
+		margin-right: 30px;
+	}
+
+	.landingBtsLink {
+		width: 445px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.conteudoInteresseTexto {
+		float: none;
+		margin: 0 auto 30px;
+	}
+
+	.conteudoInteresseFormulario {
+		max-width: 528px;
+		float: none;
+	}
+
+	.formLeft {
+		width: 230px;
+	}
+
+	.formRight {
+		width: 290px;
+	}
+
+	.conteudoLandingLeft,
+	.conteudoLandingRight {
+		float: none;
+		width: 100%;
+	}
+
+	.conteudoLandingLeft {
+		margin-bottom: 50px;
+	}
+
+	.imagemBts {
+		max-width: 440px;
+	}
+
+	.landingBtsLi:first-child {
+		margin-right: 10px;
+	}
+
+	.landingBtsLink {
+		width: 325px;
+		font-size: 11px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#sessaoBannerLanding {
+		margin-top: 0;
+	}
+
+	#sessaoBannerLanding .containerGeral,
+	#interesse .containerGeral {
+		padding: 0;
+	}
+
+	.blocoInteresse {
+		padding: 50px;
+	}
+
+	.conteudoInteresse {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.conteudoInteresseFormulario,
+	.formLeft,
+	.formRight {
+		width: 100%;
+		float: none;
+	}
+
+	.formLeft {
+		margin-bottom: 4px;
+	}
+
+	.conteudoLanding {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.conteudoLandingRight .blocoImagem,
+	.conteudoLandingRight .conteudoLandingDescricao {
+		float: none;
+	}
+
+	.conteudoLandingRight .blocoImagem {
+		max-width: 200px;
+	}
+
+	.conteudoLandingRight .conteudoLandingDescricao {
+		max-width: 100%;
+	}
+
+	.landingBtsUl {
+		display: block;
+		text-align: center;
+	}
+
+	.landingBtsLi {
+		display: block;
+	}
+
+	.landingBtsLi:first-child {
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	.landingBtsLink {
+		width: 100%;
+	}
+
+}
+

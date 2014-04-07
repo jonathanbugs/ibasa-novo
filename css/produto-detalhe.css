@@ -1,0 +1,600 @@
+
+#blocoTitulo .tituloSessao {
+	display: none;
+}
+
+.conteudoProduto {
+	display: block;
+}
+
+.produtoImagem {
+	margin-left: 120px;
+	width: 372px;
+	float: left;
+}
+
+#boxProduto {
+	position: relative;
+	text-align: center;
+	margin: -170px auto 0;
+}
+
+#boxProduto #produto1 {
+	position: relative;
+	text-align: center;
+	left: 15px;
+	z-index: 3;
+}
+
+#boxProduto #produto2 {
+	height: 80%;
+	left: 0;
+	position: absolute;
+	top: 10%;
+	z-index: 2;
+}
+
+#boxProduto #produto3 {
+	height: 60%;
+	position: absolute;
+	right: 0;
+	top: 20%;
+	z-index: 2;
+}
+
+.btsLink {
+	background: #727272 url('../img/icons/bts_detalhe.png') no-repeat 20px 16px;
+	border: 2px solid #727272;
+	color: #FFF;
+	display: block;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 23px 0;
+	text-align: right;
+	padding-right: 65px;
+}
+
+.btsLink:hover {
+	background-color: #FFF;
+	background-position: 20px -112px;
+	color: #727272;
+}
+
+.btsLinkEncontrar {
+	background-position: 20px -46px;
+	margin-top: 4px;
+}
+
+.btsLinkEncontrar:hover {
+	background-position: 20px -174px;
+}
+
+.produtoInformacoes {
+	width: 490px;
+	float: right;
+	margin-right: 113px;
+	text-align: left;
+}
+
+.produtoTitulo {
+	position: relative;
+	top: -175px;
+}
+
+.produtoTitulo .titulo {
+	color: #FFF;
+	display: block;
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 55px;
+	letter-spacing: -0.05em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.produtoTitulo .descricao {
+	color: #FFF;
+	display: block;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 35px 95px 0 0;
+}
+
+.informacoesBloco {
+	margin-bottom: 45px;
+}
+
+.informacoesBlocoIndicacoes {
+	margin-top: -85px;
+}
+
+.informacoesTitulo {
+	background: url('../img/icons/produto_informacoes.png') no-repeat 15px 0;
+	color: #cd1c38;
+	display: block;
+	text-transform: uppercase;
+	font-family: 'savignyregular_cond', sans-serif;
+	font-size: 20px;
+	line-height: 1em;
+	border-bottom: 1px solid #e4e4e4;
+	padding: 5px 0 13px 58px;
+	margin-bottom: 18px;
+}
+
+.informacoesTituloUsar {
+	background-position: 15px -150px;
+	padding-top: 6px
+}
+
+.informacoesTituloDisponivel {
+	background-position: 15px -271px;
+	padding-top: 8px
+}
+
+.informacoesTituloComposicao {
+	background-position: 15px -379px;
+}
+
+.informacoesTituloCuidados {
+	background-position: 15px -480px;
+}
+
+.informacoesTituloDuvidas {
+	background-position: 15px -637px;
+}
+
+.informacoesDescricao {
+	display: block;
+	color: #727272;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 0 25px 0 58px;
+}
+
+.indicacoesUl{
+	font-size: 0;
+	padding-left: 58px;
+}
+
+.indicacoesLi {
+	display: inline-block;
+	width: 43px;
+	height: 50px;
+	text-align: center;
+	position: relative;
+	margin: 0 15px 25px 0;
+}
+
+.indicacoesLi:first-child {
+	margin-left: 0;
+}
+
+.indicacoesIcone {
+	background: url('../img/icons/indicacoes.png') no-repeat;
+	display: inline-block;
+	width: 43px;
+	height: 38px;
+	margin-left: 8px;
+}
+
+.indicacoesIcone_bovinos {
+	background-position: 0 -200px;
+}
+
+.indicacoesIcone_equinos {
+	background-position: -57px -200px;
+}
+
+.indicacoesIcone_suinos {
+	background-position: -112px -200px;
+}
+
+.indicacoesIcone_ovinos {
+	background-position: -171px -200px;
+}
+
+.indicacoesIcone_caprinos {
+	background-position: -228px -200px;
+}
+
+.indicacoesIcone_aves {
+	background-position: -285px -200px;
+}
+
+.indicacoesIcone_caes {
+	background-position: -342px -200px;
+}
+
+.indicacoesIcone_gatos {
+	background-position: -397px -200px;
+}
+
+.indicacoesIcone_passaros {
+	background-position: -513px -200px;
+	margin-left: 13px
+}
+
+.indicacoesIcone_coelhos {
+	background-position: -455px -200px;
+}
+
+.indicacoestitulo {
+	display: block;
+	color: #717171;
+	font-size: 12px;
+}
+
+.conteudoLinha {
+	max-width: 800px;
+	display: block;
+	margin: 0 auto;
+}
+
+.todosProdutos {
+	background: #cd1c38;
+	padding: 75px 0 50px;
+	margin-top: 100px;
+}
+
+.verTodos {
+	width: 252px;
+	float: left;
+	text-align: left;
+}
+
+.verTodos span {
+	color: #FFF;
+	display: block;
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 36px;
+	letter-spacing: -0.05em;
+	line-height: 0.9em;
+	padding-left: 43px;
+}
+
+.verTodos .linhaTitulo {
+	font-family: 'savignyregular_cond_italic', sans-serif;
+	font-size: 70px; 
+	margin: -12px 0 15px 0; 
+}
+
+.btTodos {
+	border: 2px solid #fc2647;
+	color: #FFF;
+	display: block;
+	padding: 11px 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.btTodos:hover {
+	background: #fc2647;
+}
+
+.imagemLinha {
+	max-width: 487px;
+	float: right;
+	margin-top: -140px;
+}
+
+.imagemLinha img {
+	display: block;
+	width: 100%;
+}
+
+
+.conteudoMaisProdutos {
+	margin: 140px 0 120px;
+}
+
+.tituloMais {
+	border-bottom: 3px solid #cd1c38;
+	display: block;
+	margin-bottom: 50px;
+	padding: 0 35px 15px;
+}
+
+.tituloMaisLinha {
+	text-align: left;
+	float: left;
+}
+
+.tituloMaisLinha span {
+	color: #cd1c38;
+	display: block;
+	font-size: 14px;
+	line-height: 1em;
+}
+
+.tituloMaisLinha .linha {
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.btLinhaTodos {
+	border: 2px solid #727272;
+	color: #727272;
+	float: right;
+	padding: 17px 60px;
+	text-transform: uppercase;
+}
+
+.btLinhaTodos:hover {
+	background: #727272;
+	color: #FFF;
+}
+
+.btVoltar {
+	border: 2px solid #727272;
+	color: #727272;
+	display: inline-block;
+	padding: 23px 65px;
+	text-transform: uppercase;
+}
+
+.btLinhaTodos:hover,
+.btVoltar:hover {
+	background: #727272;
+	color: #FFF;
+}
+
+
+/* ============
+   MAIS PRODUTOS
+   ============ */
+.maisProdutosUl {
+	display: inline-block;
+	font-size: 0;
+	margin-bottom: 80px;
+}
+
+.maisProdutosLi {
+	background: #FFF;
+	border: 3px solid #FFF;
+	float: left;
+	width: 254px;
+	height: 378px;
+	position: relative;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.limiter {
+	float: left;
+}
+
+.limiter span {
+	background: #eaeaea;
+	display: block;
+	width: 1px;
+	height: 329px;
+	margin: 27px 10px 0;
+}
+
+.maisProdutosLi:hover {
+	border-color: #cd1c38;
+}
+
+.maisProdutosLink {
+	display: block;
+	padding: 25px;
+}
+
+.maisProdutoTitulo {
+	color: #cd1c38;
+	display: block;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 1em;
+	height: 35px;
+}
+
+.maisProdutoDescricao {
+	color: #717171;
+	display: block;
+	font-size: 12px;
+	margin: 10px 0 5px;
+}
+
+.maisProduoBlocoimagem {
+	width: 200px;
+	height: 220px;
+	margin: 10px 0;
+	position: absolute;
+	left: 25px;
+	bottom: 45px;
+}
+
+.indicacoes {
+	color: #717171;
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.maisProdutoIndicacoesUl {
+	position: absolute;
+	left: 25px;
+	bottom: 0px;
+}
+
+.maisIndicacoesLi {
+	display: inline-block;
+	margin: 0 4px 2px 0;
+}
+
+.iconeAplicacao {
+	background: url("../img/icons/aplicacao.png") no-repeat;
+	display: block;
+	width: 26px;
+	height: 26px;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+.iconAplicacao_bovinos {
+	background-position: 0 0;
+}
+
+.iconAplicacao_equinos {
+	background-position: -45px 0;
+}
+
+.iconAplicacao_suinos {
+	background-position: -89px 0;
+}
+
+.iconAplicacao_ovinos {
+	background-position: -135px 0;
+}
+
+.iconAplicacao_caprinos {
+	background-position: -181px 0;
+}
+
+.iconAplicacao_aves {
+	background-position: -224px 0;
+}
+
+.iconAplicacao_caes {
+	background-position: -269px 0;
+}
+
+.iconAplicacao_gatos {
+	background-position: -313px 0;
+}
+
+.iconAplicacao_passaros {
+	background-position: -402px 0;
+}
+
+.iconAplicacao_coelhos {
+	background-position: -358px 0;
+}
+
+@media only screen and (max-width: 1279px) {
+	.limiter_4 {
+		display: none;
+	}
+
+	.maisProdutosUl {
+		max-width: 822px;
+	}
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.produtoImagem,
+	.produtoInformacoes {
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	#blocoTitulo .tituloSessao {
+		display: block;
+		padding-left: 0;
+	}
+
+	.produtoImagem,
+	.produtoInformacoes {
+		float: none;
+		width: 100%;
+		max-width: 372px;
+		margin: 0 auto;
+	}
+
+	#boxProduto {
+		margin-top: -130px;
+	}
+
+	.produtoTitulo {
+		top: 0;
+		display: none;
+	}
+
+	.informacoesBlocoIndicacoes {
+		margin-top: 80px;
+	}
+
+	.imagemLinha {
+		max-width: 380px;
+		margin-top: -75px;
+	}
+
+	.tituloMais {
+		padding: 0;
+		padding-bottom: 15px;
+	}
+
+	.limiter_3 {
+		display: none;
+	}
+
+	.limiter_4 {
+		display: block;
+	}
+
+	.maisProdutosUl {
+		max-width: 541px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.btsLink {
+		background-image: none;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 12px;
+	}
+
+	.indicacoesUl,
+	.informacoesDescricao {
+		padding-left: 18px;
+	}
+
+	.verTodos,
+	.imagemLinha {
+		float: none;
+	}
+
+	.imagemLinha {
+		margin-top: 35px;
+	}
+
+	.verTodos span {
+		padding-left: 0;
+	}
+
+	.tituloMaisLinha,
+	.btLinhaTodos {
+		float: none;
+		display: block;
+	}
+
+	.btLinhaTodos {
+		margin-top: 20px;
+	}
+
+	.limiter {
+		display: none;
+	}
+
+	.maisProdutosUl {
+		max-width: 260px;
+	}
+}
+
+
+/* ============
+   RETINA
+   ============ */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.seta {
+		background-image: url('../img/icons/seta_timeline_2x.png');
+		background-size: 20px 40px;
+	}
+}

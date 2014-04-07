@@ -1,0 +1,409 @@
+/* ============
+   BANNER LINHA
+   ============ */
+#sessaoBannerLanding {
+	background: #cd1c38;
+	position: relative;
+	margin-top: 0;
+	min-height: 365px;
+}
+
+#sessaoBannerLanding .bg {
+	background: #FFF;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 12%;
+}
+
+#sessaoBannerLanding .bg2 {
+	background: #cd1c38;
+	top: 12%;
+	height: 76%;
+}
+
+#sessaoBannerLanding .bg3 {
+	bottom: 0;
+}
+
+.bannerLinha {
+	position: relative;
+}
+
+.linhaTitulo {
+	position: absolute;
+	top: 120px;
+	left: 370px;
+	z-index: 2;
+	text-align: left;
+}
+
+.linhaTitulo span {
+	color: #FFF;
+	display: block;
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 36px;
+	line-height: 1em;
+	letter-spacing: -0.04em;
+}
+
+.linhaTitulo .tituloLinha {
+	font-family: 'savignyregular_cond_italic', sans-serif;
+	font-size: 70px;
+	margin-top: -15px;
+}
+
+.linhaImagem {
+	position: absolute;
+	top: 85px;
+	right: 95px;
+}
+
+.linhaImagem-estetica {
+	max-width: 485px;
+}
+
+.linhaImagem img {
+	display: block;
+	width: 100%;
+}
+
+
+/* ============
+   SIDEBAR FILTROS
+   ============ */
+.sidebar {
+	background: #464646;
+	position: absolute;
+	top: 43px;
+	left: 40px;
+	padding: 50px 0 10px;
+	width: 260px;
+	z-index: 2;
+}
+
+.blocoFiltro {
+	padding: 0 40px 20px;
+	border-bottom: 1px solid #3c3c3c;
+	text-align: left;
+	margin-bottom: 35px;
+}
+
+.blocoFiltroLast {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.blocoFiltro .titulo {
+	background: url('../img/icons/titulo_filtro.png') no-repeat 0 2px;
+	border-bottom: 1px solid #6b6b6b;
+	color: #FFF;
+	display: block;
+	font-family: 'savignyregular_cond_italic', sans-serif;
+	font-size: 20px;
+	line-height: 1em;
+	padding: 0 0 15px 20px;
+	margin-bottom: 15px;
+}
+
+
+.filtroLink {
+	color: #FFF;
+	display: block;
+	padding: 15px 0 15px 15px;
+}
+
+.filtroLink:hover,
+.filtroLinkAtivo {
+	background: #cd1c38;
+}
+
+.filtroUlCheckbox .filtroLi {
+	margin-top: 14px;
+}
+
+.filtroUlCheckbox .filtroLi:first-child {
+	margin-top: 0;
+}
+
+.labelCheckbox { 
+	background: url('../img/icons/check.png') no-repeat; 
+	color: #FFF;
+	cursor: pointer; 
+	display: block; 
+	font-size: 12px;
+	line-height: 17px;
+	position: relative;
+	padding-left: 30px;
+	outline: none;
+}
+
+.labelCheckbox input { 
+	cursor: pointer; 
+	position: absolute;
+	top: -2px;
+	left: -3px;
+	filter:alpha(opacity= 0); 
+	opacity: 0; 
+}
+
+.labelCheckbox:hover {
+	background-position: 0 -56px;
+}
+
+.labelCheckbox.inputCheckboxChecked {
+	background-position: 0 -112px;
+}
+
+
+/* ============
+   LISTAGEM DE PRODUTOS
+   ============ */
+.produtos {
+	text-align: left;
+	padding: 0 41px 0 315px;
+}
+
+.produtoCategorias .titulo {
+	border-bottom: 3px solid #cd1c38;
+	color: #cd1c38;
+	display: block;
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 36px;
+	line-height: 1em;
+	padding: 45px 0 10px 37px;
+	text-transform: uppercase;
+}
+
+.produtosUl {
+	display: block;
+	padding: 10px 11px;
+	font-size: 0;
+	border-bottom: 1px solid #eaeaea;
+	margin-bottom: 25px;
+}
+
+.produtosUlLast {
+	margin-bottom: 100px;
+}
+
+.produtosLi {
+	background: #FFF;
+	border: 3px solid #FFF;
+	float: left;
+	width: 254px;
+	height: 378px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.limiter {
+	float: left;
+}
+
+.limiter span {
+	background: #eaeaea;
+	display: block;
+	width: 1px;
+	height: 329px;
+	margin: 27px 10px 0;
+}
+
+.produtosLi:hover {
+	border-color: #cd1c38;
+}
+
+.produtosLink {
+	display: block;
+	padding: 25px;
+}
+
+.produtoTitulo {
+	color: #cd1c38;
+	display: block;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 1em;
+	height: 35px;
+}
+
+.produtoDescricao {
+	color: #717171;
+	display: block;
+	font-size: 12px;
+	margin: 10px 0 5px;
+}
+
+.blocoimagem {
+	width: 200px;
+	height: 220px;
+	margin: 10px 0;
+	position: absolute;
+	left: 25px;
+	bottom: 45px;
+}
+
+.indicacoes {
+	color: #717171;
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.indicacoesUl {
+	position: absolute;
+	left: 25px;
+	bottom: 0px;
+}
+
+.indicacoesLi {
+	display: inline-block;
+	margin: 0 4px 2px 0;
+}
+
+.iconeAplicacao {
+	background: url("../img/icons/aplicacao.png") no-repeat;
+	display: block;
+	width: 26px;
+	height: 26px;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+.iconAplicacao_bovinos {
+	background-position: 0 0;
+}
+
+.iconAplicacao_equinos {
+	background-position: -45px 0;
+}
+
+.iconAplicacao_suinos {
+	background-position: -89px 0;
+}
+
+.iconAplicacao_ovinos {
+	background-position: -135px 0;
+}
+
+.iconAplicacao_caprinos {
+	background-position: -181px 0;
+}
+
+.iconAplicacao_aves {
+	background-position: -224px 0;
+}
+
+.iconAplicacao_caes {
+	background-position: -269px 0;
+}
+
+.iconAplicacao_gatos {
+	background-position: -313px 0;
+}
+
+.iconAplicacao_passaros {
+	background-position: -402px 0;
+}
+
+.iconAplicacao_coelhos {
+	background-position: -358px 0;
+}
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1279px) {
+	.produtoCategorias {
+		max-width: 563px;
+	}
+
+	.limiter_2 {
+		display: none;
+	}
+
+	.linhaImagem {
+		right: 0;
+		top: 150px;
+	}
+
+	.linhaImagem-estetica {
+		max-width: 350px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	/* ============
+	   SIDEBAR FILTROS
+	   ============ */
+	.sidebar {
+		display: none;
+	}
+
+	.linhaTitulo {
+		position: relative;
+		left: 0;
+	}
+
+	.linhaImagem-estetica {
+		max-width: 400px;
+		top: 130px;
+	}
+
+	.produtos {
+		padding: 0;
+	}
+
+	.produtoCategorias {
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#sessaoBannerLanding {
+		margin-top: 0;
+	}
+
+	#sessaoBannerLanding .containerGeral,
+	#interesse .containerGeral {
+		padding: 0;
+	}
+
+
+	.bannerLinha {
+		max-width: 260px;
+		margin: 0 auto;
+	}
+
+	.linhaTitulo {
+		top: 80px;
+	}
+
+	.linhaImagem-estetica {
+		max-width: 100%;
+		top: 195px;
+	}
+
+	.produtoCategorias .titulo {
+		padding-left: 0;
+	}
+
+	.produtoCategorias {
+		max-width: 280px;
+	}
+
+	.limiter {
+		display: none;
+	}
+
+	.produtosUl {
+		padding: 10px 0;
+	}
+
+}
+
+

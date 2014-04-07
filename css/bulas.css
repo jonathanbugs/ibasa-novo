@@ -1,0 +1,348 @@
+/* ============
+   FILTRO
+   ============ */
+#filtro {
+	margin: 30px 60px;
+}
+
+#filtrosUl {
+	display: block;
+	text-align: left;
+}
+
+.filtrosLi {
+	position: relative;
+	width: 49%;
+	height: 60px;
+	float: left;
+}
+
+.filtrosLiBusca {
+	float: right;
+}
+
+#btSelect,
+#filtroUl {
+	border: 1px solid #e3e3e3;
+	font-size: 14px;
+}
+
+#btSelect {
+	color: #727272;
+	display: block;
+	height: 58px;
+	line-height: 58px;
+	padding-left: 30px;
+	position: relative;
+}
+
+#btSelect .icone {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	width: 24px;
+	height: 20px;
+	margin-top: -10px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#btSelect.btSelectAberto {
+	border-bottom: 0;
+}
+
+.btSelectAberto .icone {
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+#filtroUl {
+	background: #FFF;
+	border-top: 0;
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+#filtroUl .filtroLink {
+	border-top: 1px solid #e3e3e3;
+	color: #727272;
+	display: block;
+	padding: 20px 0 20px 30px;
+}
+
+#filtroUl .filtroLink:hover {
+	background: #cd1c38;
+	color: #FFF;
+}
+
+#formFiltroBusca .relative,
+#formFiltroBusca .btForm {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+#formFiltroBusca .relative {
+	width: auto;
+	border: 1px solid #e3e3e3;
+	position: relative;
+	padding-right: 75px;
+}
+
+#formFiltroBusca .label,
+#formFiltroBusca .input {
+	color: #c9c9c9;
+	font-size: 14px;
+}
+
+#formFiltroBusca .label {
+	top: 23px;
+}
+
+#formFiltroBusca .input {
+	height: 20px;
+	padding: 19px 0;
+}
+
+#formFiltroBusca .btForm {
+	width: 52px;
+	height: 52px;
+}
+
+#formFiltroBusca .btForm .icone {
+	font-size: 20px;
+}
+
+
+
+/* ============
+   BULAS
+   ============ */
+.bulasLi {
+	border-bottom: 1px solid #e3e3e3;
+	padding: 0 60px;
+}
+
+.bulasLi:first-child {
+	border-top: 1px solid #e3e3e3;
+}
+
+.bulasLi .table {
+	padding: 25px 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bulasLi .tableCell {
+	text-align: left;
+}
+
+.bulasInformacoes {
+	display: table;
+	float: left;
+	max-width: 465px;
+}
+
+.bulasLi .bulaImagem,
+.bulasLi .informacoes {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.bulasLi .informacoes {
+	padding-left: 30px;
+}
+
+.informacoes .produtoTitulo,
+.informacoes .produtoTipo,
+.informacoes .produtoDescricao {
+	color: #717171;
+	display: block;
+	text-transform: uppercase;
+	line-height: 1em;
+	padding-bottom: 8px;
+}
+
+.informacoes .produtoTitulo {
+	color: #cd1c38;
+	font-size: 18px;
+}
+
+.informacoes .produtoDescricao {
+	text-transform: none;
+}
+
+.bulasLi .bulasDownload {
+	display: table;
+	float: right;
+	height: 100%;
+}
+
+.linkDownload {
+	border: 2px solid #727272;
+	color: #727272;
+	display: block;
+	padding: 13px 48px;
+	text-transform: uppercase;
+}
+
+.linkDownload:hover {
+	background: #727272;
+	color: #FFF;
+}
+
+.blocoDuvidas {
+	margin: 100px 0;
+	padding: 0 60px;
+}
+
+.btDuvidas {
+	border: 2px solid #727272;
+	color: #727272;
+	display: block;
+	padding: 40px;
+	position: relative;
+}
+
+.btDuvidas .icone {
+	background: url('../img/icons/download.png') no-repeat;
+	width: 30px;
+	height: 42px;
+	position: absolute;
+	top: 50%;
+	left: 40px;
+	margin-top: -21px;
+}
+
+.btDuvidas:hover .icone {
+	background-position: 0 -42px;
+}
+
+.btDuvidas span {
+	display: block;
+	line-height: 1em;
+	font-size: 14px;
+}
+
+.btDuvidas .txtDuvidas {
+	text-transform: uppercase;
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+
+.btDuvidas:hover {
+	background: #727272;
+	color: #FFF;
+}
+
+
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 970px) {
+	#filtro {
+		margin: 30px 25px;
+	}
+
+	#formFiltroBusca .label, 
+	#formFiltroBusca .input {
+		font-size: 13px;
+	}
+
+	.bulasLi {
+		padding: 0 25px;
+	}
+
+	.bulasInformacoes {
+		max-width: 350px;
+	}
+
+	.blocoDuvidas {
+		padding: 0 25px;
+	}
+
+	.btDuvidas {
+		padding: 80px 0 40px;
+	}
+	
+	.btDuvidas .icone {
+		top: 20px;
+		left: 50%;
+		margin: 0 0 0 -15px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#filtro {
+		margin: 30px 0;
+	}
+
+	.filtrosLi {
+		float: none;
+		width: 100%;
+	}
+
+	.filtrosLiBusca {
+		display: none;
+	}
+
+	.bulasLi {
+		padding: 0;
+	}
+
+	.bulasInformacoes {
+		float: none;
+		max-width: 100%;
+	}
+
+	.bulasLi .bulasDownload {
+		float: none;
+		width: 100%;
+		display: inline-block;
+		margin-top: 25px;
+		text-align: center;
+	}
+
+	.bulasLi .bulasDownload .tableCell {
+		display: inline-block;
+	}
+
+	.linkDownload {
+		display: inline-block;
+	}
+
+	.blocoDuvidas {
+		padding: 0;
+	}
+
+	.btDuvidas span {
+		font-size: 12px;
+	}
+
+	.btDuvidas .txtDuvidas {
+		font-size: 14px;
+	}
+}
+
+
+/* ============
+   RETINA
+   ============ */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.btDuvidas .icone {
+		background-image: url('../img/icons/download_2x.png');
+		background-size: 30px 84px;
+	}
+}
+
+

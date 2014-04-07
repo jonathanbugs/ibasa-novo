@@ -1,0 +1,182 @@
+/* ============
+   BANNER
+   ============ */
+#sessaoBanner {
+	background: #cd1c38;
+	position: relative;
+	margin-top: 33px;
+}
+
+#sessaoBanner .bg {
+	background: #FFF;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 12%;
+}
+
+#sessaoBanner .bg2 {
+	background: #cd1c38;
+	top: 12%;
+	height: 76%;
+}
+
+#sessaoBanner .bg3 {
+	bottom: 0;
+}
+
+#banner {
+	position: relative;
+}
+
+#banner li {
+	width: 100%;
+	height: 100%;
+}
+
+.bannerImg {
+	display: block;
+	width: 100%;
+}
+
+#pagerBanner {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	bottom: 20px;
+	z-index: 100;
+}
+
+#pagerBanner span {
+	background: none;
+	border: 2px solid #FFF;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 4px;
+	height: 12px;
+	width: 12px;
+	text-indent: -9999px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+#pagerBanner .cycle-pager-active {
+	background: #cd1c38;
+}
+
+
+
+/* ============
+   BLOCOS
+   ============ */
+#blocosUl {
+	padding-bottom: 90px;
+}
+
+.blocosLi {
+	max-width: 270px;
+	padding-top: 55px;
+	float: left;
+	text-align: left;
+}
+
+.blocosLi .blocosImg {
+	display: block;
+	width: 100%;
+	max-width: 239px;
+}
+
+.blocosLiCampanha {
+	padding-top: 0;
+	margin: 0 85px;
+	text-align: center;
+}
+
+.blocosLiCampanha .blocosImg {
+	margin: -70px auto 0;
+	max-width: 179px;
+}
+
+.blocoTitulo {
+	color: #cf121b;
+	font-family: 'savignylight_cond_italic', sans-serif;
+	font-size: 40px;
+	line-height: 1em;
+	margin-top: -10px;
+	padding-bottom: 25px;
+	letter-spacing: -0.03em;
+}
+
+.blocosLiCampanha .blocoTitulo {
+	margin-top: 12px;
+}
+
+.blocosLiCampanha .blocoTitulo,
+.blocosLiCampanha .blocoDescricao {
+	text-align: left;
+}
+
+.blocoDescricao {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1125px) {
+	.blocosLiCampanha {
+		margin: 0 35px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.blocosLi {
+		max-width: 180px;
+	}
+
+	.blocosLiCampanha {
+		margin: 0 60px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#sessaoBanner {
+		margin-top: 0;
+	}
+
+	#sessaoBanner .containerGeral {
+		padding: 0;
+	}
+
+	.blocosLiCampanha {
+		margin: 0;
+	}
+
+	.blocosLi {
+		float: none;
+		max-width: 270px;
+		padding-top: 30px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.blocosLi .blocosImg {
+		display: inline-block;
+	}
+
+	.blocosLiCampanha .blocosImg {
+		margin-top: 0;
+		border-top: 1px solid #e3e3e3
+	}
+
+	.blocoTitulo,
+	.blocoDescricao {
+		text-align: left;
+	}
+}
+
