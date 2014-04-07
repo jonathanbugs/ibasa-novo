@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-07 11:48:28
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-07 12:00:12
          compiled from "templates/_rodape.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1574247175342babc241f17-73164903%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:9053125885342bd7c4d0b79-19825648%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '42c39aa80c66911ff710ce549df5ddc9ec237d43' => 
     array (
       0 => 'templates/_rodape.tpl',
-      1 => 1396882041,
+      1 => 1396882659,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1574247175342babc241f17-73164903',
+  'nocache_hash' => '9053125885342bd7c4d0b79-19825648',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_5342babc290416_04517706',
+  'unifunc' => 'content_5342bd7c519813_88208254',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5342babc290416_04517706')) {function content_5342babc290416_04517706($_smarty_tpl) {?><footer id="footer">
+<?php if ($_valid && !is_callable('content_5342bd7c519813_88208254')) {function content_5342bd7c519813_88208254($_smarty_tpl) {?><footer id="footer">
 	<div id="blocoInformacoes" class="clearfix">
 		<div id="blocoTelefone" class="bloco">
 			<div class="conteudoInformacoes">
@@ -97,7 +97,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 			<div class="blocoRodape blocoRodapeFacebook">
 				<div class="conteudoBloco">
-					<div class="fb-like-box" data-href="https://www.facebook.com/Ibasa.Oficial" data-width="100%" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+					<!--div class="fb-like-box" data-href="https://www.facebook.com/Ibasa.Oficial" data-width="100%" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div-->
 				</div>
 			</div>
 			<div class="blocoRodape blocoRodapeAplicativo">
@@ -126,14 +126,14 @@ gerais/app_2x.png" alt="Aplicativo Ibasa" />
 	</div>
 </footer>
 
-<div id="fb-root"></div>
+<!--div id="fb-root"></div>
 <script>(function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) return;
 	js = d.createElement(s); js.id = id;
 	js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
 	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));</script-->
 
 
 

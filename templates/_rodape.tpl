@@ -63,7 +63,7 @@
 			</div>
 			<div class="blocoRodape blocoRodapeFacebook">
 				<div class="conteudoBloco">
-					<div class="fb-like-box" data-href="https://www.facebook.com/Ibasa.Oficial" data-width="100%" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+					<!--div class="fb-like-box" data-href="https://www.facebook.com/Ibasa.Oficial" data-width="100%" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div-->
 				</div>
 			</div>
 			<div class="blocoRodape blocoRodapeAplicativo">
@@ -90,14 +90,14 @@
 	</div>
 </footer>
 
-<div id="fb-root"></div>
+<!--div id="fb-root"></div>
 <script>(function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) return;
 	js = d.createElement(s); js.id = id;
 	js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
 	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));</script-->
 
 
 

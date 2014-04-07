@@ -223,6 +223,12 @@
 	font-size: 12px;
 }
 
+.formDuvida {
+	border: 2px solid #d71925;
+	display: block;
+	padding: 40px 55px;
+}
+
 .conteudoLinha {
 	max-width: 800px;
 	display: block;
@@ -280,7 +286,6 @@
 	display: block;
 	width: 100%;
 }
-
 
 .conteudoMaisProdutos {
 	margin: 140px 0 120px;

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-07 11:48:28
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-07 11:54:48
          compiled from "templates/inicial.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:17602571325342babc1d5621-10197226%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:15228373425342bc384e99d5-62750069%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '17602571325342babc1d5621-10197226',
+  'nocache_hash' => '15228373425342bc384e99d5-62750069',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_5342babc211635_56792171',
+  'unifunc' => 'content_5342bc3851b3c5_76043364',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5342babc211635_56792171')) {function content_5342babc211635_56792171($_smarty_tpl) {?><!-- SESSAO BANNER -->
+<?php if ($_valid && !is_callable('content_5342bc3851b3c5_76043364')) {function content_5342bc3851b3c5_76043364($_smarty_tpl) {?><!-- SESSAO BANNER -->
 <section id="sessaoBanner">
 	<span class="bg bg1"></span>
 	<span class="bg bg2"></span>

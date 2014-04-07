@@ -14,10 +14,10 @@ RewriteCond %{HTTP_HOST} !192.168.*.* [NC]
 RewriteRule .* - [E=path:\/]
 
 RewriteCond %{HTTP_HOST} localhost [NC]
-RewriteRule .* - [E=path:\/ibasa\/]
+RewriteRule .* - [E=path:\/ibasa-novo\/]
 
 RewriteCond %{HTTP_HOST} 192.168.*.* [NC]
-RewriteRule .* - [E=path:\/ibasa\/]
+RewriteRule .* - [E=path:\/ibasa-novo\/]
 
 # UTILIDADES
 	# Block para IE 6

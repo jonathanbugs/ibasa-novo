@@ -1,6 +1,6 @@
 <?php
 ### Configuracoes do Projeto
-define('PROJETO','ibasa');
+define('PROJETO','ibasa-novo');
 define('CLIENTE','ibasa');
 
 ### Configuracoes de Meta Tags do Site
