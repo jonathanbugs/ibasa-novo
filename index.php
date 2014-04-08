@@ -37,5 +37,5 @@ $smarty->display($sessao.'.tpl');
 if(!$ajax) $smarty->display('footer.tpl');
 
 # FECHAR BANCO #
-// FecharBanco();
+@FecharBanco();
 ?>

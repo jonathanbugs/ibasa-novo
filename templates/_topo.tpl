@@ -3,7 +3,7 @@
 		<div class="containerGeral clearfix">
 			<h1 id="logo">
 				<a href="{$BASE_DIR}">
-					<img src="{$IMG_DIR}logos/logo.png" data-src2x="{$IMG_DIR}logos/logo_2x.png" alt="{$title}" />
+					<img src="{$IMG_DIR}logos/logo.png" data-src2x="{$IMG_DIR}logos/logo_2x.png" alt="{$title}" width="118" height="82" />
 				</a>
 			</h1>
 
