@@ -86,14 +86,19 @@
 						</div>
 					</div>
 					<div class="formBloco formBlocoBt clearfix">
-						<button class="btForm geralTransition" type="submit">Enviar Mensagem</button>
+						<button id="btFormEnviar" class="btForm btFormEnviar geralTransition" type="submit">Enviar Mensagem</button>
+						<button id="btFormEnviando" class="btForm btFormEnviando geralTransition" type="button">
+							<span class="iconeHolder">
+								<span class="icone icon_loading"></span>
+							</span>
+							Enviando
+						</button>
 					</div>
 					<div id="contatoResposta">
 						<span id="erroContato" class="message">Aconteceu um erro. Tente novamente</span>
 						<span id="sucessoContato" class="message">Sua mensagem foi enviada com sucesso!</span>
 					</div>
 				</form>
-
 
 				<div id="endereco">
 					<span class="titulo">Laboratório IBASA Ltda.</span>

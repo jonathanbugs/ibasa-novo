@@ -34,7 +34,9 @@ function selectEstados(){
    VALIDACAO DO FORMULARIO DE CONTATO
    ========= */
 function validaForm(){
-	var $form = $('#formContato');
+	var $form = $('#formContato'),
+		$enviar = $('#btFormEnviar'),
+		$enviando = $('#btFormEnviando');
 	$form.validate({
 		ignore: '',
 		errorLabelContainer: '#errorContainer',
@@ -49,8 +51,11 @@ function validaForm(){
 			mensagem: { required: true },
 		},
 		messages: { nome: '', empresa: '', telefone: '', email: '', cidade: '', estado: '', mensagem: '' },
-		submitHandler:function() {
-			$.post($BASE_DIR+'ajax/post.contato.php', $form.serialize(), function(data){
+		submitHandler: function() {
+			$enviar.hide();
+			$enviando.show();
+			if (typeof postContato === 'object' && typeof postContato.abort === 'function'){ postContato.abort(); }
+			var postContato = $.post($BASE_DIR+'ajax/post.contato.php', $form.serialize(), function(data){
 				$("#nome").val('').prev().show();
 				$("#empresa").val('').prev().show();
 				$("#telefone").val('').prev().show();
@@ -59,9 +64,11 @@ function validaForm(){
 				$("#estado").val('').prev().show();
 				$("#mensagem").val('').prev().show();
 
+				$enviando.hide();
 				$('#contatoResposta #sucessoContato').fadeTo(1000, 1);
 				setTimeout(function() {
-					$('#contatoResposta #sucessoContato').fadeTo(500, 0);
+					$('#contatoResposta #sucessoContato').hide();
+					$enviar.fadeTo(1000, 1);
 				}, 4000);
 			}, "html");
 		},
