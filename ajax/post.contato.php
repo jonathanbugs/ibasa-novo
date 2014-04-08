@@ -52,7 +52,7 @@ $sqlMensagem = htmlentities(utf8_decode($mensagem));
 				Mensagem = '$sqlMensagem'
 			");*/
 
-if($empresa!==''){
+if($nome!==''&&$email!==''){
 	$mailer = new PHPMailer();
 	$mailer->IsSMTP();
 	$mailer->SMTPDebug = 0;
@@ -60,9 +60,12 @@ if($empresa!==''){
 	$mailer->Host = 'pod51028.outlook.com';
 	$mailer->SMTPSecure = 'tls';
 	$mailer->SMTPAuth = true;
-	$mailer->Username = 'site@ibasa.com.br';
-	$mailer->Password = 'SITEibasa123';
-	$mailer->SetFrom('site@ibasa.com.br');
+	// $mailer->Username = 'site@ibasa.com.br';
+	// $mailer->Password = 'SITEibasa123';
+	// $mailer->SetFrom('site@ibasa.com.br');
+	$mailer->Username = 'app@ibasa.com.br';
+	$mailer->Password = '@ibasa2014';
+	$mailer->SetFrom('app@ibasa.com.br');
 	$mailer->AddReplyTo($email);
 	if(count($TO)>0){ foreach ($TO as $mail) {
 		$mailer->AddAddress($mail);
