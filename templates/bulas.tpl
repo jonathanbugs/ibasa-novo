@@ -22,8 +22,8 @@
 <section id="bulas" class="sessao">
 	<div class="container">
 		<div class="containerGeral clearfix">
-			
-			<div id="filtro">					
+
+			<div id="filtro">
 				<ul id="filtrosUl" class="clearfix">
 					<li class="filtrosLi">
 						<form action="javascript:;" name="formFiltro" id="formFiltro">
@@ -109,14 +109,14 @@
 			</ul>
 
 			<div class="blocoDuvidas">
-				<a class="btDuvidas geralTransition" href="javascript:;">
+				<a class="btDuvidas geralTransition" href="{$BASE_DIR}fale-conosco/">
 					<span class="icone"></span>
 					<span class="txtDuvidas">Ficou com dúvidas ou não encontrou a bula que procurava?</span>
 					<span>Clique aqui para entrar em contato</span>
 				</a>
 			</div>
 
-			{include file='../includes/_linhas_produtos.tpl'}
+			{include file='includes/_linhas_produtos.tpl'}
 
 		</div>
 	</div>

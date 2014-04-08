@@ -73,13 +73,15 @@
    ============ */
 #blocosUl {
 	padding-bottom: 90px;
+	font-size: 0;
 }
 
 .blocosLi {
 	max-width: 270px;
+	display: inline-block;
 	padding-top: 55px;
-	float: left;
 	text-align: left;
+	vertical-align: top;
 }
 
 .blocosLi .blocosImg {

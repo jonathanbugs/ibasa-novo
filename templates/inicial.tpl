@@ -32,11 +32,11 @@
 					<img class="blocosImg" src="{$IMG_DIR}gerais/produtos.png" data-src2x="{$IMG_DIR}gerais/produtos_2x.png" alt="Sobre a IBASA" />
 					<h2 class="blocoTitulo">Sobre a IBASA</h2>
 					<p class="blocoDescricao">
-						24 anos. Esse é o tempo que trabalhamos 
+						24 anos. Esse é o tempo que trabalhamos
 						pela vida. E assim, sentimos a necessidade
-						de crescer, evoluir e fazer cada vez mais. 
-						Mais ainda que simples novidades. Uma 
-						mudança que marca o nosso novo 
+						de crescer, evoluir e fazer cada vez mais.
+						Mais ainda que simples novidades. Uma
+						mudança que marca o nosso novo
 						momento e de todos os nossos parceiros.
 					</p>
 				</li>
@@ -44,9 +44,9 @@
 					<img class="blocosImg" src="{$IMG_DIR}gerais/placa.png" data-src2x="{$IMG_DIR}gerais/placa_2x.png" alt="Campanha" />
 					<h2 class="blocoTitulo">Campanha</h2>
 					<p class="blocoDescricao">
-						Lorem Ipsum is simply dummy text of the 
-						printing and typesetting industry. Lorem 
-						Ipsum has been the industry's standard 
+						Lorem Ipsum is simply dummy text of the
+						printing and typesetting industry. Lorem
+						Ipsum has been the industry's standard
 						dummy text ever since the 1500s
 					</p>
 				</li>
@@ -58,7 +58,7 @@
 						Proin gravida nibh vel velit auctor aliquet.
 						Aenean sollicitudin, lorem quis bibendum auctor,
 						nisi elit consequat ipsum, nec sagittis sem nibh
-						id elit. Duis sed odio sit amet nibh 
+						id elit. Duis sed odio sit amet nibh
 						vulputate cursus a sit.
 					</p>
 				</li>

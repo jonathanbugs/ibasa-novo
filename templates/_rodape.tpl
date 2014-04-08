@@ -7,17 +7,17 @@
 						<div class="circulo">
 							<span class="icone icon_phone"></span>
 						</div>
-						<div class="conteudo">
-							<p class="txt">
+						<a href="tel:{$contato.FoneSacLink}" class="conteudo">
+							<span class="txt">
 								<span>Para dúvidas, críticas e sugestões, utilize o </span>
 								<span>Serviço de Atendimento ao Cliente.</span>
-							</p>
-							<p><span class="fone">{$contato.FoneSac}</span></p>
-							<p class="txt">
+							</span>
+							<span class="fone">{$contato.FoneSac}</span>
+							<span class="txt">
 								<span>De segunda à sexta-feira</span>
 								<span>Das 8h30min às 12h - 13h30min às 18h</span>
-							</p>
-						</div>
+							</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -29,13 +29,13 @@
 						<div class="circulo">
 							<span class="icone icon_pin"></span>
 						</div>
-						<div class="conteudo">
-							<p><span class="titulo">LABORATÓRIO IBASA LTDA.</span></p>
-							<p>
-								<span>{$endereco.Rua}, {$endereco.Numero} </span>
+						<a href="{$contato.Mapa}" class="conteudo" target="_blank">
+							<span class="titulo">LABORATÓRIO IBASA LTDA.</span>
+							<span>
+								<span>{$endereco.Rua}, {$endereco.Numero}</span>
 								<span>CEP {$endereco.CEP} - {$endereco.Cidade} - {$endereco.Estado} - {$endereco.Pais}</span>
-							</p>
-						</div>
+							</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 			</div>
 			<div class="blocoRodape blocoRodapeFacebook">
 				<div class="conteudoBloco">
-					<!--div class="fb-like-box" data-href="https://www.facebook.com/Ibasa.Oficial" data-width="100%" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div-->
+					<div class="fb-like-box" data-href="https://www.facebook.com/Ibasa.Oficial" data-width="100%" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 				</div>
 			</div>
 			<div class="blocoRodape blocoRodapeAplicativo">
@@ -90,14 +90,14 @@
 	</div>
 </footer>
 
-<!--div id="fb-root"></div>
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) return;
 	js = d.createElement(s); js.id = id;
 	js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
 	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script-->
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 

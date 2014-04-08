@@ -8,7 +8,7 @@
 			</h1>
 
 			<div id="headerLinks">
-				{include file='../includes/_menu-links.tpl'}
+				{include file='includes/_menu-links.tpl'}
 
 				<div id="menuBusca">
 					<form id="formBusca" class="form" action="javascript:;">
@@ -26,14 +26,14 @@
 						</a>
 
 						<div id="menu">
-							{include file='../includes/_menu-links.tpl'}
-							{include file='../includes/_menu.tpl'}
+							{include file='includes/_menu-links.tpl'}
+							{include file='includes/_menu.tpl'}
 							<a class="facebook bt" data-rel="blank" href="{$redes_sociais.facebook}">
 								<span class="icone social_facebook"></span>
 							</a>
 						</div>
 
-						{include file='../includes/_menu.tpl'}
+						{include file='includes/_menu.tpl'}
 					</nav>
 					<a class="facebook bt" data-rel="blank" href="{$redes_sociais.facebook}">
 						<span class="icone social_facebook"></span>

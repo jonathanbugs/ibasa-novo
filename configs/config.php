@@ -24,7 +24,8 @@ $contato = array(
 	'FoneLink' => '+555135276574',
 	'FoneSac' => '0800 5412 137',
 	'FoneSacLink' => '08005412137',
-	'Email' => 'sac@ibasa.com.br'
+	'Email' => 'sac@ibasa.com.br',
+	'Mapa' => 'http://goo.gl/maps/dOVkB'
 );
 
 $endereco = array(
@@ -124,6 +125,22 @@ if(!isset($ajax)){
 	$smarty->assign('scriptRodape',$scriptRodape, true);
 	$smarty->assign('contato',$contato);
 	$smarty->assign('endereco',$endereco);
+}
+
+### liveReload - http://livereload.com
+if($_SERVER['HTTP_HOST']=='localhost' or $_SERVER['HTTP_HOST']=='localhost:8888' or preg_match('/^192.168./', $_SERVER['HTTP_HOST']) or preg_match('/^10.0./', $_SERVER['HTTP_HOST']) ){
+	$liveReload = "<script src=\"http://$_SERVER[HTTP_HOST]:35729/livereload.js?ext=Chrome&extver=2.0.9\"></script>";
+	// $redirect = BASE_DIR.'central-de-conteudo/';
+	// $redirect = BASE_DIR.'app/';
+	// $redirect = BASE_DIR.'bulas/';
+	$redirect = BASE_DIR.'fale-conosco/';
+	// $redirect = BASE_DIR.'a-ibasa/';
+	// $redirect = BASE_DIR.'produtos/';
+	// $redirect = BASE_DIR.'onde-encontrar/';
+	// $redirect = BASE_DIR;
+	if(isset($redirect) && $redirect !== $_SERVER['HTTP_REFERER'])
+		$liveReload .= "<script>window.location.href = '$redirect';</script>";
+	$smarty->assign('liveReload',$liveReload);
 }
 
 ### Navegador

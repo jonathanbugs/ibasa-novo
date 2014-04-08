@@ -28,7 +28,7 @@
 						<li class="contatosLi contatosLiFone">
 							<div class="table">
 								<div class="tableCell">
-									<span class="fone">{$contato.FoneSac}</span>
+									<a href="tel:{$contato.FoneSacLink}" class="fone">{$contato.FoneSac}</a>
 									<p class="horarios">
 										<span>De segunda à sexta-feira</span>
 										<span>Das 8h30min às 12h - 13h30min às 18h</span>
@@ -79,9 +79,11 @@
 							<input class="input" type="text" id="estado" name="estado">
 						</div>
 					</div>
-					<div class="formBloco formBlocoTextarea clearfix">
-						<label class="label" for="mensagem">Mensagem</label>
-						<textarea class="textarea" name="mensagem" id="mensagem"></textarea>
+					<div class="formBloco clearfix formBlocoTextarea">
+						<div class="relative">
+							<label class="label" for="mensagem">Mensagem</label>
+							<textarea class="textarea" id="mensagem" name="mensagem"></textarea>
+						</div>
 					</div>
 					<div class="formBloco formBlocoBt clearfix">
 						<button class="btForm geralTransition" type="submit">Enviar Mensagem</button>
@@ -97,10 +99,10 @@
 					<span class="titulo">Laboratório IBASA Ltda.</span>
 					<span class="endereco">{$endereco.Rua}, {$endereco.Numero} - CEP {$endereco.CEP}</span>
 					<span class="endereco">{$endereco.Cidade}, {$endereco.Estado} - {$endereco.Pais}</span>
-					<a class="btMapa geralTransition" href="javascript:;" data-rel="blank">Ver no google maps</a>
-					
+					<a class="btMapa geralTransition" href="{$contato.Mapa}" target="_blank">Ver no google maps</a>
+
 					<div class="fone">
-						<a href="tel:{$contato.Link}">
+						<a href="tel:{$contato.FoneLink}">
 							<span class="icone icon_phone"></span>
 							<span><span>{$contato.DDD}</span> {$contato.Fone}</span>
 						</a>

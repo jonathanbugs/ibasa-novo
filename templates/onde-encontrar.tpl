@@ -27,7 +27,7 @@
 <section id="ondeEncontrar" class="sessao">
 	<div class="container">
 		<div class="containerGeral clearfix">
-	
+
 			<div id="blocoMapa" class="clearfix">
 				<div id="blocoLista">
 					<div id="conteudoLista">
@@ -82,7 +82,7 @@
 
 						<div class="lista">
 							<span class="titulo">* clique na loja para visualizá-la no mapa</span>
-							
+
 							<ul id="listaUl" class="scroll">
 								<li class="listaLi">
 									<a class="listaLink geralTransition" href="javascript:;">
@@ -132,7 +132,7 @@
 				<div id="mapa"></div>
 			</div>
 
-			{include file='../includes/_linhas_produtos.tpl'}
+			{include file='includes/_linhas_produtos.tpl'}
 
 		</div>
 	</div>

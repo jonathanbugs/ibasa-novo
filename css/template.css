@@ -226,6 +226,13 @@ h1,h2,h3,h4,h5,h6 {
 	transition: all .3s;
 }
 
+.bt .icone {
+	-moz-transition: all 0;
+	-webkit-transition: all 0;
+	-o-transition: all 0;
+	transition: all 0;
+}
+
 .bgFixo {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -267,6 +274,7 @@ h1,h2,h3,h4,h5,h6 {
 	position: absolute;
 	top: 17px;
 	left: 25px;
+	cursor: text;
 }
 
 .form .input {
@@ -324,12 +332,13 @@ h1,h2,h3,h4,h5,h6 {
 	color: #717171;
 	position: relative;
 	padding-left: 25px;
+	line-height: 20px;
 }
 
 .menuLinksLink .icone {
 	font-size: 16px;
 	position: absolute;
-	top: 2px;
+	top: 1px;
 	left: 0;
 	opacity: 0.3;
 	-moz-opacity: 0.3;
@@ -480,8 +489,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #menu .menuLinksLink {
+	display: block;
 	font-size: 13px;
-	padding-left: 30px;
+	padding-left: 0;
+	text-align: center;
 }
 
 #menu .menuLinksLink .icone {
@@ -517,14 +528,16 @@ h1,h2,h3,h4,h5,h6 {
 #blocoInformacoes {
 	display: block;
 	background: #de202e;
+	font-size: 0;
 }
 
 
 #blocoInformacoes .bloco {
 	padding: 110px 0;
 	width: 50%;
-	text-align: right;
-	float: left;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
 }
 
 #blocoInformacoes #blocoTelefone {
@@ -532,42 +545,50 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .conteudoInformacoes {
-	max-width: 575px;
+	/*max-width: 575px;*/
+	display: block;
 	position: relative;
 }
 
+.conteudoInformacoes .table {
+	display: inline-table;
+}
+
 #blocoTelefone .conteudoInformacoes {
-	float: right;
-	padding-right: 65px;
+	margin: 0 65px 0 auto;
+	text-align: right;
 }
 
 #blocoEndereco .conteudoInformacoes {
-	float: left;
-	margin-left: 65px;
+	margin: 0 auto 0 65px;
+	text-align: left;
 }
 
 .conteudoInformacoes .table {
-	height: 112px;
+	height: 116px;
 }
 
 .conteudoInformacoes .circulo {
+	display: inline-block;
 	background: #FFF;
 	color: #727272;
 	font-size: 32px;
 	width: 112px;
 	height: 112px;
 	line-height: 112px;
-	float: left;
-	position: absolute;
-	top: 0;
-	left: 0;
+	margin: 0;
+	vertical-align: middle;
 }
 
 .conteudoInformacoes .conteudo {
 	color: #FFF;
-	padding-left: 140px;
+	margin-left: 20px;
 	max-width: 240px;
 	text-align: left;
+	font-size: 12px;
+	line-height: 1em;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .conteudoInformacoes .conteudo .txt {
@@ -585,7 +606,7 @@ h1,h2,h3,h4,h5,h6 {
 .conteudoInformacoes .conteudo .fone {
 	font-size: 26px;
 	padding: 8px 0;
-} 
+}
 
 #blocoEndereco .conteudoInformacoes .conteudo span {
 	padding: 4px 0;
@@ -602,13 +623,16 @@ h1,h2,h3,h4,h5,h6 {
 
 #conteudoBlocos {
 	padding: 60px 0;
+	font-size: 0;
 }
 
 .blocoRodape {
+	display: inline-block;
 	width: 306px;
 	min-height: 220px;
-	float: left;
 	padding: 0 60px;
+	overflow: hidden;
+	font-size: 12px;
 }
 
 .txtCadastro,
@@ -645,8 +669,10 @@ h1,h2,h3,h4,h5,h6 {
 
 #formNews .icone {
 	font-size: 20px;
-	position: relative;
-	top: 1px
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin: -11px -9px;
 }
 
 .blocoRodapeAplicativo img {
@@ -656,8 +682,12 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 34px 0 30px;
 }
 
+#linksAppUl {
+	font-size: 0;
+}
+
 .linksAppLi {
-	float: left;
+	display: inline-block;
 }
 
 .linksAppLink {
@@ -802,7 +832,7 @@ h1,h2,h3,h4,h5,h6 {
 	width: 100%;
 	max-width: 251px;
 	margin: 15px 0 30px;
-} 
+}
 
 #linhasUl .linhasTitulo .linha {
 	font-family: 'savignyregular_cond_italic', sans-serif;
@@ -913,6 +943,10 @@ h1,h2,h3,h4,h5,h6 {
 	#linhasUl .linhasLiConteudo {
 		padding: 40px 25px;
 	}
+
+	.blocoRodape {
+		padding: 0 55px;
+	}
 }
 
 @media only screen and (max-width: 1279px) {
@@ -933,7 +967,7 @@ h1,h2,h3,h4,h5,h6 {
 	#formBusca .relative {
 		width: 230px;
 	}
-	
+
 	.menuLi {
 		padding: 0 20px;
 	}
@@ -988,15 +1022,17 @@ h1,h2,h3,h4,h5,h6 {
 
 	#blocoTelefone .conteudoInformacoes,
 	#blocoEndereco .conteudoInformacoes {
-		float: none;
+		display: block;
+		clear: both;
 		padding: 0;
 		margin: 0;
+		text-align: center;
 	}
 
 	.conteudoInformacoes .conteudo {
+		display: block;
 		text-align: center;
-		padding-left: 0;
-		margin-top: 30px;
+		margin: 30px 0 0;
 	}
 
 	.blocoRodape {
@@ -1010,10 +1046,6 @@ h1,h2,h3,h4,h5,h6 {
 	.fb_iframe_widget iframe {
 		width: 235px !important;
 		height: 310px !important;
-	}
-
-	.linksAppLi {
-		float: none;
 	}
 
 	.linksAppLinkAndroid {
@@ -1043,7 +1075,7 @@ h1,h2,h3,h4,h5,h6 {
 @media only screen and (max-width: 767px) {
 	/* ============
 	   GERAIS
-	   ============ */ 
+	   ============ */
 	.containerGeral {
 		padding: 0 30px;
 	}
@@ -1119,6 +1151,12 @@ h1,h2,h3,h4,h5,h6 {
 		display: block;
 	}
 
+	.menuLinksLink:hover,
+	.menuLinksLink:hover .icone {
+		color: #fff;
+	}
+
+
 
 	/* ============
 	   RODAPE
@@ -1162,10 +1200,6 @@ h1,h2,h3,h4,h5,h6 {
 
 	.fb_iframe_widget span {
 		height: 290px !important;
-	}
-
-	.linksAppLi {
-		float: left;
 	}
 
 	.linksAppLinkAndroid {

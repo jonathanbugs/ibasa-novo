@@ -53,6 +53,7 @@
 	top: 15px;
 	left: 0;
 	line-height: 1em;
+	color: #fff;
 }
 
 #conteudoFaleConosco {
@@ -63,10 +64,6 @@
 #formContato .formBloco {
 	display: block;
 	margin-bottom: 10px;
-}
-
-.formBlocoTextarea {
-	position: relative;
 }
 
 #formContato .relative {
@@ -111,12 +108,14 @@
 	appearance:none;
 }
 
-#formContato .textarea {
-	height: 145px;
-	padding-top: 11px
+#formContato .formBlocoTextarea .relative {
+	width: 100%;
+	height: 160px;
 }
 
-#formContato textarea {
+#formContato .textarea {
+	height: 160px;
+	padding: 14px 20px;
 	resize: none;
 }
 
@@ -147,7 +146,7 @@
 
 #formContato .input.error,
 #formContato .textarea.error {
-	border-color: #ff0000;	
+	border-color: #ff0000;
 }
 
 #contatoResposta {
