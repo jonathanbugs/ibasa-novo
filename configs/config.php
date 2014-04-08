@@ -133,7 +133,7 @@ if($_SERVER['HTTP_HOST']=='localhost' or $_SERVER['HTTP_HOST']=='localhost:8888'
 	// $redirect = BASE_DIR.'central-de-conteudo/';
 	// $redirect = BASE_DIR.'app/';
 	// $redirect = BASE_DIR.'bulas/';
-	$redirect = BASE_DIR.'fale-conosco/';
+	// $redirect = BASE_DIR.'fale-conosco/';
 	// $redirect = BASE_DIR.'a-ibasa/';
 	// $redirect = BASE_DIR.'produtos/';
 	// $redirect = BASE_DIR.'onde-encontrar/';
