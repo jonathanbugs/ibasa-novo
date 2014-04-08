@@ -1,440 +1,348 @@
 /* ============
-   BANNER
+   APP
    ============ */
-#sessaoBannerLanding {
-	background: #cd1c38;
-	position: relative;
+.sessaoApp {
+	background-color: #282828;
+	background-position: left center;
+	background-repeat: no-repeat;
+	height: 600px;
+	overflow: hidden;
+
+	/*bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0;*/
+}
+
+.sessaoApp .txtIntro {
+	color: #FFF;
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 40px;
+	letter-spacing: -0.04em;
+	line-height: 1em;
+}
+
+.sessaoApp .txtIntro span {
+	display: block;
+}
+
+.sessaoAppFerramentas .txtIntro {
+	font-size: 50px;
+}
+
+.sombraApp {
+	background: url('../img/gerais/app/sombra.png') no-repeat;
+	width: 891px;
+	height: 563px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -281px 0 0 -445px;
+}
+
+.sessaoAppDireita {
+	background-position: right center
+}
+
+.sessaoAppVideo {
+	height: 550px;
 	margin-top: 33px;
 }
 
-#sessaoBannerLanding .bg {
-	background: #FFF;
-	position: absolute;
-	left: 0;
-	right: 0;
-	height: 12%;
+.sessaoAppVermelho {
+	background-color: #d41e2c;
 }
 
-#sessaoBannerLanding .bg2 {
-	background: #cd1c38;
-	top: 12%;
-	height: 76%;
+.sessaoAppCinza {
+	background-color: #585858;
 }
 
-#sessaoBannerLanding .bg3 {
-	bottom: 0;
+.sessaoAppInformacoes {
+	background-image: url('../img/backgrounds/app_informacoes.png');
 }
 
-.bannerLanding {
+.sessaoAppNuvem {
+	background-image: url('../img/backgrounds/app_nuvem.png');
+}
+
+.sessaoAppAgenda {
+	background-image: url('../img/backgrounds/app_agenda.png');
+}
+
+.sessaoAppConsulta {
+	background-image: url('../img/backgrounds/app_consulta.png');
+}
+
+.containerApp {
 	position: relative;
-}
-
-.bannerLanding img {
-	display: block;
+	margin: 0 auto;
+	height: 600px;
+	max-width: 810px;
 	width: 100%;
 }
 
-.blocoInteresse {
-	background: #464646;
-	padding: 50px 80px;
+.sessaoAppFerramentas .containerApp {
+	max-width: 1010px;
 }
 
-.conteudoInteresse {
-	text-align: left;
-	display: block;
+.ferramentasUl {
+	font-size: 0;
+	margin-top: 75px;
 }
 
-.conteudoInteresseTexto {
-	max-width: 355px;
+.ferramentasLi {
+	width: 165px;
+	height: 260px;
 	float: left;
-}
-
-.conteudoInteresseTexto .titulo {
-	color: #FFF;
-	display: block;
-	font-size: 20px;
-	line-height: 1em;
-	padding-bottom: 30px;
-	text-transform: uppercase;
-}
-
-.conteudoInteresseTexto .descricao {
-	font-size: 14px;
-	line-height: 20px;
-}
-
-
-
-/* ============
-   FORMULARIO DE INTERESSE
-   ============ */
-.conteudoInteresseFormulario {
-	width: 630px;
-	float: right;
-}
-
-.formLeft {
-	width: 250px;
-	float: left;
-}
-
-.formRight {
-	width: 370px;
-	float: right;
+	padding: 0 30px;
 	position: relative;
-}
-
-#formInteresse .relative {
-	width: 100%;
-	height: 38px;
-	position: relative;
-	margin-bottom: 4px;
-}
-
-#formInteresse .relativeTexarea {
-	height: auto;
-}
-
-#formInteresse  .relativeLast {
-	margin-bottom: 0;
-}
-
-#formInteresse .label,
-#formInteresse .input,
-#formInteresse .textarea {
-	color: #727272;
-	font-family: 'OpenSans', sans-serif;
-	font-size: 12px;
-}
-
-#formInteresse .label {
-	position: absolute;
-	top: 14px;
-	left: 18px;
-}
-
-
-#formInteresse .textarea,
-#formInteresse .input {
-	background: none;
-	border: 1px solid #585858;
-	height: 38px;
-	outline: none;
-	margin: 0;
-	width: 100%;
-	padding: 0 17px;
-	-o-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	appearance:none;
-}
-
-#formInteresse .textarea {
-	height: 80px;
-	padding: 9px 17px;
-}
-
-#formInteresse textarea {
-	resize: none;
-}
-
-#formInteresse .btForm {
-	border: 2px solid #727272;
-	height: 38px;
-	font-size: 14px;
-	color: #727272;
-	display: block;
-	text-transform: uppercase;
-	width: 100%;
-	-o-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-#formInteresse .btForm:hover {
-	background: #727272;
-	color: #FFF;
-}
-
-#formInteresse .input.error,
-#formInteresse .textarea.error {
-	border-color: #ff0000;	
-}
-
-#formInteresse .errorBox {
-	display: none;
-	color: #ff0000;
-	border: none;
-	width: 100%;
-	height: 38px;
-	line-height: 38px;
-	margin-top: 5px;
 	text-align: center;
+	margin-left: 35px;
+}
+
+.ferramentasLi:first-child {
+	margin-left: 0;
+}
+
+.ferramentasLi .ferramentasImg {
+	width: 150px;
+	height: 118px;
 	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -75px;
+	z-index: 3;
+}
+
+.ferramentasLi .ferramentasCirculo {
+	border: 2px solid #424242;
+	width: 221px;
+	height: 221px;
 	left: 0;
-	bottom: -40px;
+    position: absolute;
+    top: 35px;
+    z-index: 1;
+    -webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
 }
 
-#formInteresse label.error {
-	display:none !important;
-}
-
-
-.conteudoLanding {
+.ferramentasLi .ferramentasTxt {
+	color: #C9C9C9;
 	display: block;
-	margin: 0 75px;
-	padding-top: 85px;
+	font-size: 12px;
+	line-height: 16px;
+	padding-top: 150px;
+	z-index: 2;
 }
 
-.conteudoLandingLeft,
-.conteudoLandingRight {
+
+
+.blocoEsquerda,
+.blocoDireita {
 	width: 50%;
 	float: left;
-	max-width: 470px;
+}
+
+.conteudoApp {
+	width: 100%;
+	height: 360px;
+}
+
+.sessaoAppNuvem .conteudoApp {
+	height: 430px
+}
+
+.conteudoApp .tableCell {
 	text-align: left;
+	padding-left: 50px;
 }
 
-.conteudoLandingRight {
-	float: right;
-	padding-top: 40px;
+.blocoEsquerda .conteudoApp .tableCell {
+	padding-left: 0;
+	padding-right: 50px
 }
 
-.conteudoLandingBts {
-	width: 100%;
-}
-
-.conteudoLandingLeft .blocoImagem {
-	max-width: 450px;
-}
-
-.conteudoLandingRight .blocoImagem {
-	max-width: 268px;
-	float: left;
-}
-
-.conteudoLandingLeft .blocoImagem img,
-.conteudoLandingRight .blocoImagem img {
-	width: 100%;
-	display: block;
-}
-
-.conteudoLandingDescricao {
-	font-size: 14px;
-	line-height: 20px;
-}
-
-.conteudoLandingLeft .conteudoLandingDescricao {
-	padding-right: 40px;
-}
-
-.conteudoLandingRight .conteudoLandingDescricao {
-	max-width: 195px;
-	float: right;
-}
-
-.conteudoLandingBts {
-	padding: 115px 0;
-}
-
-.imagemBts {
-	max-width: 600px;
-	margin: 0 auto;
-}
-
-.imagemBts img {
+.imgApp {
 	display: block;
 	width: 100%;
 }
 
-.landingBtsUl {
-	font-size: 0;
-	margin-top: 50px;
-}
-
-.landingBtsLi {
-	display: inline-block;
-}
-
-.landingBtsLi:first-child {
-	margin-right: 40px;
-}
-
-.landingBtsLink {
-	border: 2px solid #727272;
-	color: #727272;
-	display: block;
-	font-size: 12px;
-	padding: 33px 0;
-	text-transform: uppercase;
-	width: 556px;
-}
-
-.landingBtsLink:hover {
-	background: #727272;
+.conteudoAppTitulo span,
+.conteudoAppDescricao {
 	color: #FFF;
+	display: block;
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 80px;
+	line-height: 1em;
+}
+
+.conteudoAppTitulo span {
+	letter-spacing: -0.05em;
+}
+
+.conteudoAppTitulo .txt2 {
+	margin-top: -20px;
+}
+
+.conteudoAppDescricao {
+	padding-top: 15px; 
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.imgConsulta {
+	display: block;
+	width: 100%;
+	max-width: 247px;
+	margin-top: 30px;
+}
+
+.plataformasUl {
+	font-size: 0;
+	margin-top: 60px;
+}
+
+.plataformasLi {
+	display: inline-block;
+	height: 225px;
+	position: relative;
+}
+
+.plataformasLiAndroid {
+	margin-left: 30px;
+}
+
+.plataformasLink {
+	display: block;
+}
+
+.plataformasImg {
+	display: block;
+	width: 100%;
+}
+
+.plataformasLink .plataformasTitulo {
+	color: #FFF;
+	display: block;
+	font-family: 'savignylight_cond', sans-serif;
+	font-size: 22px;
+	letter-spacing: -0.03em;
+	line-height: 1em;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 /* ============
    MEDIA QUERIES
    ============ */
+
 @media only screen and (max-width: 1279px) {
-	.conteudoInteresseTexto {
-		max-width: 300px;
+	.ferramentasLi {
+		margin-left: 10px;
 	}
 
-	.conteudoInteresseTexto .titulo {
-		font-size: 18px;
+	.ferramentasLi:first-child {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.conteudoApp {
+		height: 305px;
 	}
 
-	.conteudoInteresseTexto .descricao {
-		font-size: 12px;
-	}
-
-	.conteudoInteresseFormulario {
-		max-width: 470px;
-	}
-
-	.formLeft {
-		width: 200px;
-	}
-
-	.formRight {
-		width: 260px;
-	}
-
-	.conteudoLandingLeft {
-		width: 40%;
-	}
-
-	.conteudoLandingRight .blocoImagem {
-		max-width: 215px;
-	}
-
-	.conteudoLandingRight .conteudoLandingDescricao {
-		max-width: 180px;
-	}
-
-	.landingBtsLi:first-child {
-		margin-right: 30px;
-	}
-
-	.landingBtsLink {
-		width: 445px;
+	.sessaoAppNuvem .conteudoApp {
+		height: 365px;
 	}
 }
 
 @media only screen and (max-width: 1023px) {
-	.conteudoInteresseTexto {
-		float: none;
-		margin: 0 auto 30px;
+	.sessaoAppFerramentas {
+		height: auto;
+		padding: 50px 0;
 	}
 
-	.conteudoInteresseFormulario {
-		max-width: 528px;
-		float: none;
+	.sessaoAppFerramentas .containerApp {
+		height: auto;
 	}
 
-	.formLeft {
-		width: 230px;
+	.ferramentasUl {
+		max-width: 515px;
 	}
 
-	.formRight {
-		width: 290px;
+	.ferramentasLi {
+		margin: 0 15px 45px;
 	}
 
-	.conteudoLandingLeft,
-	.conteudoLandingRight {
-		float: none;
-		width: 100%;
-	}
-
-	.conteudoLandingLeft {
-		margin-bottom: 50px;
-	}
-
-	.imagemBts {
-		max-width: 440px;
-	}
-
-	.landingBtsLi:first-child {
-		margin-right: 10px;
-	}
-
-	.landingBtsLink {
-		width: 325px;
-		font-size: 11px;
+	.ferramentasLi:first-child {
+		margin-left: 15px;
 	}
 }
 
 @media only screen and (max-width: 767px) {
-	#sessaoBannerLanding {
-		margin-top: 0;
+	.sessaoApp {
+		background-image: none;
+		height: auto;
+		padding: 50px 0;
 	}
 
-	#sessaoBannerLanding .containerGeral,
-	#interesse .containerGeral {
+	.ferramentasUl {
+		max-width: 225px;
+	}
+
+	.ferramentasLi {
+		margin: 0;
+		margin-bottom: 45px
+	}
+
+	.ferramentasLi:first-child {
+		margin-left: 0;
+	}
+
+	.sessaoApp .txtIntro {
+		font-size: 26px;
+	}
+
+	.sessaoAppFerramentas .txtIntro {
+		font-size: 36px;
+	}
+
+	.conteudoApp .tableCell,
+	.blocoEsquerda .conteudoApp .tableCell {
 		padding: 0;
 	}
 
-	.blocoInteresse {
-		padding: 50px;
-	}
-
-	.conteudoInteresse {
-		max-width: 300px;
+	.blocoEsquerda, 
+	.blocoDireita {
+		float: none;
+		width: 100%;
+		max-width: 280px;
 		margin: 0 auto;
 	}
 
-	.conteudoInteresseFormulario,
-	.formLeft,
-	.formRight {
-		width: 100%;
-		float: none;
+	.blocoDireita {
+		margin-top: 20px;
 	}
 
-	.formLeft {
-		margin-bottom: 4px;
+	.conteudoAppTitulo span {
+		font-size: 65px;
 	}
 
-	.conteudoLanding {
-		max-width: 300px;
+	.plataformasLi {
+		display: block;
+		max-width: 280px;
 		margin: 0 auto;
 	}
 
-	.conteudoLandingRight .blocoImagem,
-	.conteudoLandingRight .conteudoLandingDescricao {
-		float: none;
+	.plataformasLiAndroid {
+		margin-top: 30px;
 	}
-
-	.conteudoLandingRight .blocoImagem {
-		max-width: 200px;
-	}
-
-	.conteudoLandingRight .conteudoLandingDescricao {
-		max-width: 100%;
-	}
-
-	.landingBtsUl {
-		display: block;
-		text-align: center;
-	}
-
-	.landingBtsLi {
-		display: block;
-	}
-
-	.landingBtsLi:first-child {
-		margin: 0;
-		margin-bottom: 20px;
-	}
-
-	.landingBtsLink {
-		width: 100%;
-	}
-
 }
+
 
