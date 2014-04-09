@@ -2,7 +2,7 @@
    BANNER LINHA
    ============ */
 #sessaoBannerLanding {
-	background: #cd1c38;
+	/*background: #cd1c38;*/
 	position: relative;
 	margin-top: 0;
 	min-height: 365px;
@@ -17,7 +17,7 @@
 }
 
 #sessaoBannerLanding .bg2 {
-	background: #cd1c38;
+	background: #464646;
 	top: 12%;
 	height: 76%;
 }
@@ -73,9 +73,9 @@
    SIDEBAR FILTROS
    ============ */
 .sidebar {
-	background: #464646;
+	background: #cd1c38;
 	position: absolute;
-	top: 43px;
+	top: -15px;
 	left: 40px;
 	padding: 50px 0 10px;
 	width: 260px;
@@ -84,7 +84,8 @@
 
 .blocoFiltro {
 	padding: 0 40px 20px;
-	border-bottom: 1px solid #3c3c3c;
+	border-bottom: 1px solid #fff;
+	border-color: rgba(255,255,255,.5);
 	text-align: left;
 	margin-bottom: 35px;
 }
@@ -96,7 +97,8 @@
 
 .blocoFiltro .titulo {
 	background: url('../img/icons/titulo_filtro.png') no-repeat 0 2px;
-	border-bottom: 1px solid #6b6b6b;
+	border-bottom: 1px solid #fff;
+	border-color: rgba(255,255,255,.25);
 	color: #FFF;
 	display: block;
 	font-family: 'savignyregular_cond_italic', sans-serif;
@@ -110,12 +112,13 @@
 .filtroLink {
 	color: #FFF;
 	display: block;
-	padding: 15px 0 15px 15px;
+	padding: 15px;
+	cursor: pointer;
 }
 
 .filtroLink:hover,
 .filtroLinkAtivo {
-	background: #cd1c38;
+	background: #464646;
 }
 
 .filtroUlCheckbox .filtroLi {
@@ -126,11 +129,11 @@
 	margin-top: 0;
 }
 
-.labelCheckbox { 
-	background: url('../img/icons/check.png') no-repeat; 
+.labelCheckbox {
+	background: url('../img/icons/check.png') no-repeat;
 	color: #FFF;
-	cursor: pointer; 
-	display: block; 
+	cursor: pointer;
+	display: block;
 	font-size: 12px;
 	line-height: 17px;
 	position: relative;
@@ -138,13 +141,13 @@
 	outline: none;
 }
 
-.labelCheckbox input { 
-	cursor: pointer; 
+.labelCheckbox input {
+	cursor: pointer;
 	position: absolute;
 	top: -2px;
 	left: -3px;
-	filter:alpha(opacity= 0); 
-	opacity: 0; 
+	filter:alpha(opacity= 0);
+	opacity: 0;
 }
 
 .labelCheckbox:hover {
