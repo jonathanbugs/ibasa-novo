@@ -55,7 +55,8 @@ define('CSS_DIR',BASE_DIR.'css/');
 define('TPL_DIR',BASE_DIR.'templates/');
 define('PHP_ROOT',dirname(dirname(__FILE__)));
 define('MIDIA_ROOT',PHP_ROOT.'/midia/');
-define('MIDIA_DIR',ROOT_DIR.'midia/');
+// define('MIDIA_DIR',ROOT_DIR.'midia/');
+define('MIDIA_DIR','http://www.ibasa.com.br/midia/');
 define('CLASS_DIR',PHP_ROOT.'/classes/');
 
 ### Configuracoes do Smarty
@@ -90,7 +91,7 @@ require_once(PHP_ROOT.'/configs/database.php');
 ### Classes PHP
 require_once(PHP_ROOT.'/classes/funcoes.php');
 require_once(PHP_ROOT.'/classes/funcoes_projeto.php');
-//ConectarBanco();
+ConectarBanco();
 // require_once(PHP_ROOT.'/linguagem/traducao.php');
 
 ### Arrays de Javascript e CSS

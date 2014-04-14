@@ -592,9 +592,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .conteudoInformacoes .conteudo .txt {
-	opacity: 0.45;
-	-moz-opacity: 0.45;
-	filter: alpha(opacity=45);
+	color: rgba(255,255,255,.45);
 }
 
 .conteudoInformacoes .conteudo span {
@@ -724,9 +722,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #spr {
-	background: url('../img/logos/spr.png') no-repeat;
+	background: url('../img/logos/spr.png') no-repeat center center;
 	width: 29px;
-	height: 9px;
+	height: 8px;
+	padding: 10px 20px;
 }
 
 
@@ -1256,13 +1255,6 @@ h1,h2,h3,h4,h5,h6 {
 
 	#spr {
 		background-image: url('../img/logos/spr_2x.png');
-		background-size: 29px 9px;
+		background-size: 29px 8px;
 	}
 }
-
-
-
-
-
-
-

@@ -23,6 +23,7 @@
 	<div class="container">
 		<div class="containerGeral clearfix">
 
+			{*}
 			<div id="filtro">
 				<ul id="filtrosUl" class="clearfix">
 					<li class="filtrosLi">
@@ -61,10 +62,32 @@
 					</li>
 				</ul>
 			</div>
-
+			{*}
 
 			<ul id="bulasUl">
+				{foreach $bulas as $bula}
 				<li class="bulasLi">
+					<div class="table">
+						<div class="tableCell clearfix">
+							<div class="bulasInformacoes clearfix">
+								<div class="bulaImagem">
+									<img src="{$MIDIA_DIR}produtos/listagem/{$bula.Capa}" alt="{$bula.Titulo}" />
+								</div>
+								<div class="informacoes tableCell">
+									<h3 class="produtoTitulo">{$bula.Titulo}</h3>
+									<span class="produtoTipo">{$bula.SubTitulo}</span>
+									<span class="produtoDescricao">{$bula.Composicao|from_charset}</span>
+									<a class="linkDownload linkDownloadMobile geralTransition" href="{$MIDIA_DIR}produtos/arquivos/{$bula.Bula}" data-rel="blank">Download da Bula</a>
+								</div>
+								<div class="download tableCell">
+									<a class="linkDownload geralTransition" href="{$MIDIA_DIR}produtos/arquivos/{$bula.Bula}" data-rel="blank">Download da Bula</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				{/foreach}
+				{*}<li class="bulasLi">
 					<div class="table">
 						<div class="tableCell clearfix">
 							<div class="bulasInformacoes clearfix">
@@ -84,28 +107,7 @@
 							</div>
 						</div>
 					</div>
-				</li>
-				<li class="bulasLi">
-					<div class="table">
-						<div class="tableCell clearfix">
-							<div class="bulasInformacoes clearfix">
-								<div class="bulaImagem">
-									<img src="{$IMG_DIR}gerais/bula.jpg" alt="" />
-								</div>
-								<div class="informacoes tableCell">
-									<h3 class="produtoTitulo">Ibatrim</h3>
-									<span class="produtoTipo">Injetável</span>
-									<span class="produtoDescricao">Sulfadiazina + Trimetoprim com potente ação antimicrobiana.</span>
-								</div>
-							</div>
-							<div class="bulasDownload">
-								<div class="tableCell">
-									<a class="linkDownload geralTransition" href="javascript:;" data-rel="blank">Download da Bula</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
+				</li>{*}
 			</ul>
 
 			<div class="blocoDuvidas">

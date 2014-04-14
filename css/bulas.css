@@ -127,7 +127,8 @@
    ============ */
 .bulasLi {
 	border-bottom: 1px solid #e3e3e3;
-	padding: 0 60px;
+	padding: 25px 60px;
+	position: relative;
 }
 
 .bulasLi:first-child {
@@ -135,7 +136,7 @@
 }
 
 .bulasLi .table {
-	padding: 25px 0;
+	/*padding: 25px 0;*/
 	width: 100%;
 	height: 100%;
 }
@@ -145,9 +146,9 @@
 }
 
 .bulasInformacoes {
+	width: 100%;
 	display: table;
-	float: left;
-	max-width: 465px;
+	/*max-width: 465px;*/
 }
 
 .bulasLi .bulaImagem,
@@ -157,7 +158,12 @@
 }
 
 .bulasLi .informacoes {
-	padding-left: 30px;
+	width: 100%;
+	padding: 0 30px;
+}
+
+.produtoImagem {
+	float: left;
 }
 
 .informacoes .produtoTitulo,
@@ -179,23 +185,25 @@
 	text-transform: none;
 }
 
-.bulasLi .bulasDownload {
-	display: table;
-	float: right;
-	height: 100%;
-}
-
 .linkDownload {
 	border: 2px solid #727272;
 	color: #727272;
 	display: block;
 	padding: 13px 48px;
 	text-transform: uppercase;
+	white-space: nowrap;
+	text-align: center;
+	background: #fff;
 }
 
 .linkDownload:hover {
 	background: #727272;
 	color: #FFF;
+}
+
+.linkDownloadMobile {
+	display: none;
+	white-space: normal;
 }
 
 .blocoDuvidas {
@@ -254,17 +262,17 @@
 		margin: 30px 25px;
 	}
 
-	#formFiltroBusca .label, 
+	#formFiltroBusca .label,
 	#formFiltroBusca .input {
 		font-size: 13px;
 	}
 
 	.bulasLi {
-		padding: 0 25px;
+		padding: 25px;
 	}
 
 	.bulasInformacoes {
-		max-width: 350px;
+		/*max-width: 350px;*/
 	}
 
 	.blocoDuvidas {
@@ -274,7 +282,7 @@
 	.btDuvidas {
 		padding: 80px 0 40px;
 	}
-	
+
 	.btDuvidas .icone {
 		top: 20px;
 		left: 50%;
@@ -297,28 +305,20 @@
 	}
 
 	.bulasLi {
-		padding: 0;
+		padding: 25px 0;
 	}
 
-	.bulasInformacoes {
-		float: none;
-		max-width: 100%;
+	.bulasLi .informacoes {
+		padding-right: 0;
 	}
 
-	.bulasLi .bulasDownload {
-		float: none;
-		width: 100%;
-		display: inline-block;
-		margin-top: 25px;
-		text-align: center;
+	.bulasLi .download {
+		display: none;
 	}
 
-	.bulasLi .bulasDownload .tableCell {
-		display: inline-block;
-	}
-
-	.linkDownload {
-		display: inline-block;
+	.bulasLi .linkDownloadMobile {
+		display: block;
+		padding: 13px;
 	}
 
 	.blocoDuvidas {
@@ -331,6 +331,19 @@
 
 	.btDuvidas .txtDuvidas {
 		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.bulasLi {
+		padding: 25px 0 65px;
+	}
+
+	.linkDownloadMobile {
+		position: absolute;
+		bottom: 15px;
+		left: 0;
+		right: 0;
 	}
 }
 
