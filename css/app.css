@@ -7,13 +7,6 @@
 	background-repeat: no-repeat;
 	height: 600px;
 	overflow: hidden;
-
-	/*bottom: 0;
-	left: 0;
-	overflow: hidden;
-	position: fixed;
-	right: 0;
-	top: 0;*/
 }
 
 .sessaoApp .txtIntro {
@@ -83,6 +76,158 @@
 	width: 100%;
 }
 
+.boxIpads {
+	height: 368px;
+	margin: 20px auto 0;
+	position: relative;
+	width: 815px;
+}
+
+.imgIpad {
+	position: absolute;
+}
+
+.imgIpad img {
+	display: block;
+	width: 100%;
+}
+
+.imgIpadMenor {
+	width: 26%;
+	z-index: 1;
+	top: 87px;
+	left: 10px;
+}
+
+.imgIpadDireita {
+	left: auto;
+	right: 10px;
+}
+
+.imgIpadCentro {
+	left: 50%;
+	margin-left: -249px;
+	top: 0;
+	width: 498px;
+	z-index: 2;
+}
+
+.boxPlay {
+	background: none;
+	color: #FFF;
+	border: 4px solid #FFF;
+	width: 80px;
+	height: 80px;
+	left: 50%;
+	margin-left: -42px;
+	position: absolute;
+	top: 85px;
+	font-size: 40px;
+	line-height: 80px;
+	z-index: 5;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.boxPlay:hover {
+	background: #FFF;
+	border-color: #d71925;
+	color: #d71925;
+}
+
+.boxTextIntro {
+	margin: 0 auto;
+	position: absolute;
+	text-align: center;
+	top: 200px;
+	width: 280px;
+	left: 50%;
+	margin-left: -140px;
+	z-index: 2;
+}
+
+.boxTextIntro .txtIntro {
+	color: #FFFFFF;
+	display: block;
+}
+
+.boxTextIntro .txtFacilite {
+	font-family: 'savignyregular_cond','Lucida Grande',Verdana,Arial,sans-serif;
+	font-size: 17px;
+	letter-spacing: 0;
+	line-height: 17px;
+	padding-bottom: 7px;
+}
+
+.boxTextIntro .txtIntroDescricao {
+	font-family: 'savignyregular_cond','Lucida Grande',Verdana,Arial,sans-serif;
+	font-size: 28px;
+	letter-spacing: -0.02em;
+	line-height: 28px;
+	position: relative;
+}
+
+#iconesUl {
+	font-size: 0;
+	margin-top: 40px;
+}
+
+.iconesLi {
+	display: inline-block;
+	position: relative;
+	min-width: 190px;
+}
+
+.iconesLi .table {
+	height: 81px;
+	padding-left: 90px;
+}
+
+.iconesLi .tableCell {
+	text-align: left;
+}
+
+.iconesLi .boxIcone {
+	background: #434242;
+	width: 81px;
+	height: 81px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.iconesLi .boxIcone .icone {
+	background: url('../img/icons/app.png') no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.iconesLi .boxIcone .iconePacientes {
+	background-position: -80px 0;
+}
+
+.iconesLi .boxIcone .iconeAgende {
+	background-position: -160px 0;
+}
+
+.iconesLi .boxIcone .iconeRegistre {
+	background-position: -240px 0;
+}
+
+.iconesLi .txt span {
+	color: #FFF;
+	font-size: 12px;
+	line-height: 15px;
+	display: block;
+}
+
 .sessaoAppFerramentas .containerApp {
 	max-width: 1010px;
 }
@@ -121,10 +266,10 @@
 	width: 221px;
 	height: 221px;
 	left: 0;
-    position: absolute;
-    top: 35px;
-    z-index: 1;
-    -webkit-border-radius: 100%;
+	position: absolute;
+	top: 35px;
+	z-index: 1;
+	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
 	border-radius: 100%;
 }
@@ -137,8 +282,6 @@
 	padding-top: 150px;
 	z-index: 2;
 }
-
-
 
 .blocoEsquerda,
 .blocoDireita {
@@ -252,17 +395,11 @@
 	}
 }
 
-@media only screen and (max-width: 980px) {
-	.conteudoApp {
-		height: 305px;
-	}
-
-	.sessaoAppNuvem .conteudoApp {
-		height: 365px;
-	}
-}
-
 @media only screen and (max-width: 1023px) {
+	.iconesLi {
+		min-width: 170px;
+	}
+
 	.sessaoAppFerramentas {
 		height: auto;
 		padding: 50px 0;
@@ -285,7 +422,73 @@
 	}
 }
 
+@media only screen and (max-width: 980px) {
+	.boxIpads {
+		width: 100%;
+	}
+
+	.imgIpadCentro {
+		width: 450px;
+		margin-left: -225px;
+	}
+	
+	.conteudoApp {
+		height: 305px;
+	}
+
+	.sessaoAppNuvem .conteudoApp {
+		height: 365px;
+	}
+}
+
 @media only screen and (max-width: 767px) {
+	.sessaoAppVideo {
+		margin-top: 0;
+	}
+
+	.boxIpads {
+		height: auto;
+	}
+
+	.imgIpadMenor {
+		display: none;
+	}
+
+	.imgIpadCentro {
+		width: 100%;
+		max-width: 450px;
+		margin: 0 auto;
+		left: 0;
+		position: relative;
+	}
+
+	.boxTextIntro {
+		display: none;
+	}
+
+	.boxPlay {
+		border: 2px solid #FFF;
+		width: 70px;
+		height: 70px;
+		margin: -35px 0 0 -35px;
+		top: 50%;
+		font-size: 35px;
+		line-height: 74px;
+	}
+
+	.boxPlay .icone {
+		margin-left: 4px;
+	}
+
+	#iconesUl {
+		display: inline-block;
+	}
+
+	.iconesLi {
+		display: block;
+		margin-bottom: 20px;
+	}
+
 	.sessaoApp {
 		background-image: none;
 		height: auto;

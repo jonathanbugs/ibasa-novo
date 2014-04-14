@@ -1,7 +1,86 @@
 <section class="sessaoApp sessaoAppVideo sessaoAppVermelho">
 	<div class="container">
 		<div class="containerGeral">
-				
+			<div class="boxIpads">
+				<div class="imgIpad imgIpadMenor">
+					<img src="{$IMG_DIR}gerais/app/ipad_esquerda.png" alt="" />
+				</div>
+				<div class="imgIpad imgIpadCentro">
+					<img src="{$IMG_DIR}gerais/app/ipad_centro.png" alt="" />
+					<a class="boxPlay geralTransition" href="javascript:;">
+						<span class="icone arrow_triangle-right"></span>
+					</a>
+					<div class="boxTextIntro">
+						<span class="txtIntro txtFacilite">Facilite seus atendimentos de forma completa:</span>
+						<span class="txtIntro txtIntroDescricao">
+							Central de Inteligência para
+						</span>
+						<span class="txtIntro txtIntroDescricao">
+							Veterinários IBASA.
+						</span>
+					</div>
+				</div>
+				<div class="imgIpad imgIpadMenor imgIpadDireita">
+					<img src="{$IMG_DIR}gerais/app/ipad_direita.png" alt="" />
+				</div>
+			</div>
+
+			<ul id="iconesUl">
+				<li class="iconesLi">
+					<div class="table">
+						<div class="tableCell">
+							<div class="boxIcone">
+								<span class="icone"></span>
+							</div>
+							<div class="txt">
+								<span>Cadastre</span>			
+								<span>proprietarios</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="iconesLi">
+					<div class="table">
+						<div class="tableCell">
+							<div class="boxIcone">
+								<span class="icone iconePacientes"></span>
+							</div>
+							<div class="txt">
+								<span>Cadastre</span>			
+								<span>pacientes</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="iconesLi">
+					<div class="table">
+						<div class="tableCell">
+							<div class="boxIcone">
+								<span class="icone iconeAgende"></span>
+							</div>
+							<div class="txt">
+								<span>Agende</span>			
+								<span>consultas</span>
+								<span>e revisões</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="iconesLi">
+					<div class="table">
+						<div class="tableCell">
+							<div class="boxIcone">
+								<span class="icone iconeRegistre"></span>
+							</div>
+							<div class="txt">
+								<span>Registre e</span>			
+								<span>acompanhe</span>
+								<span>o atendimento</span>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 </section>
