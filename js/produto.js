@@ -3,6 +3,35 @@ $(document).ready(function(){
 	validaForm();
 });
 
+$window.on('load resize orientationchange', imagemProduto);
+
+var imagemProdutoInt;
+function imagemProduto(reinit){
+	clearInterval(imagemProdutoInt);
+	imagemProdutoInt = setInterval(function(){
+		clearInterval(imagemProdutoInt);
+		var $img = $('#produto1'),
+			$holder = $('#boxProduto .holderImagens'),
+			w = $img.width(),
+			h = $img.height(),
+			mw = 80*(w/h),
+			mh = (windowHeight>windowWidth) ? windowHeight*0.7 : windowHeight*0.8 ;
+
+		if (windowWidth<=767 && mw>28) $holder.css('max-width', mw+'%');
+
+		w = $img.width();
+		h = $img.height();
+		if (h>mh) $holder.css('max-height', mh+'px');
+
+		w = $img.width();
+		h = $img.height();
+		$holder.css({
+			'padding-left': Math.floor(w/3)+'px',
+			'padding-right': Math.floor(w/3)+'px'
+		});
+		if (reinit!==false) imagemProduto(false);
+	}, 150);
+}
 
 
 /* =========
@@ -11,7 +40,7 @@ $(document).ready(function(){
 function validaForm(){
 	$('#formDuvida').validate({
 		ignore: "",
-		errorLabelContainer: "#errorContainer", 
+		errorLabelContainer: "#errorContainer",
 		errorElement: "div",
 		rules: {
 			email:  { required: true, email: true },
@@ -25,7 +54,7 @@ function validaForm(){
 
 		submitHandler:function() {
 			//enviaDuvida();
-			
+
 			// $('#contatoResposta #sucessoContato').fadeTo(1000, 1);
 			// setTimeout(function() {
 			// 	$('#contatoResposta #sucessoContato').fadeTo(500, 0);

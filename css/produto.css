@@ -3,6 +3,12 @@
 	display: none;
 }
 
+#blocoTitulo .descricaoSessao {
+	display: none;
+	padding: 0;
+	margin: 15px auto 0;
+}
+
 .conteudoProduto {
 	display: block;
 }
@@ -16,13 +22,21 @@
 #boxProduto {
 	position: relative;
 	text-align: center;
-	margin: -170px auto 0;
+	margin: -170px auto 40px;
+}
+
+#boxProduto .holderImagens {
+	display: inline-block;
+	margin: 0 auto;
+	position: relative;
 }
 
 #boxProduto #produto1 {
+	max-height: 100%;
+	max-width: 100%;
 	position: relative;
 	text-align: center;
-	left: 15px;
+	/*left: 15px;*/
 	z-index: 3;
 }
 
@@ -72,13 +86,20 @@
 .produtoInformacoes {
 	width: 490px;
 	float: right;
-	margin-right: 113px;
+	margin: 0 113px 45px 0;
 	text-align: left;
+	position: relative;
 }
 
 .produtoTitulo {
-	position: relative;
-	top: -175px;
+	height: 244px;
+	position: absolute;
+	top: -244px;
+	left: 0;
+}
+
+.produtoTitulo .tableCell {
+	text-align: left;
 }
 
 .produtoTitulo .titulo {
@@ -86,7 +107,7 @@
 	display: block;
 	font-family: 'savignylight_cond', sans-serif;
 	font-size: 55px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.025em;
 	line-height: 1em;
 	text-transform: uppercase;
 }
@@ -96,15 +117,15 @@
 	display: block;
 	font-size: 14px;
 	line-height: 18px;
-	padding: 35px 95px 0 0;
+	padding: 25px 95px 0 0;
 }
 
 .informacoesBloco {
-	margin-bottom: 45px;
+	margin-top: 45px;
 }
 
 .informacoesBlocoIndicacoes {
-	margin-top: -85px;
+	/*margin-top: -85px;*/
 }
 
 .informacoesTitulo {
@@ -235,7 +256,7 @@
 
 #formDuvida .formBloco {
 	display: block;
-	margin-bottom: 10px;
+	margin-top: 10px;
 	position: relative;
 }
 
@@ -309,7 +330,7 @@
 
 #formDuvida .input.error,
 #formDuvida .textarea.error {
-	border-color: #ff0000;	
+	border-color: #ff0000;
 }
 
 #contatoResposta {
@@ -341,13 +362,14 @@
 	font-size: 36px;
 	letter-spacing: -0.05em;
 	line-height: 0.9em;
-	padding-left: 43px;
+	padding-left: 25px;
 }
 
 .verTodos .linhaTitulo {
 	font-family: 'savignyregular_cond_italic', sans-serif;
-	font-size: 70px; 
-	margin: -12px 0 15px 0; 
+	font-size: 55px;
+	margin: -12px 0 15px 0;
+	text-transform: lowercase;
 }
 
 .btTodos {
@@ -585,7 +607,15 @@
 }
 
 @media only screen and (max-width: 1023px) {
-	#blocoTitulo .tituloSessao {
+	#blocoTitulo {
+		min-height: 0;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 160px;
+	}
+
+	#blocoTitulo .tituloSessao,
+	#blocoTitulo .descricaoSessao {
 		display: block;
 		padding-left: 0;
 	}
@@ -635,6 +665,20 @@
 }
 
 @media only screen and (max-width: 767px) {
+	#blocoTitulo {
+		padding: 0 30px 80px;
+	}
+
+	#boxProduto {
+		margin-top: -60px;
+		margin-bottom: 25px;
+	}
+
+	#boxProduto .holderImagens {
+		max-width: 28%;
+		padding: 0 10%;
+	}
+
 	.btsLink {
 		background-image: none;
 		text-align: center;
@@ -680,13 +724,12 @@
 	}
 }
 
+@media only screen and (max-width: 479px) {
+	#blocoTitulo .tituloSessao {
+		font-size: 38px;
+	}
 
-/* ============
-   RETINA
-   ============ */
-@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-	.seta {
-		background-image: url('../img/icons/seta_timeline_2x.png');
-		background-size: 20px 40px;
+	.formDuvida {
+		padding: 20px 25px;
 	}
 }

@@ -6,8 +6,11 @@
 		<div class="containerGeral">
 			<div id="blocoTitulo">
 				<h2 class="tituloSessao">
-					<span class="titulo">Deocolônia Blue</span>
+					<span class="titulo">{$prod.Titulo}</span>
 				</h2>
+				{if $prod.SubTitulo}
+				<p class="descricaoSessao">{$prod.SubTitulo}</p>
+				{/if}
 			</div>
 		</div>
 	</div>
@@ -17,118 +20,94 @@
 <section id="produto" class="sessao">
 	<div class="container">
 		<div class="containerGeral clearfix">
-			
+
 			<div class="conteudoProduto clearfix">
 				<div class="produtoImagem">
 					<div id="boxProduto">
-						<img src="http://ibasa.com.br/midia/produtos/interna/136728724774.png" id="produto1">
-						<img src="http://ibasa.com.br/midia/produtos/interna/136728724774.png" id="produto2">
-						<img src="http://ibasa.com.br/midia/produtos/interna/136728724774.png" id="produto3">
+						<div class="holderImagens">
+							<img src="{$MIDIA_DIR}produtos/interna/{$prod.Capa}" id="produto1">
+							<img src="{$MIDIA_DIR}produtos/interna/{$prod.Capa}" id="produto2">
+							<img src="{$MIDIA_DIR}produtos/interna/{$prod.Capa}" id="produto3">
+						</div>
 					</div>
 
 					<ul class="btsUl">
+						{if $prod.Bula}
 						<li class="btsLi">
-							<a class="btsLink geralTransition" href="javascript:;" data-rel="blank">Fazer download da bula em PDF</a>
+							<a class="btsLink geralTransition" href="{$MIDIA_DIR}produtos/arquivos/{$prod.Bula}" data-rel="blank">Fazer download da bula em PDF</a>
 						</li>
+						{/if}
 						<li class="btsLi">
-							<a class="btsLink btsLinkEncontrar geralTransition" href="javascript:;" data-rel="blank">onde encontrar este produto</a>
+							<a class="btsLink btsLinkEncontrar geralTransition" href="{$BASE_DIR}onde-encontrar/">onde encontrar este produto</a>
 						</li>
 					</ul>
 				</div>
 				<div class="produtoInformacoes">
-					<div class="produtoTitulo">
-						<h2 class="titulo">Deocolônia Blue</h2>
-						<p class="descricao">Fragrância floral frutada, leve e alegre para cães e gatos diferenciados.</p>
+					<div class="produtoTitulo table">
+						<div class="tableCell">
+							<h2 class="titulo">{$prod.Titulo}</h2>
+							{if $prod.SubTitulo}
+							<p class="descricao">{$prod.SubTitulo}</p>
+							{/if}
+						</div>
 					</div>
 
+					{if $prod.AnimaisUrl}
 					<div class="informacoesBloco informacoesBlocoIndicacoes">
 						<span class="informacoesTitulo">Indicações</span>
 
 						<ul class="indicacoesUl">
+							{foreach $prod.Animais as $animal}
 							<li class="indicacoesLi">
-								<span class="indicacoesIcone indicacoesIcone_bovinos"></span>
-								<span class="indicacoestitulo">Bovinos</span>
+								<span class="indicacoesIcone indicacoesIcone_{$animal.Url}"></span>
+								<span class="indicacoestitulo">{$animal.Titulo}</span>
 							</li>
-							<li class="indicacoesLi">
-								<span class="indicacoesIcone indicacoesIcone_equinos"></span>
-								<span class="indicacoestitulo">Equinos</span>
-							</li>
-							<li class="indicacoesLi">
-								<span class="indicacoesIcone indicacoesIcone_suinos"></span>
-								<span class="indicacoestitulo">Suínos</span>
-							</li>
-							<li class="indicacoesLi">
-								<span class="indicacoesIcone indicacoesIcone_ovinos"></span>
-								<span class="indicacoestitulo">Ovínos</span>
-							</li>
-							<li class="indicacoesLi">
-								<span class="indicacoesIcone indicacoesIcone_caprinos"></span>
-								<span class="indicacoestitulo">Caprinos</span>
-							</li>
-							<li class="indicacoesLi">
-								<span class="indicacoesIcone indicacoesIcone_aves"></span>
-								<span class="indicacoestitulo">Aves</span>
-							</li>
-							<li class="indicacoesLi">
-								<span class="indicacoesIcone indicacoesIcone_caes"></span>
-								<span class="indicacoestitulo">Cães</span>
-							</li>
-							<li class="indicacoesLi">
-								<span class="indicacoesIcone indicacoesIcone_gatos"></span>
-								<span class="indicacoestitulo">Gatos</span>
-							</li>
-							<li class="indicacoesLi">
-								<span class="indicacoesIcone indicacoesIcone_passaros"></span>
-								<span class="indicacoestitulo">Passáros</span>
-							</li>
-							<li class="indicacoesLi">
-								<span class="indicacoesIcone indicacoesIcone_coelhos"></span>
-								<span class="indicacoestitulo">Coelhos</span>
-							</li>
+							{/foreach}
 						</ul>
 					</div>
+					{/if}
 
+					{if $prod.Dicasuso}
 					<div class="informacoesBloco">
 						<span class="informacoesTitulo informacoesTituloUsar">Modo de Usar</span>
-						<p class="informacoesDescricao">
-							Aplicar o produto sobre os pelos do animal a uma distância de 10 a 15 cm. Somente uso externo.
-						</p>
+						<p class="informacoesDescricao">{$prod.Dicasuso}</p>
 					</div>
+					{/if}
 
+					{if $prod.Disponivel}
 					<div class="informacoesBloco">
 						<span class="informacoesTitulo informacoesTituloDisponivel">Disponível em</span>
-						<p class="informacoesDescricao">
-							1 L (refil), 250 ml e 60 ml
-						</p>
+						<p class="informacoesDescricao">{$prod.Disponivel}</p>
 					</div>
+					{/if}
 
+					{if $prod.Composicao}
 					<div class="informacoesBloco">
 						<span class="informacoesTitulo informacoesTituloComposicao">Composição</span>
-						<p class="informacoesDescricao">
-							Fragrância, triclosan, propilenoglicol, água purificada e álcool.
-						</p>
+						<p class="informacoesDescricao">{$prod.Composicao}</p>
 					</div>
+					{/if}
 
+					{if $prod.Precaucoes}
 					<div class="informacoesBloco">
 						<span class="informacoesTitulo informacoesTituloCuidados">Cuidados</span>
-						<p class="informacoesDescricao">
-							Evitar o contato do produto com os olhos, boca e focinho do animal. Caso isso ocorra, lavar com água em abundância. Procurar um médico veterinário, caso ocorra uma irritação ocular persistente. Conservar o produto em local seco e fresco, ao abrigo da luz e fora do alcance de crianças e animais. Produto inflamável.
-						</p>
+						<p class="informacoesDescricao">{$prod.Precaucoes}</p>
 					</div>
+					{/if}
 
 					<div class="informacoesBloco">
 						<span class="informacoesTitulo informacoesTituloDuvidas">Dúvidas Frequentes</span>
 						<div class="formDuvida">
 							<form action="javascript:;" name="formDuvida" id="formDuvida">
 								<p>Envie sua pergunta e receba a resposta.</p>
-								
+
 								<div class="formBloco clearfix">
 									<div class="relative">
 										<label class="label" for="email">Insira seu e-mail</label>
 										<input class="input" type="text" id="email" name="email">
 									</div>
 								</div>
-							
+
 								<div class="formBloco formBlocoTextarea">
 									<label class="label" for="duvida">Qual sua dúvida?</label>
 									<textarea class="textarea" name="duvida" id="duvida"></textarea>
@@ -145,7 +124,7 @@
 		</div>
 	</div>
 
-	
+
 	<!-- VER TODOS OS PRODUTOS DA LINHA -->
 	<div class="todosProdutos">
 		<div class="container">
@@ -153,19 +132,19 @@
 				<div class="conteudoLinha clearfix">
 					<div class="verTodos">
 						<span>Linha</span>
-						<span class="linhaTitulo">estética</span>
-						<a class="btTodos geralTransition" href="javascript:;">Ver todos produtos desta linha</a>
+						<span class="linhaTitulo">{$prod.Categoria}</span>
+						<a class="btTodos geralTransition" href="{$BASE_DIR}produtos/{$prod.CategoriaUrl}/">Ver todos produtos desta linha</a>
 					</div>
 
 					<div class="imagemLinha">
-						<img src="{$IMG_DIR}gerais/imagem_linha.png" alt="" />
+						<img src="{$IMG_DIR}gerais/banner_linha_{$prod.CategoriaUrl}.png" alt="" />
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-
+{*}
 	<!-- MAIS PRODUTOS DA LINHA -->
 	<div class="maisProdutos">
 		<div class="container">
@@ -278,4 +257,5 @@
 			</div>
 		</div>
 	</div>
+{*}
 </section>

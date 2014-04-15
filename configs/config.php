@@ -4,12 +4,12 @@ define('PROJETO','ibasa-novo');
 define('CLIENTE','ibasa');
 
 ### Configuracoes de Meta Tags do Site
-$title = 'IBASA - A vida exige o melhor';
+$title = 'IBASA';
 $subtag = '';
-$subtitle = '';
-$description = '';
-$keywords = '';
-$analytics = '';
+$subtitle = 'A vida exige o melhor';
+$description = 'O Laboratório Ibasa desenvolve produtos estéticos e medicamentos veterinários para animais de pequeno e grande porte. A vida exige o melhor.';
+$keywords = 'Laboratório Ibasa, ibasa, estética pet, medicamento veterinário, pet, fluido ibasa, shampoo pet, representante ibasa, aves, bovinos, cachorro, ovelha, coelho, cavalo, gato, cabra, porco, produtos pet shop';
+// $analytics = 'UA-40726061-1';
 
 ### Redes Sociais
 $redes_sociais = array(
@@ -136,6 +136,12 @@ if($_SERVER['HTTP_HOST']=='localhost' or $_SERVER['HTTP_HOST']=='localhost:8888'
 	// $redirect = BASE_DIR.'bulas/';
 	// $redirect = BASE_DIR.'fale-conosco/';
 	// $redirect = BASE_DIR.'a-ibasa/';
+	// $redirect = BASE_DIR.'produto/estetica-pet/deocolonia-bebe/';
+	// $redirect = BASE_DIR.'produto/tratamento/shampoo-condicionador-antipulgas/';
+	// $redirect = BASE_DIR.'produto/tratamento/sabonete-antipulgas-e-carrapatos/';
+	// $redirect = BASE_DIR.'produto/estetica-pet/fluido-desembaracador-plus/';
+	// $redirect = BASE_DIR.'produto/medicamentos/shampoo-hipoalergenico/';
+	// $redirect = BASE_DIR.'produtos/estetica-pet/';
 	// $redirect = BASE_DIR.'produtos/';
 	// $redirect = BASE_DIR.'onde-encontrar/';
 	// $redirect = BASE_DIR;

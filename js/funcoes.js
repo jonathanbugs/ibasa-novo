@@ -100,7 +100,7 @@ function init(){
 	abrirMenu();
 }
 
-$(window).on('resize', function(){
+$window.on('resize orientationchange', function(){
 	windowHeight = $window.height();
 	windowWidth = $window.width();
 
@@ -184,11 +184,11 @@ function imgRetina(){
    ============ */
 function abrirMenu(){
 	var divMenu = $('#menu');
-	
+
 	$('#btMenu').on('click', function() {
 		var ele = $(this);
 		ele.toggleClass('btMenuAberto');
-		
+
 		if (divMenu.is(":hidden")) {
 			//divMenu.show();
 			divMenu.slideDown(300);

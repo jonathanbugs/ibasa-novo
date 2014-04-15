@@ -10,6 +10,7 @@ function FecharBanco() {
 
 function ExecutarSQL($sql) {
 	$colecao = mysql_query($sql) or exit($sql."<br>".mysql_error());
+	// $colecao = mysql_query($sql) or exit('Ocorreu um erro.');
 	return $colecao;
 }
 

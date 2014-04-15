@@ -7,10 +7,7 @@
 <meta name="keywords" content="{$keywords}" />
 <link rel="shortcut icon" href="{$IMG_DIR}icons/favicon.png" />
 
-<meta property="og:title" content="IBASA" />
-<meta property="og:image" content="{$IMG_DIR}gerais/compartilhamento.jpg" />
-<meta property="og:description" content="O Laboratório IBASA levou nove crianças para passar um dia especial em uma fazenda. Lá, elas puderam conhecer de perto vários bichinhos e aprenderam que “A vida exige o melhor”. Clique aqui e confira como tudo aconteceu." />
-
+{$metashare}
 
 <title>{$tituloFinal}</title>
 
