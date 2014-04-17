@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-16 11:25:49
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-17 17:43:24
          compiled from "templates/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:736460006534e92ed7e3516-57509956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:6614178253503cec8dddd7-04118416%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'be439f82a4dbec61746f62a0df07c19a7eecd966' => 
     array (
       0 => 'templates/header.tpl',
-      1 => 1395057616,
+      1 => 1397767065,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '736460006534e92ed7e3516-57509956',
+  'nocache_hash' => '6614178253503cec8dddd7-04118416',
   'function' => 
   array (
   ),
@@ -20,6 +20,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'description' => 0,
     'keywords' => 0,
     'IMG_DIR' => 0,
+    'metashare' => 0,
     'tituloFinal' => 1,
     'analytics' => 0,
     'css_files' => 1,
@@ -38,9 +39,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_534e92edba4cb8_11653896',
+  'unifunc' => 'content_53503cec9a5354_24844308',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_534e92edba4cb8_11653896')) {function content_534e92edba4cb8_11653896($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_53503cec9a5354_24844308')) {function content_53503cec9a5354_24844308($_smarty_tpl) {?><!DOCTYPE HTML>
 <html dir="ltr" lang="pt-br" class="no-js">
 <head>
 <meta charset="UTF-8">
@@ -52,10 +53,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <link rel="shortcut icon" href="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
 icons/favicon.png" />
 
-<meta property="og:title" content="IBASA" />
-<meta property="og:image" content="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
-gerais/compartilhamento.jpg" />
-<meta property="og:description" content="O Laboratório IBASA levou nove crianças para passar um dia especial em uma fazenda. Lá, elas puderam conhecer de perto vários bichinhos e aprenderam que “A vida exige o melhor”. Clique aqui e confira como tudo aconteceu." />
+<?php echo $_smarty_tpl->tpl_vars['metashare']->value;?>
 
 
 <title><?php echo $_smarty_tpl->tpl_vars['tituloFinal']->value;?>
