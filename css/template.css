@@ -149,6 +149,17 @@ html[xmlns] .clearfix {
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'savignymedium_cond';
+	src: url('../fontes/savignymediumcond-webfont-webfont.eot');
+	src: url('../fontes/savignymediumcond-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/savignymediumcond-webfont-webfont.woff') format('woff'),
+		 url('../fontes/savignymediumcond-webfont-webfont.ttf') format('truetype'),
+		 url('../fontes/savignymediumcond-webfont-webfont.svg#savignymedium_cond') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 	color: #717171;
 	font-family: 'OpenSans', sans-serif;
