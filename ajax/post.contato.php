@@ -42,7 +42,7 @@ $sqlCidade   = htmlentities(utf8_decode($cidade));
 $sqlEstado   = htmlentities(utf8_decode($estado));
 $sqlMensagem = htmlentities(utf8_decode($mensagem));
 
-/*ExecutarSQL("INSERT INTO _spr_contatos SET
+ExecutarSQL("INSERT INTO _spr_contatos SET
 				Nome     = '$sqlNome',
 				Empresa  = '$sqlEmpresa',
 				Telefone = '$telefone',
@@ -50,7 +50,7 @@ $sqlMensagem = htmlentities(utf8_decode($mensagem));
 				Cidade   = '$sqlCidade',
 				Estado   = '$sqlEstado',
 				Mensagem = '$sqlMensagem'
-			");*/
+			");
 
 if($nome!==''&&$email!==''){
 	$mailer = new PHPMailer();

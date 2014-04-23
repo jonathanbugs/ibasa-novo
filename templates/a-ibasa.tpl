@@ -18,7 +18,7 @@
 <section id="ibasa" class="sessao">
 	<div class="container">
 		<div class="containerGeral clearfix">
-			
+
 			<!-- LINHA DO TEMPO -->
 			<div id="timeline">
 				<ul id="tempoUl">
@@ -103,7 +103,7 @@
 							<span>Ibasa</span>
 							<span class="txtMomento2">Um Novo Momento</span>
 						</div>
-						
+
 						<p class="txtAnoAtual">
 							Vinte e dois anos: este é o tempo que o Laboratório IBASA já trabalha pela vida animal. Assim como ela, sentimos a necessidade de crescer, evoluir, fazer mais. Mais do que algumas novidades, transformamos este desejo em um novo momento para IBASA e seus parceiros.
 						</p>
@@ -208,13 +208,13 @@
 			</div>
 			<ul id="linhasProdutosUl">
 				<li class="linhasProdutosLi">
-					<a class="linhasProdutosLink geralTransition" href="javascript:;">Linha de Medicamentos</a>
+					<a class="linhasProdutosLink geralTransition" href="{$BASE_DIR}produtos/medicamentos/">Linha de Medicamentos</a>
 				</li>
 				<li class="linhasProdutosLi linhasProdutosLiCentro">
-					<a class="linhasProdutosLink geralTransition" href="javascript:;">Linha de Estética PET</a>
+					<a class="linhasProdutosLink geralTransition" href="{$BASE_DIR}produtos/estetica-pet/">Linha de Estética PET</a>
 				</li>
 				<li class="linhasProdutosLi">
-					<a class="linhasProdutosLink geralTransition" href="javascript:;">Linha de Tratamento</a>
+					<a class="linhasProdutosLink geralTransition" href="{$BASE_DIR}produtos/tratamento/">Linha de Tratamento</a>
 				</li>
 			</ul>
 		</div>

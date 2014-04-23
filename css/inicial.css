@@ -72,22 +72,43 @@
    BLOCOS
    ============ */
 #blocosUl {
+	display: block;
 	padding-bottom: 90px;
 	font-size: 0;
 }
 
 .blocosLi {
-	max-width: 270px;
+	width: 33.3%;
 	display: inline-block;
-	padding-top: 55px;
-	text-align: left;
+	margin-top: 75px;
+	text-align: center;
 	vertical-align: top;
 }
 
-.blocosLi .blocosImg {
+.blocosLink {
+	padding: 0 25px;
+	max-width: 250px;
 	display: block;
+	margin: 0 auto;
+}
+
+.blocosLi .blocosImgHolder {
+	display: block;
+	position: relative;
+	padding: 30% 0;
+}
+
+.blocosLi .blocosImg {
 	width: 100%;
-	max-width: 239px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.blocosLi_tratamento .blocosImgHolder {
+	margin: 0 10px;
 }
 
 .blocosLiCampanha {
@@ -102,6 +123,7 @@
 }
 
 .blocoTitulo {
+	display: block;
 	color: #cf121b;
 	font-family: 'savignylight_cond_italic', sans-serif;
 	font-size: 40px;
@@ -121,31 +143,35 @@
 }
 
 .blocoDescricao {
+	display: block;
 	font-size: 13px;
 	line-height: 18px;
+	color: #717171;
 }
 
+.blocosLinkBt {
+	display: block;
+	font-size: 13px;
+}
+
+.blocosLinkBt {
+	display: block;
+	border: 2px solid #717171;
+	color: #717171;
+	padding: 15px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.blocosLink:hover .blocosLinkBt {
+	background: #717171;
+	color: #FFF;
+}
 
 
 /* ============
    MEDIA QUERIES
    ============ */
-@media only screen and (max-width: 1125px) {
-	.blocosLiCampanha {
-		margin: 0 35px;
-	}
-}
-
-@media only screen and (max-width: 1023px) {
-	.blocosLi {
-		max-width: 180px;
-	}
-
-	.blocosLiCampanha {
-		margin: 0 60px;
-	}
-}
-
 @media only screen and (max-width: 767px) {
 	#sessaoBanner {
 		margin-top: 0;
@@ -155,30 +181,16 @@
 		padding: 0;
 	}
 
-	.blocosLiCampanha {
-		margin: 0;
-	}
-
 	.blocosLi {
-		float: none;
-		max-width: 270px;
-		padding-top: 30px;
-		margin-bottom: 30px;
+		width: 100%;
+		display: block;
+		max-width: 250px;
+		margin: 30px auto;
 		text-align: center;
 	}
 
-	.blocosLi .blocosImg {
-		display: inline-block;
-	}
-
-	.blocosLiCampanha .blocosImg {
-		margin-top: 0;
-		border-top: 1px solid #e3e3e3
-	}
-
-	.blocoTitulo,
-	.blocoDescricao {
-		text-align: left;
+	.blocosLink {
+		padding: 0;
 	}
 }
 

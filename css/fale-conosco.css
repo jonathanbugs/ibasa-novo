@@ -205,8 +205,17 @@
 	bottom: 0;
 }
 
+#contatoResposta #preenchaContato,
 #contatoResposta #erroContato {
 	border-color: #ff0000;
+	background-color: #ff0000;
+	color: #fff;
+}
+
+#contatoResposta #sucessoContato {
+	border-color: #009900;
+	background-color: #009900;
+	color: #fff;
 }
 
 #endereco {

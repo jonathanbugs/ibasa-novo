@@ -73,6 +73,6 @@ function validaForm(){
 			}, "html");
 		},
 
-		errorContainer: $('#contatoResposta #erroContato')
+		errorContainer: $('#contatoResposta #preenchaContato')
 	});
 }

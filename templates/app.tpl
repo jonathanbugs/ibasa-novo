@@ -7,7 +7,7 @@
 				</div>
 				<div class="imgIpad imgIpadCentro">
 					<img src="{$IMG_DIR}gerais/app/ipad_centro.png" alt="" />
-					<a class="boxPlay geralTransition" href="javascript:;">
+					<a id="playVideo" class="boxPlay geralTransition" href="javascript:;">
 						<span class="icone arrow_triangle-right"></span>
 					</a>
 					<div class="boxTextIntro">
@@ -33,7 +33,7 @@
 								<span class="icone"></span>
 							</div>
 							<div class="txt">
-								<span>Cadastre</span>			
+								<span>Cadastre</span>
 								<span>proprietarios</span>
 							</div>
 						</div>
@@ -46,7 +46,7 @@
 								<span class="icone iconePacientes"></span>
 							</div>
 							<div class="txt">
-								<span>Cadastre</span>			
+								<span>Cadastre</span>
 								<span>pacientes</span>
 							</div>
 						</div>
@@ -59,7 +59,7 @@
 								<span class="icone iconeAgende"></span>
 							</div>
 							<div class="txt">
-								<span>Agende</span>			
+								<span>Agende</span>
 								<span>consultas</span>
 								<span>e revisões</span>
 							</div>
@@ -73,7 +73,7 @@
 								<span class="icone iconeRegistre"></span>
 							</div>
 							<div class="txt">
-								<span>Registre e</span>			
+								<span>Registre e</span>
 								<span>acompanhe</span>
 								<span>o atendimento</span>
 							</div>

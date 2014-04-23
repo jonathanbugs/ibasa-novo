@@ -214,7 +214,7 @@
 
 .blocoIbasaMenorBeleza .blocoIbasaTexto {
 	width: 290px;
-}	
+}
 
 .blocoIbasaTexto {
 	width: 195px;
@@ -336,12 +336,15 @@
 }
 
 .blocoVideo .videoDestaque,
-.blocoVideo .boxVideoDestaque,
-.blocoVideo .imagem {
+.blocoVideo .boxVideoDestaque {
 	border: none;
 	width: 100%;
 	height: 100%;
 	position: relative;
+}
+
+.blocoVideo .imagem {
+	width: 100%;
 }
 
 .blocoVideo .play {
@@ -485,8 +488,8 @@
 		width: 100%;
 	}
 
-	.tempoLi1997 .blocoImagem, 
-	.tempoLi2006 .blocoImagem, 
+	.tempoLi1997 .blocoImagem,
+	.tempoLi2006 .blocoImagem,
 	.tempoLi2009 .blocoImagem {
 		margin: 0;
 	}
@@ -495,7 +498,7 @@
 		margin-top: 30px;
 	}
 
-	
+
 	.blocoIbasaMenor {
 		display: block;
 		margin: 0 auto 95px;

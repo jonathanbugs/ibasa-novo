@@ -52,10 +52,19 @@
 						</div>
 					</div>
 
-					{if $prod.AnimaisUrl}
+					{if $prod.Descricao}
+					<div class="informacoesBloco">
+						<p class="informacoesDescricao">{$prod.Descricao}</p>
+					</div>
+					{/if}
+
+					{if $prod.Indicacoes or $prod.AnimaisUrl}
 					<div class="informacoesBloco informacoesBlocoIndicacoes">
 						<span class="informacoesTitulo">Indicações</span>
-
+						{if $prod.Indicacoes}
+						<p class="informacoesDescricao">{$prod.Indicacoes}</p>
+						{/if}
+						{if $prod.AnimaisUrl}
 						<ul class="indicacoesUl">
 							{foreach $prod.Animais as $animal}
 							<li class="indicacoesLi">
@@ -64,6 +73,7 @@
 							</li>
 							{/foreach}
 						</ul>
+						{/if}
 					</div>
 					{/if}
 
@@ -81,17 +91,64 @@
 					</div>
 					{/if}
 
-					{if $prod.Composicao}
+					{if $prod.Composicao || $prod.ComposicaoItem}
 					<div class="informacoesBloco">
 						<span class="informacoesTitulo informacoesTituloComposicao">Composição</span>
+						{if $prod.Composicao}
 						<p class="informacoesDescricao">{$prod.Composicao}</p>
+						{/if}
+						{if $prod.ComposicaoItem}
+						<table class="informacoesTabela">
+							<thead>
+								<tr>
+									<th class="informacoesTabelaTh informacoesTabelaLeft">Substância</th>
+									<th class="informacoesTabelaTh informacoesTabelaCenter">Qtde.</th>
+								</tr>
+							</thead>
+							<tbody>
+								{foreach $prod.ComposicaoItens as $comp}
+								<tr class="informacoesTabelaTr informacoesTabelaTr{cycle values="1,2" name="composicao"}">
+									<td class="informacoesTabelaTd informacoesTabelaLeft">{$comp.Item|from_charset}</td>
+									<td class="informacoesTabelaTd informacoesTabelaCenter">{$comp.Valor|from_charset}</td>
+								</tr>
+								{/foreach}
+							</tbody>
+						</table>
+						{/if}
 					</div>
 					{/if}
 
 					{if $prod.Precaucoes}
 					<div class="informacoesBloco">
-						<span class="informacoesTitulo informacoesTituloCuidados">Cuidados</span>
+						<span class="informacoesTitulo informacoesTituloCuidados">{if $prod.CategoriaUrl eq 'estetica-pet'}Cuidados{else}Precauções{/if}</span>
 						<p class="informacoesDescricao">{$prod.Precaucoes}</p>
+					</div>
+					{/if}
+
+					{if $prod.Posologia || $prod.PosologiaItem}
+					<div class="informacoesBloco">
+						<span class="informacoesTitulo informacoesTituloPosologia">Posologia | Modo de Usar</span>
+						{if $prod.Posologia}
+						<p class="informacoesDescricao">{$prod.Posologia}</p>
+						{/if}
+						{if $prod.ComposicaoItem}
+						<table class="informacoesTabela">
+							<thead>
+								<tr>
+									<th class="informacoesTabelaTh informacoesTabelaLeft">Espécie</th>
+									<th class="informacoesTabelaTh informacoesTabelaCenter">Dose</th>
+								</tr>
+							</thead>
+							<tbody>
+								{foreach $prod.PosologiaItens as $pos}
+								<tr class="informacoesTabelaTr informacoesTabelaTr{cycle values="1,2" name="posologia"}">
+									<td class="informacoesTabelaTd informacoesTabelaLeft">{$pos.Item|from_charset}</td>
+									<td class="informacoesTabelaTd informacoesTabelaCenter">{$pos.Valor|from_charset}</td>
+								</tr>
+								{/foreach}
+							</tbody>
+						</table>
+						{/if}
 					</div>
 					{/if}
 
@@ -113,8 +170,15 @@
 									<textarea class="textarea" name="duvida" id="duvida"></textarea>
 								</div>
 
+								<input type="hidden" name="produto" value="{$prod.Url}">
 								<div class="formBloco formBlocoBt clearfix">
-									<button class="btForm geralTransition" type="submit">Enviar Dúvida</button>
+									<button id="btFormEnviar" class="btForm btFormEnviar geralTransition" type="submit">Enviar Dúvida</button>
+									<button id="btFormEnviando" class="btForm btFormEnviando geralTransition" type="button">
+										<span class="iconeHolder">
+											<span class="icone icon_loading"></span>
+										</span>
+										Enviando
+									</button>
 								</div>
 							</form>
 						</div>
@@ -144,7 +208,7 @@
 		</div>
 	</div>
 
-{*}
+
 	<!-- MAIS PRODUTOS DA LINHA -->
 	<div class="maisProdutos">
 		<div class="container">
@@ -152,110 +216,43 @@
 				<div class="conteudoMaisProdutos">
 					<div class="tituloMais clearfix">
 						<div class="tituloMaisLinha">
-							<span>Confira mais</span>
-							<span class="linha">Deocolônias</span>
+							<!-- <span>Confira mais</span> -->
+							<span>Confira todos de</span>
+							<span class="linha">{$prod.SubCategoria}</span>
 						</div>
-						<a class="btLinhaTodos geralTransition" href="javascript:;">Ver todos produtos de “Deocoloônias”</a>
+						<a class="btLinhaTodos geralTransition" href="{$BASE_DIR}produtos/{$prod.CategoriaUrl}/{$prod.SubCategoriaUrl}/">Ver todos produtos de {$prod.SubCategoria}</a>
 					</div>
 
 					<div>
-						<ul class="maisProdutosUl produtosUl_4produtos clearfix">
+						<ul class="maisProdutosUl clearfix">
+							{foreach $produtosSubcategorias.Produtos as $prod}
 							<li class="maisProdutosLi geralTransition">
-								<a class="maisProdutosLink" href="javascript:;">
-									<h3 class="maisProdutoTitulo">Deocolônia Ange</h3>
-									<p class="maisProdutoDescricao">2 EM 1: HIGIENIZADOR E NEUTRALIZADOR DE ODORES</p>
+								<a class="maisProdutosLink" href="{$BASE_DIR}produto/{$prod.CategoriaUrl}/{$prod.Url}/">
+									<h3 class="maisProdutoTitulo">{$prod.Titulo}</h3>
+									<p class="maisProdutoDescricao">{$prod.SubTitulo}</p>
 									<span class="maisProduoBlocoimagem table">
 										<span class="tableCell">
-											<img alt="" src="http://localhost/ibasa/img/gerais/produtos/1.png">
+											<img src="{$MIDIA_DIR}produtos/listagem/{$prod.Capa}" alt="{$prod.Titulo} {$prod.SubTitulo}" />
 										</span>
 									</span>
 									<ul class="maisProdutoIndicacoesUl">
 										<li><span class="indicacoes">Indicações</span></li>
+										{foreach $prod.Animais as $animal}
 										<li class="maisIndicacoesLi">
-											<span class="iconeAplicacao iconAplicacao_caes"></span>
+											<span class="iconeAplicacao iconAplicacao_{$animal.Url}" title="{$animal.Titulo}" data-animal="{$animal.Url}"></span>
 										</li>
-										<li class="maisIndicacoesLi">
-											<span class="iconeAplicacao iconAplicacao_gatos"></span>
-										</li>
+										{/foreach}
 									</ul>
 								</a>
 							</li>
-
-							<li class="limiter limiter_2"><span></span></li>
-
-							<li class="maisProdutosLi geralTransition">
-								<a class="maisProdutosLink" href="javascript:;">
-									<h3 class="maisProdutoTitulo">Deocolônia Ange</h3>
-									<p class="maisProdutoDescricao">2 EM 1: HIGIENIZADOR E NEUTRALIZADOR DE ODORES</p>
-									<span class="maisProduoBlocoimagem table">
-										<span class="tableCell">
-											<img alt="" src="http://localhost/ibasa/img/gerais/produtos/2.png">
-										</span>
-									</span>
-									<ul class="maisProdutoIndicacoesUl">
-										<li><span class="indicacoes">Indicações</span></li>
-										<li class="maisIndicacoesLi">
-											<span class="iconeAplicacao iconAplicacao_caes"></span>
-										</li>
-										<li class="maisIndicacoesLi">
-											<span class="iconeAplicacao iconAplicacao_gatos"></span>
-										</li>
-									</ul>
-								</a>
-							</li>
-
-							<li class="limiter limiter_3"><span></span></li>
-
-							<li class="maisProdutosLi geralTransition">
-								<a class="maisProdutosLink" href="javascript:;">
-									<h3 class="maisProdutoTitulo">Deocolônia Ange</h3>
-									<p class="maisProdutoDescricao">2 EM 1: HIGIENIZADOR E NEUTRALIZADOR DE ODORES</p>
-									<span class="maisProduoBlocoimagem table">
-										<span class="tableCell">
-											<img alt="" src="http://localhost/ibasa/img/gerais/produtos/3.png">
-										</span>
-									</span>
-									<ul class="maisProdutoIndicacoesUl">
-										<li><span class="indicacoes">Indicações</span></li>
-										<li class="maisIndicacoesLi">
-											<span class="iconeAplicacao iconAplicacao_caes"></span>
-										</li>
-										<li class="maisIndicacoesLi">
-											<span class="iconeAplicacao iconAplicacao_gatos"></span>
-										</li>
-									</ul>
-								</a>
-							</li>
-
-							<li class="limiter limiter_4"><span></span></li>
-
-							<li class="maisProdutosLi geralTransition">
-								<a class="maisProdutosLink" href="javascript:;">
-									<h3 class="maisProdutoTitulo">Deocolônia Ange</h3>
-									<p class="maisProdutoDescricao">2 EM 1: HIGIENIZADOR E NEUTRALIZADOR DE ODORES</p>
-									<span class="maisProduoBlocoimagem table">
-										<span class="tableCell">
-											<img alt="" src="http://localhost/ibasa/img/gerais/produtos/4.png">
-										</span>
-									</span>
-									<ul class="maisProdutoIndicacoesUl">
-										<li><span class="indicacoes">Indicações</span></li>
-										<li class="maisIndicacoesLi">
-											<span class="iconeAplicacao iconAplicacao_caes"></span>
-										</li>
-										<li class="maisIndicacoesLi">
-											<span class="iconeAplicacao iconAplicacao_gatos"></span>
-										</li>
-									</ul>
-								</a>
-							</li>
+							{/foreach}
 						</ul>
 					</div>
 
-					<a class="btVoltar geralTransition" href="javascript:;">Voltar para a listagem de produtos</a>
+					<a class="btVoltar geralTransition" href="{$BASE_DIR}produtos/">Voltar para a listagem de produtos</a>
 				</div>
 			</div>
 		</div>
 	</div>
-{*}
+
 </section>

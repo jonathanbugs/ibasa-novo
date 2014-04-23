@@ -2,6 +2,7 @@
 ### Configuracoes do Projeto
 define('PROJETO','ibasa-novo');
 define('CLIENTE','ibasa');
+// ini_set('memory_limit', '512M');
 
 ### Configuracoes de Meta Tags do Site
 $title = 'IBASA';
@@ -45,7 +46,7 @@ if($_SERVER['HTTP_HOST']=='localhost' or $_SERVER['HTTP_HOST']=='localhost:8888'
 	define('ROOT_DIR','http://'.$_SERVER['HTTP_HOST'].ROOT.'');
 	define('BASE_DIR','http://'.$_SERVER['HTTP_HOST'].ROOT.'');
 } else {
-	define('ROOT','/');
+	define('ROOT','/site/');
 	define('ROOT_DIR','http://'.$_SERVER['HTTP_HOST'].''.ROOT.'');
 	define('BASE_DIR','http://'.$_SERVER['HTTP_HOST'].''.ROOT.'');
 }
@@ -144,6 +145,7 @@ if($_SERVER['HTTP_HOST']=='localhost' or $_SERVER['HTTP_HOST']=='localhost:8888'
 	// $redirect = BASE_DIR.'produtos/estetica-pet/';
 	// $redirect = BASE_DIR.'produtos/';
 	// $redirect = BASE_DIR.'onde-encontrar/';
+	// $redirect = BASE_DIR.'produtos/busca/ibatrim/';
 	// $redirect = BASE_DIR;
 	if(isset($redirect) && $redirect !== $_SERVER['HTTP_REFERER'])
 		$liveReload .= "<script>window.location.href = '$redirect';</script>";

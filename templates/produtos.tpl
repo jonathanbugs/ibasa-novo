@@ -5,52 +5,6 @@
 	<span class="bg bg3"></span>
 	<div class="container">
 		<div class="containerGeral">
-			<form id="filtros" class="sidebar" action="javascript:;" method="post">
-				<div id="filtroLinhas" class="blocoFiltro filtroLinha">
-					<span class="titulo">Filtrar por linha</span>
-					<ul class="filtroUl">
-						{foreach $linhas as $linha}
-						<li class="filtroLi">
-							<label class="filtroLink geralTransition" data-linha="{$linha.Url}">
-								<input type="checkbox" name="linhas" value="{$linha.Url}" title="{$linha.Titulo}" {if $linha.Url eq $smarty.get.id}checked="checked"{/if} style="display:none;" />
-								{$linha.Titulo|lower}
-							</label>
-						</li>
-						{/foreach}
-					</ul>
-				</div>
-
-				<div id="filtroCategorias" class="blocoFiltro filtroCategoria" {if !$smarty.get.id}style="display:none;"{/if}>
-					<span class="titulo">Filtrar por categoria</span>
-					{foreach $linhas as $linha}
-					<ul class="filtroUl filtroUlCheckbox" data-linha="{$linha.Url}" {if $linha.Url neq $smarty.get.id}style="display:none;"{/if}>
-						{foreach $linha.SubCategorias as $sub}
-						<li class="filtroLi">
-							<label class="labelCheckbox">
-								<input type="checkbox" name="categorias-{$linha.Url}" value="{$sub.Url}" />
-								{$sub.Titulo}
-							</label>
-						</li>
-						{/foreach}
-					</ul>
-					{/foreach}
-				</div>
-
-				<div id="filtroAnimais" class="blocoFiltro filtroAnimais blocoFiltroLast">
-					<span class="titulo">Filtrar por espécie</span>
-					<ul class="filtroUl filtroUlCheckbox">
-						{foreach $animais as $animal}
-						<li class="filtroLi">
-							<label class="labelCheckbox">
-								<input type="checkbox" name="animais" value="{$animal.Url}" />
-								{$animal.Titulo}
-							</label>
-						</li>
-						{/foreach}
-					</ul>
-				</div>
-			</form>
-
 			<div id="bannerLinha">
 				<div class="bannerLinha bannerLinha-produtos" data-linha="">
 					<div class="linhaTitulo">
@@ -93,6 +47,67 @@
 					</div>
 				</div>
 			</div>
+
+			<form id="filtros" class="sidebar geralTransition" action="javascript:;" method="post">
+				<div class="sidebarOverlay"></div>
+				<a href="javascript:;" class="sidebarAbrir">
+					<!-- <span class="icone icon_tags_alt"></span> -->
+					<span class="icone abrir icon_search_alt"></span>
+					<span class="icone fechar icon_close"></span>
+				</a>
+				<div class="filtrosHolder">
+					<input type="hidden" id="urlBusca" name="urlBusca" value="{$urlBusca}" />
+					<div id="filtroLinhas" class="blocoFiltro filtroLinha">
+						<span class="titulo">Filtrar por linha</span>
+						<ul class="filtroUl">
+							<li class="filtroLi">
+								<label class="filtroLink geralTransition" data-linha="">
+									<input type="checkbox" name="linhas" value="" title="ver todos os produtos" style="display:none;" />
+									ver todos os produtos
+								</label>
+							</li>
+							{foreach $linhas as $linha}
+							<li class="filtroLi">
+								<label class="filtroLink geralTransition" data-linha="{$linha.Url}">
+									<input type="checkbox" name="linhas" value="{$linha.Url}" title="{$linha.Titulo}" {if $linha.Url eq $urlLinha}checked="checked"{/if} style="display:none;" />
+									{$linha.Titulo|lower}
+								</label>
+							</li>
+							{/foreach}
+						</ul>
+					</div>
+
+					<div id="filtroCategorias" class="blocoFiltro filtroCategoria" {if !$urlLinha}style="display:none;"{/if}>
+						<span class="titulo">Filtrar por categoria</span>
+						{foreach $linhas as $linha}
+						<ul class="filtroUl filtroUlCheckbox" data-linha="{$linha.Url}" {if $linha.Url neq $urlLinha}style="display:none;"{/if}>
+							{foreach $linha.SubCategorias as $sub}
+							<li class="filtroLi">
+								<label class="labelCheckbox">
+									<input type="checkbox" name="categorias-{$linha.Url}" value="{$sub.Url}" {if $sub.Url eq $urlCategoria}checked="checked"{/if} />
+									{$sub.Titulo}
+								</label>
+							</li>
+							{/foreach}
+						</ul>
+						{/foreach}
+					</div>
+
+					<div id="filtroAnimais" class="blocoFiltro filtroAnimais blocoFiltroLast">
+						<span class="titulo">Filtrar por espécie</span>
+						<ul class="filtroUl filtroUlCheckbox">
+							{foreach $animais as $animal}
+							<li class="filtroLi">
+								<label class="labelCheckbox">
+									<input type="checkbox" name="animais" value="{$animal.Url}" />
+									{$animal.Titulo}
+								</label>
+							</li>
+							{/foreach}
+						</ul>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 </section>

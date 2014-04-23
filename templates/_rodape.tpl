@@ -89,6 +89,15 @@
 		</div>
 	</div>
 </footer>
+
+<div id="modal">
+	<div id="modalOverlay"></div>
+	<a href="javascript:;" id="modalFechar" class="bt circulo">
+		<span class="icone icon_close"></span>
+	</a>
+	<div id="modalContent"></div>
+</div>
+
 {*}
 <div id="fb-root"></div>
 <script>(function(d, s, id) {

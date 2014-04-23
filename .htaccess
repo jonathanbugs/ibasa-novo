@@ -12,7 +12,7 @@ RewriteCond %{HTTP_HOST} !10.0.*.* [NC]
 ## SEM WWW
 #RewriteCond %{HTTP_HOST} ^www.ibasa\.com.br$ [NC]
 #RewriteRule ^(.*)$ http://ibasa.com.br/$1 [R=301,L]
-RewriteRule .* - [E=path:\/]
+RewriteRule .* - [E=path:\/site\/]
 
 RewriteCond %{HTTP_HOST} localhost [NC]
 RewriteRule .* - [E=path:\/ibasa-novo\/]
@@ -62,9 +62,14 @@ RewriteRule ^admin/(.*)/(.*)/$ %{ENV:path}admin/index.php?modulo=$1&acao=$2 [L]
 RewriteRule ^admin/(.*)/$ %{ENV:path}admin/index.php?modulo=$1 [L]
 RewriteRule ^(admin|manager)/$ %{ENV:path}admin/index.php [L]
 
+# CENTRAL DE CONTEUDO
+RewriteRule ^central-de-conteudo/wp-admin/$ %{ENV:path}central-de-conteudo/wp-admin/index.php [R,L]
+RewriteRule ^central-de-conteudo/(post|categoria|tag|paginacao)/(.*)/(.*)/$ %{ENV:path}index.php?pagina=central-de-conteudo&$1=$2&slug=$3 [L]
+RewriteRule ^central-de-conteudo/(post|categoria|tag|paginacao)/(.*)/$ %{ENV:path}index.php?pagina=central-de-conteudo&$1=$2 [L]
+
 # PAGINAS
-RewriteRule ^(nossos\-produtos)/(.*)/(.*)/$ %{ENV:path}index.php?pagina=$1&categoria=$2&id=$3 [L]
-RewriteRule ^(nossos\-produtos)/(.*)/$ %{ENV:path}index.php?pagina=$1&categoria=$2 [L]
+RewriteRule ^(nossos\-produtos|produtos)/(.*)/(.*)/$ %{ENV:path}index.php?pagina=produtos&categoria=$2&id=$3 [L]
+RewriteRule ^(nossos\-produtos|produtos)/(.*)/$ %{ENV:path}index.php?pagina=produtos&categoria=$2 [L]
 RewriteRule ^(produto)/(.*)/(.*)/$ %{ENV:path}index.php?pagina=$1&categoria=$2&id=$3 [L]
 RewriteRule ^(produto)/(.*)/$ %{ENV:path}index.php?pagina=$1&categoria=$2 [L]
 

@@ -70,17 +70,18 @@
 }
 
 .linhaImagem-medicamentos {
-	top: 150px;
+	top: 153px;
 	max-width: 380px;
 }
 
 .linhaImagem-tratamento {
-	top: 110px;
-	max-width: 475px;
+	top: 111px;
+	max-width: 400px;
 }
 
 .linhaImagem-estetica-pet {
-	max-width: 485px;
+	top: 125px;
+	max-width: 450px;
 }
 
 .linhaImagem img {
@@ -100,6 +101,28 @@
 	padding: 50px 0 10px;
 	width: 260px;
 	z-index: 2;
+}
+
+.sidebarAbrir {
+	display: none;
+	width: 60px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	right: -60px;
+	margin: -40px 0 0;
+	z-index: 5;
+}
+
+.sidebarAbrir .icone {
+	width: 40px;
+	height: 40px;
+	margin: 20px 0;
+	display: block;
+	font-size: 20px;
+	line-height: 40px;
+	color: #fff;
+	background: #cd1c38;
 }
 
 .blocoFiltro {
@@ -262,7 +285,7 @@
 .produtoTitulo {
 	color: #cd1c38;
 	display: block;
-	font-size: 16px;
+	font-size: 15px;
 	text-transform: uppercase;
 	line-height: 1em;
 	height: 35px;
@@ -381,17 +404,17 @@
 	}
 
 	.linhaImagem-medicamentos {
-		top: 180px;
+		top: 179px;
 		max-width: 320px;
 	}
 
 	.linhaImagem-tratamento {
-		top: 180px;
-		max-width: 325px;
+		top: 163px;
+		max-width: 300px;
 	}
 
 	.linhaImagem-estetica-pet {
-		top: 160px;
+		top: 178px;
 		max-width: 330px;
 	}
 }
@@ -400,9 +423,51 @@
 	/* ============
 	   SIDEBAR FILTROS
 	   ============ */
-	.sidebar {
-		display: none;
+	.bodySidebarAberta {
+		overflow: hidden;
 	}
+
+	.sidebar {
+		position: fixed;
+		top: 0;
+		left: -260px;
+		bottom: 0;
+	}
+
+	.filtrosHolder {
+		background-color: #cd1c38;
+		overflow: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 25px 0;
+		z-index: 10;
+	}
+
+	.sidebarAbrir {
+		display: block;
+	}
+
+	.sidebarAberta {
+		left: 0;
+	}
+
+	.sidebarAberta .sidebarOverlay {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #000;
+		background: rgba(0,0,0,0.5);
+	}
+
+	.sidebarAbrir .fechar { display: none; }
+	.sidebarAberta .sidebarAbrir .abrir { display: none; }
+	.sidebarAberta .sidebarAbrir .fechar { display: block; }
+
 
 	.linhaTitulo {
 		position: relative;
@@ -415,17 +480,17 @@
 	}
 
 	.linhaImagem-medicamentos {
-		top: 160px;
-		max-width: 380px;
+		top: 162px;
+		max-width: 360px;
 	}
 
 	.linhaImagem-tratamento {
-		top: 150px;
-		max-width: 400px;
+		top: 131px;
+		max-width: 360px;
 	}
 
 	.linhaImagem-estetica-pet {
-		top: 130px;
+		top: 146px;
 		max-width: 400px;
 	}
 
@@ -466,15 +531,15 @@
 	}
 
 	.linhaImagem-medicamentos {
-		top: 205px;
+		top: 206px;
 	}
 
 	.linhaImagem-tratamento {
-		top: 205px;
+		top: 184px;
 	}
 
 	.linhaImagem-estetica-pet {
-		top: 185px;
+		top: 207px;
 	}
 
 	.produtoCategorias .titulo {
@@ -497,7 +562,19 @@
 }
 
 @media only screen and (max-width: 480px) {
-	/*.sidebar { display: block; z-index: 999; }*/
+	.produtosLi {
+		width: 230px;
+	}
+
+	.produtosLink {
+		padding: 13px;
+	}
+
+	.blocoimagem,
+	.indicacoesUl {
+		left: 13px;
+	}
+
 	#sessaoBannerLanding {
 		height: 295px;
 		min-height: 0;
@@ -520,7 +597,7 @@
 	}
 
 	.linhaImagem-medicamentos {
-		top: 140px;
+		top: 145px;
 	}
 
 	.linhaImagem-tratamento {
@@ -528,7 +605,7 @@
 	}
 
 	.linhaImagem-estetica-pet {
-		top: 135px;
+		top: 145px;
 	}
 
 }

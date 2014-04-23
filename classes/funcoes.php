@@ -16,9 +16,9 @@ function ExecutarSQL($sql) {
 
 function Consultar($dados) {
 	$colecaoNova = array();
-		while($colecao = mysql_fetch_array($dados)) {
-			array_push($colecaoNova,$colecao);
-		}
+	while($colecao = mysql_fetch_array($dados)) {
+		array_push($colecaoNova,$colecao);
+	}
 	return $colecaoNova;
 }
 

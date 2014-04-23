@@ -1,3 +1,7 @@
+#tabRepresentantes {
+	display: none;
+}
+
 #tipoUl {
 	margin-top: 40px;
 	font-size: 0;
@@ -63,23 +67,51 @@
 
 #mapa {
 	width: 55%;
+	margin: 40px 0;
 	height: 385px;
-	background: #F4F4F4;
+	background: #E5E3DF;
 	float: right;
+	position: relative;
 }
 
+#mapaRegioes {
+	width: 55%;
+	margin: 40px 0;
+	height: 385px;
+	float: right;
+	text-align: center;
+}
+
+#mapaRegioes svg {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#mapaRegioes svg path {
+	fill: #464646;
+	stroke: #FFFFFF;
+	cursor: pointer;
+}
+
+#mapaRegioes svg g#Estados g:hover path {
+	fill: #6b6b6b;
+}
+
+#mapaRegioes svg .RegiaoAtiva path {
+	fill: #cd1c38 !important;
+}
 
 /* ============
    SELECT
    ============ */
-#filtrosUl {
+.filtrosUl {
 	display: block;
 	text-align: left;
+	margin-bottom: 10px;
 }
 
 .filtrosLi {
 	position: relative;
-	height: 60px;
 	float: left;
 }
 
@@ -92,19 +124,48 @@
 	width: 74%;
 }
 
+.filtrosLiRegiao {
+	width: 100%;
+}
+
 .btSelect {
+	background: #FFFFFF;
 	color: #727272;
 	display: block;
 	height: 48px;
 	line-height: 48px;
 	padding-left: 20px;
 	position: relative;
+	z-index: 5;
 }
 
 .listaSelectUl {
 	top: 50px;
 }
 
+.selectPrs {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.selectVazio {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	padding: 5px 10px;
+	color: #FFFFFF;
+	background: #CD1C38;
+	font-size: 10px;
+	text-align: center;
+}
 
 /* ============
    LISTA DE LOJAS E REPRESENTANTES
@@ -116,15 +177,16 @@
 	padding: 5px 0 8px 0;
 }
 
-#listaUl {
-	height: 261px;
+.listaUl {
+	height: 300px;
 	overflow: hidden;
 	text-align: left;
 	display: block;
 }
 
 .listaLi {
-	display: block;
+	/*display: block;*/
+	display: none;
 	margin-right: 10px;
 	border-top: 1px solid #e3e3e3;
 }
@@ -132,7 +194,7 @@
 .listaLink {
 	color: #77787b;
 	display: block;
-	font-family: 'OpenSans', sans-serif;	
+	font-family: 'OpenSans', sans-serif;
 	font-size: 12px;
 	padding: 12px 55px 12px 25px;
 	position: relative;
@@ -152,6 +214,7 @@
 .listaLink .listaTitulo {
 	padding-top: 0;
 	font-size: 14px;
+	line-height: 1em;
 	text-transform: uppercase;
 }
 
@@ -179,6 +242,32 @@
 	color: #cd1c38;
 }
 
+.infoLoja {
+	width: 300px;
+	padding: 15px;
+	text-align: left;
+}
+
+.infoLoja .titulo,
+.infoLoja .endereco,
+.infoLoja .contatoLink {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #515151;
+	font-size: 12px;
+	display: block;
+	line-height: 1em;
+}
+
+.infoLoja .titulo {
+	font-size: 15px;
+	color: #CD1C38;
+	padding-bottom: 7px;
+}
+
+.infoLoja .endereco {
+	line-height: 15px;
+}
+
 
 @media only screen and (max-width: 1125px) {
 	.filtrosLiEstado {
@@ -198,7 +287,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-	#tipoUl {		
+	#tipoUl {
 		padding-bottom: 50px;
 	}
 
@@ -217,7 +306,8 @@
 	}
 
 	#blocoLista,
-	#mapa {
+	#mapa,
+	#mapaRegioes {
 		float: none;
 		width: 100%;
 	}
@@ -236,7 +326,7 @@
 		float: right;
 		width: 64%;
 	}
-}	
+}
 
 
 

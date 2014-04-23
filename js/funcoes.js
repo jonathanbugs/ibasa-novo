@@ -98,6 +98,7 @@ function init(){
 	showErros();
 	imgRetina();
 	abrirMenu();
+	busca();
 }
 
 $window.on('resize orientationchange', function(){
@@ -195,5 +196,28 @@ function abrirMenu(){
 		}  else {
 			divMenu.slideUp(150);
 		}
+	});
+}
+
+/* ============
+   MODAL
+   ============ */
+function modal(){
+	var $modal = $('#modal');
+	$modal.on('click', '#modalFechar', function(event) {
+		event.preventDefault();
+		$modal.hide();
+		$modal.find('#modalContent').empty();
+	});
+}
+
+/* ============
+   BUSCA
+   ============ */
+function busca(){
+	$('#formBusca').on('submit', function(event) {
+		event.preventDefault();
+		if ($('#busca').val()!=='')
+			window.location.href = $BASE_DIR+'produtos/busca/'+encodeURI($('#busca').val())+'/';
 	});
 }

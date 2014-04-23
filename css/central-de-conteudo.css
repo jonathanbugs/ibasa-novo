@@ -8,8 +8,8 @@
 /* ============
    CATEGORIAS
    ============ */
-#categoriasUl {
-	padding-top: 50px;
+.categoriasUl {
+	padding: 50px 25px 0;
 }
 
 .categoriasLi {
@@ -111,7 +111,7 @@
 	color: #727272;
 	font-size: 12px;
 	text-transform: uppercase;
-	margin-left: 30px; 
+	margin-left: 30px;
 }
 
 .tagsUl a:first-child {

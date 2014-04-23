@@ -95,7 +95,8 @@
 						</button>
 					</div>
 					<div id="contatoResposta">
-						<span id="erroContato" class="message">Aconteceu um erro. Tente novamente</span>
+						<span id="preenchaContato" class="message">Preencha os campos corretamente.</span>
+						<span id="erroContato" class="message">Aconteceu um erro. Tente novamente.</span>
 						<span id="sucessoContato" class="message">Sua mensagem foi enviada com sucesso!</span>
 					</div>
 				</form>

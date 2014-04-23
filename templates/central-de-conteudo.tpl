@@ -7,29 +7,16 @@
 			<div id="blocoTitulo">
 				<h2 class="tituloSessao">
 					<span class="icone icon_pencil_alt"></span>
-					<span class="titulo">Central de Conteúdos</span>
+					<span class="titulo">Central de Conteúdo</span>
 				</h2>
 
 				<div id="categorias">
-					<ul id="categoriasUl" class="clearfix">
+					<ul id="categoriasUl" class="categoriasUl">
+						{foreach get_categories() as $cat}
 						<li class="categoriasLi">
-							<a class="categoriasLink" href="javascript:;">Dicas de Cuidades</a>
+							<a class="categoriasLink" href="{$BASE_DIR}central-de-conteudo/categoria/{$cat->term_id}/{$cat->slug}/">{$cat->name}</a>
 						</li>
-						<li class="categoriasLi">
-							<a class="categoriasLink" href="javascript:;">Dicas de Limpeza</a>
-						</li>
-						<li class="categoriasLi">
-							<a class="categoriasLink" href="javascript:;">Mundo Pet</a>
-						</li>
-						<li class="categoriasLi">
-							<a class="categoriasLink" href="javascript:;">Linha Estética</a>
-						</li>
-						<li class="categoriasLi">
-							<a class="categoriasLink" href="javascript:;">Linha Medicamentos</a>
-						</li>
-						<li class="categoriasLi">
-							<a class="categoriasLink" href="javascript:;">Linha de Tratamento</a>
-						</li>
+						{/foreach}
 					</ul>
 				</div>
 			</div>
@@ -42,40 +29,36 @@
 	<div class="container">
 		<div class="containerGeral clearfix">
 			<div class="centralConteudos">
+				{foreach $posts_array as $p}
 				<div class="post">
-					<span class="postData">18 de maio de 2014</span>
-					
-					<h3>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</h3>
-					
-					<img src="{$IMG_DIR}gerais/post.jpg" alt="" />
+					{*}<span class="postData">18 de maio de 2014</span>{*}
 
-					<p>
-						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
-					</p>
-					<p>
-						Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
-					</p>
+					<h3><a href="{$BASE_DIR}blog/post/{$p->ID}/{RemoveAcentos($p->post_title,'UTF-8')}/">{$p->post_title}</a></h3>
 
+					{$p->post_content|nl2br}
+
+					{if wp_get_post_categories($p->ID)}
 					<ul class="tagsUl clearfix">
 						<li>
-							<a href="javascript:;">Dicas de cuidados</a>
-							<a href="javascript:;">Dicas de Limpeza</a>
-							<a href="javascript:;">Mundo Pet</a>
+							{foreach wp_get_post_categories($p->ID) as $catID}
+							{$cat = get_category($catID)}
+							<a href="{$BASE_DIR}blog/categoria/{$cat->term_id}/{$cat->slug}/">{$cat->name}</a>
+							{/foreach}
 						</li>
 					</ul>
-				</div>
+					{/if}
 
-				<div class="post">
-					<span class="postData">18 de maio de 2014</span>
-					<h3>Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</h3>
-					<p>
-						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
-					</p>
-					<p>
-						Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
-					</p>
+					{if wp_get_post_tags($p->ID)}
+					<ul class="tagsUl clearfix">
+						<li>
+							{foreach wp_get_post_tags($p->ID) as $tag}
+							<a href="{$BASE_DIR}blog/tag/{$tag->term_id}/{$tag->slug}/">{$tag->name}</a>
+							{/foreach}
+						</li>
+					</ul>
+					{/if}
 				</div>
-
+				{/foreach}
 
 				<div id="paginacao">
 					<ul id="paginacaoUl" class="clearfix">

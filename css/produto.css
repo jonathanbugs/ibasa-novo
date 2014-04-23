@@ -163,6 +163,10 @@
 	background-position: 15px -637px;
 }
 
+.informacoesTituloPosologia {
+	background-position: 15px -772px;
+}
+
 .informacoesDescricao {
 	display: block;
 	color: #727272;
@@ -174,6 +178,7 @@
 .indicacoesUl{
 	font-size: 0;
 	padding-left: 58px;
+	margin-top: 15px;
 }
 
 .indicacoesLi {
@@ -231,11 +236,16 @@
 
 .indicacoesIcone_passaros {
 	background-position: -513px -200px;
-	margin-left: 13px
+	margin-left: 13px;
 }
 
 .indicacoesIcone_coelhos {
 	background-position: -455px -200px;
+}
+
+.indicacoesIcone_outros {
+	background-position: -569px -200px;
+	margin-left: 6px;
 }
 
 .indicacoestitulo {
@@ -244,6 +254,32 @@
 	font-size: 12px;
 }
 
+.informacoesTabela {
+	width: 100%;
+	/*display: block;*/
+	color: #727272;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 10px 25px 0 54px;
+}
+.informacoesTabelaTh {
+	padding: 10px 15px;
+	background-color: #727272;
+	color: #fff;
+	text-transform: uppercase;
+}
+.informacoesTabelaTd {
+	padding: 5px 15px;
+	background-color: #e5e5e5;
+}
+.informacoesTabelaTr2 .informacoesTabelaTd {
+	background-color: #d5d5d5;
+}
+.informacoesTabelaTr:hover .informacoesTabelaTd {
+	background-color: #f7f7f7;
+}
+.informacoesTabelaLeft { text-align: left; }
+.informacoesTabelaCenter { text-align: center; }
 
 /* ============
    FORMULARIO DUVIDA
@@ -326,6 +362,46 @@
 #formDuvida .btForm:hover {
 	background: #727272;
 	color: #FFF;
+}
+
+#formDuvida .btFormEnviando {
+	display: none;
+}
+
+#formDuvida .btFormEnviando .iconeHolder {
+	position: relative;
+}
+
+#formDuvida .btFormEnviando .icone {
+	-moz-transition: all 0;
+	-webkit-transition: all 0;
+	-o-transition: all 0;
+	transition: all 0;
+	font-size: 16px;
+	position: absolute;
+	top: -2px;
+	right: 10px;
+	-webkit-animation: loader 1s infinite ease-in-out;
+	-moz-animation: loader 1s infinite ease-in-out;
+	-o-animation: loader 1s infinite ease-in-out;
+	animation: loader 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes loader {
+	from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+	to { -webkit-transform: rotate(359deg); transform: rotate(359deg); }
+}
+@-moz-keyframes loader {
+	from { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+	to { -moz-transform: rotate(359deg); transform: rotate(359deg); }
+}
+@-o-keyframes loader {
+	from { -o-transform: rotate(0deg); transform: rotate(0deg); }
+	to { -o-transform: rotate(359deg); transform: rotate(359deg); }
+}
+@keyframes loader {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(359deg); }
 }
 
 #formDuvida .input.error,
@@ -463,14 +539,15 @@
 }
 
 .maisProdutosLi {
+	display: inline-block;
 	background: #FFF;
 	border: 3px solid #FFF;
-	float: left;
 	width: 254px;
 	height: 378px;
 	position: relative;
-	margin-bottom: 20px;
+	margin: 0 5px 20px;
 	text-align: left;
+	vertical-align: top;
 }
 
 .limiter {
@@ -588,6 +665,11 @@
 	background-position: -358px 0;
 }
 
+.iconAplicacao_outros {
+	background-position: -448px 0;
+}
+
+
 @media only screen and (max-width: 1279px) {
 	.limiter_4 {
 		display: none;
@@ -692,6 +774,10 @@
 		padding-left: 18px;
 	}
 
+	.informacoesTabela {
+		padding-left: 16px;
+	}
+
 	.verTodos,
 	.imagemLinha {
 		float: none;
@@ -721,6 +807,21 @@
 
 	.maisProdutosUl {
 		max-width: 260px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.maisProdutosLi {
+		width: 230px;
+	}
+
+	.maisProdutosLink {
+		padding: 13px;
+	}
+
+	.maisProduoBlocoimagem,
+	.maisProdutoIndicacoesUl {
+		left: 13px;
 	}
 }
 

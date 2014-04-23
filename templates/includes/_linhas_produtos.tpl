@@ -1,6 +1,6 @@
 <ul id="linhasUl">
 	<li class="linhasLi">
-		<a class="linhasLiConteudo" href="javascript:;">
+		<a class="linhasLiConteudo" href="{$BASE_DIR}produtos/medicamentos/">
 			<h3 class="linhasTitulo">
 				<span>Linha</span>
 				<span class="linha">medicamentos</span>
@@ -12,7 +12,7 @@
 		</a>
 	</li>
 	<li class="linhasLi linhasLiTratamento">
-		<a class="linhasLiConteudo" href="javascript:;">
+		<a class="linhasLiConteudo" href="{$BASE_DIR}produtos/tratamento/">
 			<h3 class="linhasTitulo">
 				<span>Linha</span>
 				<span class="linha">tratamento</span>
@@ -24,10 +24,10 @@
 		</a>
 	</li>
 	<li class="linhasLi linhasLiEstetica">
-		<a class="linhasLiConteudo" href="javascript:;">
+		<a class="linhasLiConteudo" href="{$BASE_DIR}produtos/estetica-pet/">
 			<h3 class="linhasTitulo">
 				<span>Linha</span>
-				<span class="linha">estética</span>
+				<span class="linha">estética pet</span>
 			</h3>
 
 			<img class="linhasImg" src="{$IMG_DIR}gerais/linha_estetica.png" data-src2x="{$IMG_DIR}gerais/linha_estetica_2x.png" alt="Linha Estética" />

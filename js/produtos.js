@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	init();
 	filtroLinha();
+	sidebar();
 });
 
 function filtroLinha(){
@@ -21,8 +22,10 @@ function filtroLinha(){
 		$linhas.find('input').not($(this)).prop('checked', false).parents('label').removeClass('filtroLinkAtivo');
 		$categorias.find('input').prop('checked', false).parents('label').removeClass('inputCheckboxChecked');
 		var val = $(this).val();
-		if ($(this).is(':checked')){
+		if ($(this).is(':checked')&&val!==''){
 			$categorias.show().find('.filtroUl').hide().filter('[data-linha="'+val+'"]').show();
+		} else if (val==='' && $('#urlBusca').val()!==''){
+			window.location.replace($BASE_DIR+'produtos/');
 		} else {
 			$categorias.hide();
 		}
@@ -103,21 +106,40 @@ function filtroLinha(){
 			$('#semProdutos').show();
 		}
 
+		/*if (linhas || categorias.length || animais.length)
+			$('body,html').animate({ scrollTop: $listagem.offset().top }, 750);*/
+
 		var link2 = link,
 			titulo2 = titulo;
-		if ($linhas.find('input:checked').length){
+		if (linhas){
 			link2 = $BASE_DIR+'produtos/'+$linhas.find('input:checked').val()+'/';
-			titulo2 = 'Linha '+$linhas.find('input:checked').attr('title')+' | '+navegacao+' | '+title;
+			titulo2 = $linhas.find('input:checked').attr('title')+' | '+navegacao+' | '+title;
+		} else {
+			link2 = link;
+			titulo2 = titulo;
 		}
 
-		/* ANALYTICS *_/
-		path = link.split('/');
-		path = link.replace(path[0]+'//'+path[2], '');
-		_gaq.push(['_trackPageview', path]);
+		/* ANALYTICS */
+		path = link2.split('/');
+		path = link2.replace(path[0]+'//'+path[2], '');
+		if(typeof _gaq !== 'undefined')
+			_gaq.push(['_trackPageview', path]);
 		/* URL */
 		if(history.pushState){
 			document.title = titulo2;
 			history.pushState(link2, titulo2, link2);
 		}
 	}
+}
+
+function sidebar(){
+	$('.sidebarAbrir').on('click', function(event) {
+		event.preventDefault();
+		$('.sidebar').toggleClass('sidebarAberta');
+		$('body,html').toggleClass('bodySidebarAberta');
+	});
+	$('.sidebarOverlay').on('click', function(event) {
+		$('.sidebar').removeClass('sidebarAberta');
+		$('body,html').removeClass('bodySidebarAberta');
+	});
 }
