@@ -183,100 +183,428 @@
 	display:none !important;
 }
 
-
-.conteudoLanding {
-	display: block;
-	margin: 0 75px;
-	padding-top: 85px;
+.sessaoLanding .conteudoLanding {
+	background: #ed963b;
+	color: #30130e;
+	font-family: 'savignyregular_cond', sans-serif;
+	font-size: 16px;
+	padding: 85px 0 80px;
 }
 
-.conteudoLandingLeft,
-.conteudoLandingRight {
-	width: 50%;
+.sessaoLanding .centro {
+	display: block;
+	margin: 0 auto;
+	max-width: 705px;
+}
+
+.sessaoLanding .conteudoEsquerda {
 	float: left;
-	max-width: 470px;
+	width: 40%;
+}
+
+.sessaoLanding .conteudoDireita {
+	float: right;
+	width: 54%;
+}
+
+.sessaoLanding .blocoImagem img {
+	width: 100%;
+	display: block;
+}
+
+.sessaoLanding .conteudoTexto {
 	text-align: left;
 }
 
-.conteudoLandingRight {
-	float: right;
-	padding-top: 40px;
-}
-
-.conteudoLandingBts {
-	width: 100%;
-}
-
-.conteudoLandingLeft .blocoImagem {
-	max-width: 450px;
-}
-
-.conteudoLandingRight .blocoImagem {
-	max-width: 268px;
-	float: left;
-}
-
-.conteudoLandingLeft .blocoImagem img,
-.conteudoLandingRight .blocoImagem img {
-	width: 100%;
+.sessaoLanding .tituloConteudo {
 	display: block;
+	font-family: 'savignymedium_cond', sans-serif;
+	font-size: 40px;
+	line-height: 0.9em;
+	padding-top: 25px;
 }
 
-.conteudoLandingDescricao {
-	font-size: 14px;
+.sessaoLanding p {
 	line-height: 20px;
+	margin-top: 10px;
 }
 
-.conteudoLandingLeft .conteudoLandingDescricao {
-	padding-right: 40px;
+.sessaoLanding p.bold {
+	font-family: 'OpenSans-Semibold', sans-serif;
 }
 
-.conteudoLandingRight .conteudoLandingDescricao {
-	max-width: 195px;
-	float: right;
-}
-
-.conteudoLandingBts {
-	padding: 115px 0;
-}
-
-.imagemBts {
-	max-width: 600px;
-	margin: 0 auto;
-}
-
-.imagemBts img {
+.sessaoLanding p span {
 	display: block;
-	width: 100%;
+	text-align: right;
+	padding: 5px 10px 0 0;
 }
 
-.landingBtsUl {
-	font-size: 0;
+
+#bloco2 .conteudoLanding {
+	background: #30130e;
+	color: #e69237;
+}
+
+.beneficios {
 	margin-top: 50px;
 }
 
-.landingBtsLi {
+.tituloBeneficios {
+	display: block;
+	font-family: 'savignymedium_cond', sans-serif;
+	font-size: 26px;
+	line-height: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.beneficiosUl {
+	margin-top: 25px;
+	font-size: 0;
+}
+
+.beneficiosLi {
+	border: 2px solid #542c17;
 	display: inline-block;
+	width: 176px;
+	height: 176px;
+	margin: 0 5px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
 }
 
-.landingBtsLi:first-child {
-	margin-right: 40px;
+.beneficiosLi .table {
+	width: 100%;
+	height: 100%;
+	text-align: center;
 }
 
-.landingBtsLink {
+.beneficiosLi .tableCell {
+	padding: 0 30px;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+#bloco3 .centro {
+	max-width: 615px;
+}
+
+#bloco3 .conteudoEsquerda {
+	width: 44%;
+}
+
+#bloco3 .conteudoDireita {
+	width: 56%;
+}
+
+#bloco3 .beneficiosLi {
+	border-color: #c77c32;
+}
+
+#bloco3 .conteudoTexto {
+	padding-top: 70px;
+}
+
+#bloco3 .conteudoTexto p {
+	margin-top: 35px;
+}
+
+
+#bloco4 .conteudoLanding {
+	background: #d74f2c;
+}
+
+#bloco4 .centro,
+#bloco7 .centro,
+#bloco8 .centro {
+	color: #FFF;
+	max-width: 545px;
+}
+
+#bloco4 .conteudoEsquerda,
+#bloco7 .conteudoEsquerda,
+#bloco8 .conteudoEsquerda {
+	width: 20%;
+}
+
+#bloco4 .conteudoDireita,
+#bloco7 .conteudoDireita,
+#bloco8 .conteudoDireita {
+	width: 66%;
+}
+
+#bloco4 .tituloConteudo,
+#bloco7 .tituloConteudo,
+#bloco8 .tituloConteudo {
+	color: #ec9466;
+	padding-top: 0;
+}
+
+#bloco4 .conteudoTexto,
+#bloco7 .conteudoTexto,
+#bloco8 .conteudoTexto {
+	padding-top: 120px;
+}
+
+#bloco4 .conteudoTexto p,
+#bloco7 .conteudoTexto p,
+#bloco8 .conteudoTexto p {
+	margin-top: 20px;
+}
+
+.listaUl {
+	font-size: 0;
+	margin-top: 30px;
+}
+
+.listaLi {
+	height: 45px;
+	margin-top: 13px;
+}
+
+.listaLi .table {
+	height: 100%;
+	position: relative;
+}
+
+.listaLi .tableCell {
+	padding-left: 60px;
+	text-align: left;
+}
+
+.listaLi .icone {
+	background: url('../img/landing-page/icones.png') no-repeat;
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	top: 0;
+	left: 0;
+}
+
+.listaLi .descricao {
+	font-size: 20px;
+	line-height: 1em;
+}
+
+.listaLi .iconeSustentacao {
+	background-position: 0 -45px;
+}
+
+.listaLi .iconePentear {
+	background-position: 0 -90px;
+}
+
+.listaLi .iconeFixacao {
+	background-position: 0 -135px;
+}
+
+.listaLi .iconeDesmaio {
+	background-position: 0 -180px;
+}
+
+.listaLi .iconeRealinhamento {
+	background-position: 0 -225px;
+}
+
+.listaLi .iconeFrizz {
+	background-position: 0 -270px;
+}
+
+.listaLi .iconeReconstrucao {
+	background-position: 0 -315px;
+}
+
+.listaLi .iconeHidratacao {
+	background-position: 0 -360px;
+}
+
+.listaLi .iconeGloss {
+	background-position: 0 -405px;
+}
+
+.listaLi .iconeCondicionamento {
+	background-position: 0 -450px;
+}
+
+.listaLi .iconeDesembaraco {
+	background-position: 0 -495px;
+}
+
+.listaLi .iconeAntifrizz {
+	background-position: 0 -540px;
+}
+
+.listaLi .iconeProtetor {
+	background-position: 0 -585px;
+}
+
+.listaLi .iconeSecagem {
+	background-position: 0 -630px;
+}
+
+.listaLi .iconeAntioxidante {
+	background-position: 0 -675px;
+}
+
+
+#bloco5 .conteudoLanding {
+	background: #ec8b32;
+	color: #FFF;
+}
+
+#bloco5 .centro {
+	max-width: 755px; 
+}
+
+#bloco5 .boxTexto {
+	max-width: 385px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+#bloco5 .tituloConteudo {
+	color: #f6cd78;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+#bloco5 .blocoImagem {
+	margin: 60px auto;
+}
+
+#bloco5 .listaLi {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+#bloco5 .listaLi:first-child {
+	margin-left: 0;
+}
+
+#bloco6 .conteudoLanding {
+	background: #30130e;
+	color: #ec8b32;
+}
+
+#bloco6 .centro {
+	max-width: 555px; 
+}
+
+#bloco6 .blocoImagem {
+	margin-bottom: 15px;
+}
+
+#bloco6 .txt {
+	display: block;
+	font-size: 32px;
+	line-height: 1em;
+}
+
+#bloco6 .txt2 {
+	font-family: 'savignymedium_cond', sans-serif;
+}
+
+#bloco7 .conteudoLanding {
+	background: #88bc34;
+}
+
+#bloco7 .tituloConteudo {
+	color: #efef87;
+}
+
+#bloco8 .conteudoLanding {
+	background: #e5751f;
+	padding-bottom: 310px;
+}
+
+#bloco8 .conteudoEsquerda {
+	width: 25%;
+}
+
+#bloco8 .conteudoDireita {
+	width: 60%;
+}
+
+#bloco8 .conteudoTexto {
+	padding-top: 13px;
+}
+
+#bloco8 .tituloConteudo {
+	color: #fed08e;
+}
+
+#bloco8 .subTituloConteudo {
+	display: block;
+	color: #fed08e;
+	font-size: 26px;
+	line-height: 1em;
+}
+
+#bloco8 .descricao {
+	margin: 45px 0 40px;
+}
+
+#bloco8 .descricao .table {
+	background: url('../img/landing-page/beneficios.png') no-repeat;
+	padding-left: 125px;
+	height: 109px;
+}
+
+#bloco8 .descricao .tableCell {
+	text-align: left;
+	font-size: 17px;
+	line-height: 20px;
+}
+
+#botoes {
+	margin-top: -175px;
+}
+
+#botoes .conteudoLanding {
+	padding: 0 22px;
+}
+
+.imagemBotoes {
+	max-width: 510px;
+	margin: 0 auto;
+}
+
+.imagemBotoes img {
+	display: block;
+	width: 100%;
+}
+
+.btsUl {
+	margin: 45px 0 120px;
+	font-size: 0;
+}
+
+.btsLi {
+	display: inline-block;
+	width: 48%;
+	margin-left: 2%;
+}
+
+.btsLi:first-child {
+	margin: 0;
+}
+
+.btsLink {
 	border: 2px solid #727272;
 	color: #727272;
 	display: block;
 	font-size: 12px;
-	padding: 33px 0;
 	text-transform: uppercase;
-	width: 556px;
+	padding: 33px 0;
 }
 
-.landingBtsLink:hover {
+.btsLink:hover {
 	background: #727272;
 	color: #FFF;
 }
+
+
 
 /* ============
    MEDIA QUERIES
@@ -306,24 +634,10 @@
 		width: 260px;
 	}
 
-	.conteudoLandingLeft {
-		width: 40%;
-	}
-
-	.conteudoLandingRight .blocoImagem {
-		max-width: 215px;
-	}
-
-	.conteudoLandingRight .conteudoLandingDescricao {
-		max-width: 180px;
-	}
-
-	.landingBtsLi:first-child {
-		margin-right: 30px;
-	}
-
-	.landingBtsLink {
-		width: 445px;
+	#bloco2 .beneficiosLi {
+		width: 170px;
+		height: 170px;
+		margin: 0 2px;
 	}
 }
 
@@ -346,31 +660,41 @@
 		width: 290px;
 	}
 
-	.conteudoLandingLeft,
-	.conteudoLandingRight {
-		float: none;
-		width: 100%;
+	.sessaoLanding .centro {
+		max-width: 630px;
 	}
 
-	.conteudoLandingLeft {
-		margin-bottom: 50px;
+
+	.beneficiosLi,
+	#bloco2 .beneficiosLi  {
+		display: block;
+		margin: 0;
+		margin-top: 10px;
 	}
 
-	.imagemBts {
-		max-width: 440px;
+	.beneficiosLi:first-child,
+	#bloco2 .beneficiosLi:first-child {
+		margin-top: 0;
 	}
 
-	.landingBtsLi:first-child {
-		margin-right: 10px;
+	#bloco5 .blocoImagem {
+		max-width: 560px;
 	}
 
-	.landingBtsLink {
-		width: 325px;
-		font-size: 11px;
+	#bloco5 .listaLi {
+		margin-left: 25px;
+	}
+
+	#botoes .conteudoLanding {
+		padding: 0;
 	}
 }
 
 @media only screen and (max-width: 767px) {
+	.containerGeral {
+		padding: 0;
+	}
+
 	#sessaoBannerLanding {
 		margin-top: 0;
 	}
@@ -400,41 +724,91 @@
 		margin-bottom: 4px;
 	}
 
-	.conteudoLanding {
-		max-width: 300px;
+
+	.sessaoLanding .centro {
+		padding: 0 30px;
+	}
+
+	.sessaoLanding .conteudoEsquerda,
+	.sessaoLanding .conteudoDireita,
+	#bloco3 .conteudoEsquerda,
+	#bloco3 .conteudoDireita,
+	#bloco4 .conteudoEsquerda, 
+	#bloco7 .conteudoEsquerda, 
+	#bloco8 .conteudoEsquerdam,
+	#bloco4 .conteudoDireita, 
+	#bloco7 .conteudoDireita, 
+	#bloco8 .conteudoDireita {
+		width: 100%;
+		float: none;
+		max-width: 280px;
 		margin: 0 auto;
 	}
 
-	.conteudoLandingRight .blocoImagem,
-	.conteudoLandingRight .conteudoLandingDescricao {
-		float: none;
-	}
 
-	.conteudoLandingRight .blocoImagem {
-		max-width: 200px;
-	}
-
-	.conteudoLandingRight .conteudoLandingDescricao {
-		max-width: 100%;
-	}
-
-	.landingBtsUl {
+	#bloco5 .listaLi {
 		display: block;
-		text-align: center;
-	}
-
-	.landingBtsLi {
-		display: block;
-	}
-
-	.landingBtsLi:first-child {
 		margin: 0;
-		margin-bottom: 20px;
+		margin-top: 13px;
 	}
 
-	.landingBtsLink {
+	#bloco5 .listaLi:first-child {
+		margin-top: 0;
+	}
+
+	#bloco4 .conteudoEsquerda, 
+	#bloco7 .conteudoEsquerda, 
+	#bloco8 .conteudoEsquerda {
+		max-width: 108px;
+	}
+
+	#bloco4 .blocoImagem img,
+	#bloco7 .blocoImagem img {
+		width: auto;
+		max-height: 320px;
+		display: inline-block;
+	}
+
+	#bloco8 .conteudoEsquerda {
+		max-width: 139px;
+	}
+
+	.sessaoLanding .conteudoDireita,
+	#bloco3 .conteudoDireita  {
+		margin-top: 30px;
+	}
+
+	#bloco4 .conteudoTexto, 
+	#bloco7 .conteudoTexto, 
+	#bloco8 .conteudoTexto {
+		padding-top: 30px;
+	}
+
+	#bloco8 .descricao .table {
+		padding: 0;
+		padding-top: 115px;
+	}
+
+	#botoes {
+		margin-top: -100px;
+	}
+
+	#bloco8 .conteudoLanding {
+		padding-bottom: 160px;
+	}
+
+	#botoes .conteudoLanding {
+		padding: 0 15px;
+	}
+
+
+	.btsLi {
 		width: 100%;
+		margin: 0;
 	}
 
+	.btsLi:first-child {
+		margin-bottom: 10px;
+	}
 }
 
