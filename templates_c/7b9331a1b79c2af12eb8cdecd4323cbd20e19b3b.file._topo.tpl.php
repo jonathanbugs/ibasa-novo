@@ -1,31 +1,17 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-23 14:31:09
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-23 12:05:26
          compiled from "templates/_topo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:20242317965357cead0256d6-26584422%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-22 21:37:21
-         compiled from "templates/_topo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:50452723953570b4153b158-71141043%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> FETCH_HEAD
+<?php /*%%SmartyHeaderCode:2631510505357d6b66325b3-76492416%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '7b9331a1b79c2af12eb8cdecd4323cbd20e19b3b' => 
     array (
       0 => 'templates/_topo.tpl',
-<<<<<<< HEAD
       1 => 1396991429,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '20242317965357cead0256d6-26584422',
-=======
-      1 => 1397516338,
-      2 => 'file',
-    ),
-  ),
-  'nocache_hash' => '50452723953570b4153b158-71141043',
->>>>>>> FETCH_HEAD
+  'nocache_hash' => '2631510505357d6b66325b3-76492416',
   'function' => 
   array (
   ),
@@ -38,15 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-<<<<<<< HEAD
-  'unifunc' => 'content_5357cead054996_79401866',
+  'unifunc' => 'content_5357d6b666b413_89852348',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5357cead054996_79401866')) {function content_5357cead054996_79401866($_smarty_tpl) {?><header id="header" class="geralTransition">
-=======
-  'unifunc' => 'content_53570b4158bd90_52897317',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53570b4158bd90_52897317')) {function content_53570b4158bd90_52897317($_smarty_tpl) {?><header id="header" class="geralTransition">
->>>>>>> FETCH_HEAD
+<?php if ($_valid && !is_callable('content_5357d6b666b413_89852348')) {function content_5357d6b666b413_89852348($_smarty_tpl) {?><header id="header" class="geralTransition">
 	<div class="container">
 		<div class="containerGeral clearfix">
 			<h1 id="logo">

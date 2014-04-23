@@ -42,6 +42,7 @@ if (isset($_GET['post'])) {
 	$smarty->assign('description',$description);
 
 } else {
+	$posts_per_page = 2;
 	$categoria = (isset($_GET['categoria'])) ? $_GET['categoria'] : '' ;
 	$tag = (isset($_GET['tag'])) ? $_GET['tag'] : '' ;
 	$paginacao = (isset($_GET['paginacao']) && $_GET['paginacao']>0) ? $_GET['paginacao']-1 : 0 ;
@@ -54,8 +55,8 @@ if (isset($_GET['post'])) {
 		$paginaTit = $_tag->name.' | '.$paginaTit;
 	}
 	$args = array(
-		'posts_per_page' => 5,
-		'offset' => $paginacao,
+		'posts_per_page' => $posts_per_page,
+		'offset' => $paginacao*$posts_per_page,
 		'category' => $categoria,
 		'orderby' => 'post_date',
 		'order' => 'DESC',
@@ -72,7 +73,7 @@ if (isset($_GET['post'])) {
 	$posts_array = get_posts( $args );
 
 	$args = array(
-		'posts_per_page' => 5,
+		'posts_per_page' => $posts_per_page,
 		'offset' => $paginacao,
 		'term' => $cat||$tag
 	);
