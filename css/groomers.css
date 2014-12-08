@@ -1,0 +1,521 @@
+/* ============
+   BANNER
+   ============ */
+#sessaoBannerLanding {
+	background: #cd1c38;
+	position: relative;
+	margin-top: 33px;
+	height: 244px;
+}
+
+#sessaoBannerLanding .bg {
+	background: #FFF;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 30%;
+}
+
+#sessaoBannerLanding .bg2 {
+	background: #cd1c38;
+	top: 30%;
+	height: 70%;
+}
+
+.bannerLanding {
+	background: #1b1b1b;
+	position: relative;
+	height: 244px;
+}
+
+.bannerLanding .conteudo {
+	display: block;
+	max-width: 820px;
+	height: 244px;
+	margin: 0 auto;
+}
+
+.bannerLanding .blocoLogo {
+	width: 183px;
+	height: 186px;
+	float: left;
+	margin: 30px 58px 0 0;
+}
+
+.bannerLanding .blocoLogo img {
+	display: block;
+	width: 100%;
+}
+
+.bannerLanding .blocoDescricao {
+	color: #FFF;
+	font-family: 'savignyregular_cond', sans-serif;
+	font-size: 30px;
+	line-height: 35px;
+	float: left;
+	max-width: 260px;
+	text-align: left;
+	margin-top: 75px;
+}	
+
+.sessaoLanding .conteudoLanding {
+	padding: 0 40px;
+}
+
+.sessaoLanding .centro {
+	display: block;
+	margin: 0 auto;
+	max-width: 820px;
+}
+
+.menuGroomers {
+	font-size: 0;
+	line-height: 0;
+	text-align: left;
+	padding: 30px 0;
+}
+
+.menuGroomers li {
+	border-left: 1px solid #2c2c2c;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	margin-left: 20px;
+}
+
+.menuGroomers li:first-child {
+	border: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.menuGroomers .menuLink {
+	color: #FFF;
+	font-family: 'savignyregular_cond', sans-serif;
+	font-size: 17px;
+	display: block;
+	text-transform: uppercase;
+	padding: 9px 0;
+}
+
+.menuGroomers .menuLink:hover {
+	color: #b60024;
+} 
+
+#blocoSobre {
+	background: #000000;
+	padding: 0 0 0;
+}
+
+.blocoExplicacao {
+	margin-bottom: 35px;
+	text-align: left;
+}
+
+.tituloBloco {
+	color: #b60024;
+	display: block;
+	font-family: 'savignyregular_cond', sans-serif;
+	font-size: 30px;
+	line-height: 1em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+
+.blocoExplicacao .descricaoBloco {
+	color: #FFF;
+	font-family: 'OpenSans', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	padding-left: 80px;
+	max-width: 495px;
+}
+
+.imagemGroomers {
+	display: block;
+	margin-left: -60px;
+}
+
+#eliteGroomers {
+	background: #181818;
+	padding: 80px 0 70px;
+	text-align: left;
+}
+
+.listaGroomers {
+	font-size: 0;
+	line-height: 0;
+	margin-left: -40px;
+}
+
+.listaGroomers .lista {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin: 40px 0 0 40px;
+}
+
+.listaGroomers .foto,
+.listaGroomers .foto img {
+	display: block;
+	width: 175px;
+	height: 175px;
+}
+
+.listaGroomers .nome {
+	color: #FFF;
+	display: block;
+	font-family: 'savignybold_cond', sans-serif;
+	font-size: 14px;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.listaGroomers .linkLista:hover .nome,
+.listaGroomers .linkLista.perfilSelecionado .nome {
+	color: #b60024
+}
+
+.blocoSobreGroomer {
+	background: #000;
+	display: none;
+	padding-bottom: 30px;
+	margin-top: 85px;
+}
+
+.blocoSobreGroomer .conteudo {
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.blocoSobreGroomer .topoSobre {
+	background: #0f0f0f;
+	display: block;
+	padding: 40px 0;
+	position: relative;
+}
+
+.topoSobre .bloco {
+	float: left;
+}
+
+.topoSobre .blocoFoto {
+	float: none;
+	position: absolute;
+	left: 40px;
+	bottom: 0;
+	width: 167px;
+}
+
+.topoSobre .bloco img {
+	display: block;
+	width: 100%;
+}
+
+.topoSobre .blocoSelo {
+	width: 156px;
+	margin: 0 32px 0 200px;
+}
+
+.topoSobre .blocoCurriculo {
+	max-width: 375px;
+}
+
+.blocoCurriculo .tituloBloco {
+	padding-bottom: 10px;
+}
+
+.blocoCurriculo .descricao {
+	color: #FFF;
+	font-family: 'OpenSans', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.blocoSobreGroomer .blocoConteudo {
+	margin-top: 40px;
+}
+
+.blocoConteudo .titulo {
+	color: #464646;
+	display: block;
+	font-family: 'savignyregular_cond', sans-serif;
+	font-size: 30px;
+	line-height: 1em;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.listaConteudo {
+	font-size: 0;
+	line-height: 0;
+	text-align: left;
+}
+
+.listaConteudo .lista {
+	display: block;
+	vertical-align: top;
+}
+
+.listaVideos .lista {
+	display: inline-block;
+	margin: 0 0 9px 9px;
+}
+
+.listaDicas .lista {
+	border-bottom: 1px solid #1a1a1a;
+	padding: 15px 0;
+}
+
+.listaDicas .lista:first-child {
+	border-top: 1px solid #1a1a1a;
+}
+
+.listaVideos .lista.primeiro {
+	margin-left: 0;
+}
+
+.listaVideos .listaLink,
+.listaVideos .listaLink img {
+	display: block;
+	width: 178px;
+	height: 100px;
+}
+
+.listaConteudo .listaLink {
+	color: #3e3e3e;
+	display: block;
+	font-size: 13px;
+	line-height: 1em;
+}
+
+.listaConteudo .lista .destaque {
+	color: #FFF;
+	font-family: 'OpenSans-Bold', sans-serif;
+	text-transform: uppercase;
+	padding-right: 22px;
+}
+
+.listaVideos .listaLink {
+	overflow: hidden;
+}
+
+.listaVideos .listaLink img {
+	height: auto;
+}
+
+#modalDica {
+	max-width: 450px;
+}
+
+.modais {
+	display: none;
+	text-align: left;
+	padding: 30px 25px;
+}
+
+.modais h3 {
+	color: #b60024;
+	display: block;
+	font-family: 'savignyregular_cond', sans-serif;
+	font-size: 30px;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.modais p {
+	color: #1a1a1a;
+	font-family: 'savignyregular_cond', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 10px;
+}
+
+#eventos {
+	background: #000000;
+	padding: 40px 0;
+	text-align: left;
+}
+
+#eventos .tituloBloco {
+	border-bottom: 1px solid #1a1a1a;
+	padding-bottom: 10px;
+}
+
+.listaEventos {
+	font-size: 0;
+	line-height: 0;
+}
+
+.listaEventos .lista {
+	border-bottom: 1px solid #1a1a1a;
+}
+
+.listaEventos .linkEventos {
+	color: #464646;
+	display: block;
+	font-size: 30px;
+	line-height: 1em;
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+.listaEventos .linkEventos .data {
+	color: #FFF;
+	padding-right: 18px;
+}
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1020px) { 
+	#sessaoBannerLanding {
+		height: auto;
+	}
+
+	.bannerLanding {
+		height: auto;
+		padding: 30px 30px;
+	}
+
+	.bannerLanding .conteudo {
+		height: auto;
+	}
+
+	.bannerLanding .blocoLogo {
+		float: none;
+		margin: 0 auto 25px;
+	}
+
+	.bannerLanding .blocoDescricao {
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+		font-size: 24px;
+		line-height: 1em;
+		text-align: center;
+	}
+
+	.listaGroomers {
+		max-width: 645px;
+		margin: 0 auto;
+	}
+
+	.listaConteudo .lista .destaque {
+		display: block;
+		padding-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.imagemGroomers {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	.tituloBlocoGroomers {
+		text-align: center;
+	}
+
+	.listaVideos {
+		max-width: 565px;
+		margin: 0 auto;
+	}
+
+	.listaVideos .lista {
+		margin: 5px;
+	}
+
+	.listaVideos .lista.primeiro {
+		margin-left: 5px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.blocoSobreGroomer .topoSobre {
+		padding: 35px 25px 230px;
+	}
+
+	.topoSobre .bloco {
+		float: none;
+	}
+
+	.topoSobre .blocoSelo {
+		display: none;
+	}
+
+	.topoSobre .blocoFoto {
+		left: 50%;
+		margin-left: -83px;
+	}
+
+	.topoSobre .blocoCurriculo {
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 805px) {
+	.listaGroomers {
+		max-width: 430px;
+	}
+
+	.listaVideos {
+		max-width: 376px;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.menuGroomers {
+		display: none;
+	}
+
+	.sessaoLanding .conteudoLanding {
+		padding-top: 30px;
+	}
+
+	.blocoExplicacao .descricaoBloco {
+		padding-left: 40px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.tituloBloco {
+		font-size: 24px;
+	}
+
+	.sessaoLanding .conteudoLanding {
+		padding: 30px 10px 0;
+	}
+
+	.blocoExplicacao .descricaoBloco {
+		padding: 0;
+	}
+
+
+	.listaEventos .linkEventos {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.blocoSobreGroomer .conteudo {
+		padding: 0 25px;
+	}
+}
+
+@media only screen and (max-width: 510px) {
+	.listaGroomers {
+		max-width: 175px;
+	}
+
+	.listaGroomers .lista {
+		margin: 0;
+		margin-top: 30px;
+	}
+
+	.listaVideos {
+		max-width: 178px;
+	}
+}
